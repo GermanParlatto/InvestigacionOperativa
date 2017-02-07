@@ -32,16 +32,16 @@ Forma Estándar:
     0&X_1 + 1X_2 + 0X_3 + 0X_4 + 0X_5 + 0X_6 + 0X_7 + 1X_8 + 0\mu_1 = 200 \\
 \end{align*}
 \subsubsection{Resolución LINDO}
-\insertarTabla{02.05.01.tex}{Tableau Simplex Optimo}
+\insertarTabla{02.05.01.tex}{Tableau Simplex Óptimo}
 \subsubsection{Interpretación de LINDO}
 \insertarCodigo{lindo05.txt}{Problema 05 - LINDO}
 A partir del reporte de LINDO se pueden extraer las siguientes conclusiones: 
 \begin{itemize}
-    \item Se necesitaron solo 2 iteraciones para alcanzar la solución optima del problema.
-    \item El valor optimo del funcional es de $\$111429.50$
-    \item El plan de producción optimo consiste en la fabricación de 195 unidades del producto 2. 70 del producto 3 y ninguna unidad del primer producto
+    \item Se necesitaron solo 2 iteraciones para alcanzar la solución Óptima del problema.
+    \item El valor óptimo del funcional es de $\$111429.50$.
+    \item El plan de producción óptimo consiste en la fabricación de 195 unidades del producto 2. 70 del producto 3 y ninguna unidad del primer producto.
     \item Para lograr lo antes mencionado, se consumirá la totalidad de las horas de mano de obra disponible, 247 horas de maquinaria y 65,5 de materia prima.
-    \item Siendo la mano de obra el recurso que nos limita en este caso (la restricción activa), lo que podemos notar debido a que posee un precio sombra de 92,92 lo que indica que estaríamos dispuestos a pagar hasta esa cantidad con tal de contar con una unidad mas del recurso, o dicho de otra forma eso es lo que mejoraría nuestra ganancia en coas de contar con dicha unidad extra.
+    \item Siendo la mano de obra el recurso que nos limita en este caso (la restricción activa), lo que podemos notar debido a que posee un precio sombra de 92,92 lo que indica que estaríamos dispuestos a pagar hasta esa cantidad con tal de contar con una unidad más del recurso, o dicho de otra forma eso es lo que mejoraría nuestra ganancia en caso de contar con dicha unidad extra.
 \end{itemize}
 
 \subsubsection{Planteo Dual}
@@ -51,5 +51,5 @@ A partir del reporte de LINDO se pueden extraer las siguientes conclusiones:
     4&Y_1 + 0.3Y_2 + 0.8Y_3 \ge 400 \\
     6&Y_1 + 0.1Y_2 + 1.3Y_3 \ge 600
 \end{align*}
-El problema dual, en cada una de sus restricciones nos impone que si vendemos la misma cantidad de recursos que se necesitan para completar cada una de las actividades, entonces si o si la ganancia debe ser mayor, ya que caso contrario no resulta beneficioso.
+El problema dual, en cada una de sus restricciones nos impone que si vendiésemos la misma cantidad de recursos que se necesitan para completar cada una de las actividades, entonces sí o sí la ganancia debe ser mayor, ya que caso contrario no resultaría beneficioso.
 \end{homeworkProblem} 

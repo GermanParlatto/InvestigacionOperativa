@@ -27,7 +27,7 @@ Forma Estándar:
   2&X_1 + 1.5X_2 + 0.5X_3 + 0X_4 + 0X_5 + 1X_6 = 8 \\
   &X_1,X_2,X_3 \ge 0
 \end{align*}
-\insertarTabla{02.01.01.tex}{Tableau Simplex Optimo}
+\insertarTabla{02.01.01.tex}{Tableau Simplex Óptimo}
 
 \subsubsection{Variación de $c_3$}
 \begin{align*}
@@ -45,10 +45,10 @@ Los valores de los precios sombra son:
   \item Hora de Acabado: $10 \fraccorche{\$}{Aca}$
   \item Madera: $0 \fraccorche{\$}{Mad}$
 \end{itemize}
-En el caso de las horas e Carpintería y Acabado, las mismas se interpretan como la mejora que se produciría en el funcional en el caso de contar con una unidad mas de cualquiera de los dos recursos.
-Sin embargo, esta variación es valida solo para el intervalo de variación de cada una de las variables en cuestión. Cabe destacar que las mismas fueron consumidas en su totalidad\\
+En el caso de las horas de Carpintería y Acabado, las mismas se interpretan como la mejora que se produciría en el funcional en el caso de contar con una unidad más de cualquiera de los dos recursos.
+Sin embargo, está variación es válida sólo para el intervalo de variación de cada una de las variables en cuestión. Cabe destacar que las mismas fueron consumidas en su totalidad.\\
 
-En cambio, la madera presenta un sobrante y es por esto que contar con una unidad de madera extra no presentaría una mejora, ya que de por si tenemos todavía madera a nuestra disposición
+En cambio, la madera presenta un sobrante y es por ésto que contar con una unidad de madera extra no presentaría una mejora, ya que de por sí tenemos todavía madera a nuestra disposición.
 \subsubsection{18 hs de acabado}
 
 \begin{align*}
@@ -58,7 +58,7 @@ En cambio, la madera presenta un sobrante y es por esto que contar con una unida
 \end{align*}
 Por lo tanto, $b_2$ esta en el rango de: $16  \le b_2 \le 24$
 
-$W = Z = 0(5) + 18(10) + 8(10) = 260 \quad \rightarrow 280-260 = 20 \rightarrow Disminucion$
+$W = Z = 0(5) + 18(10) + 8(10) = 260 \quad \rightarrow 280-260 = 20 \rightarrow$ Disminución.
 
 \subsubsection{Mesas para PC}
 Un método para determinar si es conveniente o no es analizar el valor de la suma de los precios sombra de los recursos necesarios para realizar la nueva actividad y comparar los mismos con el precio estimado de venta. Por lo tanto:
@@ -91,22 +91,22 @@ Forma Estándar
 \end{align*}
 Se puede interpretar el problema dual de la siguiente manera. Buscamos minimizar el costo total a pagar por cada recurso que necesitamos para la producción.
 En el lado izquierdo de las restricciones podemos apreciar los requerimientos de cada recurso para cada una de las actividades que deseamos llevar a cabo como empresa, mientras
-que en el lado derecho se encuentra el precio de venta del producto resultante de dicha actividad. De esta manera, exigimos que lógicamente la suma de los costos de un producto sea siempre menor a su precio de venta de manera de asegurar la existencia de ganancias para la empresa
+que en el lado derecho se encuentra el precio de venta del producto resultante de dicha actividad. De esta manera, exigimos que lógicamente la suma de los costos de un producto, sea siempre menor a su precio de venta, de manera de asegurar la existencia de ganancias para la empresa.
 
 
 \subsubsection{Estudio de Mercado}
 No es necesario modificar la solución obtenida anteriormente ya que la nueva restricción resulta redundante.
-El plan de producción actual incluye la fabricación de 8 unidades del producto 3 ($X_3$), osea sillas.
+El plan de producción actual incluye la fabricación de 8 unidades del producto 3 ($X_3$), o sea sillas.
 
 \subsubsection{Una corrección en el Estudio de Mercado}
-Como los muchachos de Marketing estaban equivocados (que sorpresa), la restricción anterior si nos afecta. Esto es debido a que actualmente el nivel de la actividad "producción de sillas" es de 8, mientras que la nueva restricción nos impone un mínimo de 9.
+Como los muchachos de Marketing estaban equivocados (qué sorpresa), la restricción anterior sí nos afecta. Esto es debido a que actualmente el nivel de la actividad 'producción de sillas' es de 8, mientras que la nueva restricción nos impone un mínimo de 9.
 Entonces debemos agregar la siguiente restricción,
 \ecuacion{0X_1 + 0X_2 + 1X_3 + 0X_4 + 0X_5 + 0X_6 - 1X_7 + 1\mu_1 \ge 9}{020103}
 lo que resulta en una nueva tabla, la cual debemos analizar:
 \insertarTabla{02.01.03.tex}{Nueva tabla}
 \insertarTabla{02.01.04.tex}{Iteraciones}
 \pagebreak
-Por lo tanto, el mejor plan de producción seria:
+Por lo tanto, el mejor plan de producción sería:
 \begin{itemize}
 	\item $9$ Sillas
 	\item $1.375$ Escritorios
@@ -114,8 +114,8 @@ Por lo tanto, el mejor plan de producción seria:
 \end{itemize}
 
 
-\subsubsection{Mesas, si o si}
-Para lograr que la venta de mesas sea una actividad rentable, entonces el precio sombra de la actividad 2 debería ser igual a $0$. Para lograr esto, una forma es aumentar el valor de $c_2$ (la contribución de la actividad venta de mesas al funcional) hasta que la solución actual no sea optima. Entonces debemos aumentarlo por afuera de su rango de variación. \\
+\subsubsection{Mesas, sí o sí}
+Para lograr que la venta de mesas sea una actividad rentable, entonces el precio sombra de la actividad 2 debería ser igual a $0$. Para lograr ésto, una forma es aumentar el valor de $c_2$ (la contribución de la actividad venta de mesas al funcional) hasta que la solución actual no sea Óptima. Entonces debemos aumentarlo por afuera de su rango de variación. \\
 Intervalo de variación de $c_2$ (VNB):
 \begin{align*}
   &L_{inf} = -\infty \\

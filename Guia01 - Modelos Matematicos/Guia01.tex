@@ -1,7 +1,7 @@
 \documentclass{tarea}
 
 
-\renewcommand{\hmwkTitle}{Guia 01: Modelos Matemáticos}
+\renewcommand{\hmwkTitle}{Guía 01: Modelos Matemáticos}
 \renewcommand{\hmwkDueDate}{--}
 \renewcommand{\hmwkClass}{Investigación Operativa}
 \renewcommand{\hmwkClassInstructor}{C.C. Lauritto \& Ing. Casanova}
@@ -17,13 +17,13 @@
 \begin{homeworkProblem}
 
 \begin{itemize}
-\item {\bfseries Modelo a: }Deterministico, lineal y continuo
-\item {\bfseries Modelo b: }Deterministico, lineal y continuo
-\item {\bfseries Modelo c: }Deterministico, lineal y entero
-\item {\bfseries Modelo d: }Deterministico, no lineal y restringido
-\item {\bfseries Modelo e: }Deterministico, no lineal y restringido
-\item {\bfseries Modelo f: }Deterministico, no lineal y restringido
-\item {\bfseries Modelo g: }Deterministico, lineal y mixto (entero y binario)
+\item {\bfseries Modelo a: }Determinístico, lineal y continuo
+\item {\bfseries Modelo b: }Determinístico, lineal y continuo
+\item {\bfseries Modelo c: }Determinístico, lineal y entero
+\item {\bfseries Modelo d: }Determinístico, no lineal y restringido
+\item {\bfseries Modelo e: }Determinístico, no lineal y restringido
+\item {\bfseries Modelo f: }Determinístico, no lineal y restringido
+\item {\bfseries Modelo g: }Determinístico, lineal y mixto (entero y binario)
 \end{itemize}
 \end{homeworkProblem}
 \pagebreak
@@ -44,7 +44,7 @@ S &\le 1700 \\
 
 
 \begin{homeworkProblem}[-1][Televisores]
-Siendo $x$ la cantidad de televisores de 27'' e $y$ la cantidad de televisores de 20" a producir, entonces debemos minimizar la función\\
+Siendo $x$ la cantidad de televisores de 27'' e $y$ la cantidad de televisores de 20'' a producir, entonces debemos minimizar la función\\
 \begin{equation}
 Max\ Z=120\fraccorche{\$}{Ux} x\corche{Ux} +80\fraccorche{\$}{Uy}y\corche{Uy} 
 \end{equation}
@@ -108,7 +108,7 @@ M_i &\in \{0,1,2,3,4,5,6,7\}\quad \quad \forall i=1,2,3
 
 
 \begin{homeworkProblem}[-1][Agropecuario]
-En este problema, debemos buscar como distribuir nuestros cultivos en 3 fincas, de manera
+En este problema, debemos buscar cómo distribuir nuestros cultivos en 3 fincas, de manera
 de maximizar la utilidad total. Para esto trabajamos con 9 variables de decisión:
 \begin{itemize}
 \item $X_{1y}$ Cantidad de hectáreas de la finca 1 dedicadas a la plantación de yuca
@@ -121,7 +121,7 @@ de maximizar la utilidad total. Para esto trabajamos con 9 variables de decisió
 \item $X_{3p}$ Cantidad de hectáreas de la finca 3 dedicadas a la plantación de papa
 \item $X_{3m}$ Cantidad de hectáreas de la finca 3 dedicadas a la plantación de maíz
 \end{itemize}
-La utilidad total esta modelada mediante la siguiente función:
+La utilidad total está modelada mediante la siguiente función:
 \begin{align*}
 Max\ Z =\quad &400\fraccorche{\$}{Ha}(X_{1y}\corche{Ha}+X_{2y}\corche{Ha}+X_{3y}\corche{Ha})\quad + \\
   &300\fraccorche{\$}{Ha}(X_{1p}\corche{Ha}+X_{2p}\corche{Ha}+X_{3p}\corche{Ha})\quad + \\
@@ -150,11 +150,11 @@ X_{1m}\corche{Ha} + X_{2m}\corche{Ha} + X_{3m}\corche{Ha} &\le 900\corche{Ha} \\
 
 
 \begin{homeworkProblem}[-1][Ómnibus]
-Debemos decidir cuantos chóferes contratar y despedir por año, a fin de minimizar el costo del personal, siempre satisfaciendo el nivel operativo mínimo.
+Debemos decidir cuántos choferes contratar y despedir por año, a fin de minimizar el costo del personal, siempre satisfaciendo el nivel operativo mínimo.
 Las variables de decisión son:
 \begin{itemize}
-\item $C_i$: Cantidad de chóferes contratados en el año $i$
-\item $D_i$: Cantidad de chóferes despedidos en el año $i$
+\item $C_i$: Cantidad de choferes contratados en el año $i$
+\item $D_i$: Cantidad de choferes despedidos en el año $i$
 \end{itemize}
 La función de costo es:
 \begin{align*}
@@ -172,7 +172,7 @@ sujeta a
 
 \begin{homeworkProblem}[-1][Mainframe Seguridad]
 Se busca minimizar el costo de realizar backups de las bases de datos de un Mainframe, el cual es proporcional a la cantidad de GB utilizados.
-Contamos con 10 cintas de distintos capacidades, siendo el siguiente el vector de costos:
+Contamos con 10 cintas de distintas capacidades, siendo el siguiente el vector de costos:
 \begin{align*}
 capac = \corche{1.3, 5, 3.1, 4.3, 5.1, 4, 3, 1, 2, 10.2}
 \end{align*}
@@ -197,7 +197,7 @@ X_{ij} \in & \left\{  0,1 \right\}\quad\quad \forall i=A...E,j=1...10\\
 
 
 \begin{homeworkProblem}[-1][Monopolista]
-En este caso debemos hallar el costo por producto $q$ que maximice nuestra ganancia, la cual esta dada por:
+En este caso debemos hallar el costo por producto $q$ que maximice nuestra ganancia, la cual está dada por:
 \begin{equation}
   Max\ Z = \left( 100-4q-2 \right)\fraccorche{\$}{U}q\corche{U} -50\corche{\$} 
 \end{equation}
@@ -207,7 +207,7 @@ Obviamente, dado que representa una cantidad, $q$ puede ser como mínimo 0 ($q \
 
 \begin{homeworkProblem}[-1][Firma genérica]
 Similar al caso anterior, solo que con dos mercados en los cuales vendemos nuestro producto, por lo que tendremos las variables de decisión
-$q_1$ y $q_2$ que representan la cantidad vendidas en cada mercado. La función a optimizar es:
+$q_1$ y $q_2$ que representan la cantidad vendida en cada mercado. La función a optimizar es:
 \begin{equation}
   Max\ Z = 60\fraccorche{\$}{U}q_1\corche{U} + \left( 100-q_2 \right)\fraccorche{\$}{U}q_2\corche{U} - \left( q_1 + q_2 \right)^2\corche{\$}
 \end{equation}
@@ -235,9 +235,8 @@ sujeta a:
 \end{homeworkProblem}
 
 
-\begin{homeworkProblem}[-1][Dos lamparas]
+\begin{homeworkProblem}[-1][Dos lámparas]
 \begin{equation}
-Cambiar pesos por euros!!! \\
   Max\ Z = 15\fraccorche{\text{\euro}}{L1}X_1\corche{L1} +10\fraccorche{\text{\euro}}{L2}X_2{L2}
 \end{equation}
 \begin{align*}
@@ -248,7 +247,7 @@ Cambiar pesos por euros!!! \\
 \end{homeworkProblem}
 
 
-\begin{homeworkProblem}[-1][Refinería de Petroleo]
+\begin{homeworkProblem}[-1][Refinería de Petróleo]
 \begin{equation}
   Min\ Z = 35\fraccorche{\$}{CL}X_L\corche{CL} + 30\fraccorche{\$}{CP}X_P\corche{CP}
 \end{equation}

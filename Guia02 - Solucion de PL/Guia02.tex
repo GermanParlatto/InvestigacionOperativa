@@ -1,9 +1,9 @@
 \documentclass{tarea}
 
 
-\renewcommand{\hmwkTitle}{Guia 02: Solucion de PL}
+\renewcommand{\hmwkTitle}{Guía 02: Solución de PL}
 \renewcommand{\hmwkDueDate}{--}
-\renewcommand{\hmwkClass}{Investigacion Operativa}
+\renewcommand{\hmwkClass}{Investigación Operativa}
 \renewcommand{\hmwkClassInstructor}{C.C. Lauritto \& Ing. Casanova}
 \renewcommand{\hmwkAuthorName}{\textbf{ Ravera P. \& Rivera R.}}
 
@@ -19,7 +19,7 @@
 
 \begin{homeworkProblem}[-1][Modelos Lineales]
 \subsubsection{Inciso A}
-Funcion Objetivo 
+Función Objetivo 
 \begin{align*}
 Max\ Z = 2X_1 + 4X_2
 \end{align*}
@@ -41,7 +41,7 @@ Por lo que los puntos son:
 &B \rightarrow\ 2(3) + 4(1)   = 10 \\
 &C \rightarrow\ 2(4) + 4(0)   =  8
 \end{align*}
-Por lo tanto, el problema cuenta con Soluciones Alternativas, siendo Deterministico - Lineal - Continuo. \\
+Por lo tanto, el problema cuenta con Soluciones Alternativas, siendo Determinístico - Lineal - Continuo. \\
 Región factible:
 \insertarImagen{01-a}
 
@@ -73,7 +73,7 @@ Por lo que los puntos son:
 &B \rightarrow\ 2(5) + 8(2)   = 26 \\
 &C \rightarrow\ 2(2.22) + 8(0.88)   =  11.48
 \end{align*}
-El máximo se halla en $B$. El problema es Deterministico - Lineal - Continuo. \\
+El máximo se halla en $B$. El problema es Determinístico - Lineal - Continuo. \\
 Región factible:
 \insertarImagen{01-b}
 
@@ -84,7 +84,7 @@ La función objetivo es:
 	Max\ Z = 2X_1 + X_2
 \end{align*}
 \insertarImagen{01-c}
-La región factible no esta acotada, por lo que el valor de $Z$ es $\infty$. La variable $X_2$ puede crecer libremente. \\
+La región factible no está acotada, por lo que el valor de $Z$ es $\infty$. La variable $X_2$ puede crecer libremente. \\
 El problema e Deterministico - Lineal - Continuo.
 
 \subsubsection{Inciso D}
@@ -94,7 +94,7 @@ La función objetivo es:
 \end{align*}
 \insertarImagen{01-d}
 En este caso la solución es Infactible o Incompatible ya que la región factible es un conjunto vació al ser no convexo. \\
-El problema es Deterministico - Lineal - Continuo.
+El problema es Determinístico - Lineal - Continuo.
 \end{homeworkProblem}
 
 \begin{homeworkProblem}[-1][Simplex Modelos Lineales]
@@ -113,7 +113,7 @@ Forma Estándar:
 	&X_1,X_2,X_3,X_4 \ge 0
 \end{align*}
 
-Este problema tiene soluciones alternativas, lo cual podemos detectar gracias a que existen dos conjuntos de variables básicas con el mismo valor de $Z$.
+Éste problema tiene soluciones alternativas, lo cual podemos detectar gracias a que existen dos conjuntos de variables básicas con el mismo valor de $Z$.
 \insertarTabla{02A}{Tableau Simplex 02A}
 
 
@@ -134,7 +134,7 @@ s.a. : \quad \quad &2X_1 - 5X_2 -1X_3 +0X_4 + 0X_5 + 1\mu_1= 8 \\
 -&1X_1 + 5X_2 -0X_3 +0X_4 + 1X_5 + 0\mu_1 = 5 \\
 &X_1,X_2,X_3,X_4,X_5 \ge 0
 \end{align*}
-La Solución Básica Factible Optima es $X_1 = 5\ y\ X_2=2$.
+La Solución Básica Factible Óptima es $X_1 = 5\ y\ X_2=2$.
 \insertarTabla{02B1}{Tableau Simplex 02.A}
 \insertarTabla{02B2}{Tableau Simplex 02.B}
 
@@ -154,7 +154,7 @@ Forma Estándar:
 	&X_1,X_2,X_3,X_4 \ge 0
 \end{align*}
 \insertarTabla{02C}{Tableau Simplex 02.C}
-Como podemos ver, en la ultima iteracion del Simplex no existe un $\theta \ge 0$ por lo que la solución no esta acotada, osea, $Z\rightarrow  \infty$.
+Como podemos ver, en la última iteración del Simplex no existe un $\theta \ge 0$ por lo que la solución no esta acotada, o sea, $Z\rightarrow  \infty$.
 
 \subsubsection{Inciso D}
 \begin{align*}
@@ -171,7 +171,7 @@ Forma Estándar:
 	&X_1,X_2,X_3,X_4 \ge 0
 \end{align*}
 \insertarTabla{02D}{Tableau Simplex 02.D}
-En este caso, el problema es incompatible ya que la región de factibilidad es igual al conjunto vació.
+En esté caso, el problema es incompatible ya que la región de factibilidad es igual al conjunto vacio.
 \end{homeworkProblem}
 
 \begin{homeworkProblem}[-1][Compañía]
@@ -199,11 +199,11 @@ Forma Estándar:
 \insertarTabla{03A}{Tableau Simplex 03}
 De esta manera, para maximizar la utilidad deberíamos producir 20 y 10 unidades de los productos A y B respectivamente.
 De esa manera, nuestra ganancia ascendería a los $\$1700$.\\
-Los efectos de contar con mas recursos (una unidad mas) son los siguientes:
+Los efectos de contar con más recursos (una unidad más) son los siguientes:
 \begin{itemize}
-	\item Hora de la Maquina 1: Nuestra ganancia aumentaría en $20/7\corche{\$}$, 
-	podríamos producir $5/4$ unidades mas del producto A, pero deberíamos producir $3/4$ unidades menos del B.
-	\item Hora de la Maquina 2: Nuestra ganancia aumentaría en $90/7\corche{\$}$, produciendo $1/7$ menos unidades del producto A y $10/35$ mas del producto B. 
+	\item Hora de la Máquina 1: Nuestra ganancia aumentaría en $20/7\corche{\$}$, 
+	podríamos producir $5/4$ unidades más del producto A, pero deberíamos producir $3/4$ unidades menos del B.
+	\item Hora de la Máquina 2: Nuestra ganancia aumentaría en $90/7\corche{\$}$, produciendo $1/7$ menos unidades del producto A y $10/35$ más del producto B. 
 \end{itemize}
 
 \end{homeworkProblem}
@@ -232,14 +232,14 @@ Forma Estándar:
 	-0.08&X_1 + 0.01X_2 + 1X_5 = 0 \\
 	&X_1,X_2,X_3,X_4,X_5  \ge 0
 \end{align*}
-Se determino entonces que se deben utilizar 200 kg de Maíz y 600 de Soja para cumplir con las exigencias impuestas.
+Se determinó entonces que se deben utilizar 200 kg de Maíz y 600 de Soja para cumplir con las exigencias impuestas.
 \insertarTabla{04}{Tableau Simplex 04}
 \end{homeworkProblem}
 
 \begin{homeworkProblem}[-1][Almacén La Falda]
 Las variables de decisión son:
 \begin{itemize}
-	\item $X_1$: cantidad de cajas que se solicitan al deposito
+	\item $X_1$: cantidad de cajas que se solicitan al depósito
 	\item $X_2$: cantidad de cajas  que se solicitan al proveedor 
 \end{itemize}
 La función objetivo es: 
@@ -264,7 +264,7 @@ Forma Estándar:
 	&X_1,X_2 \ge 0
 \end{align*}
 \insertarTabla{05}{Tableau Simplex 05}
-De esta manera, podemos alcanzar el costo mínimo (de $ \$ 160$) si traemos del deposito la totalidad de las cajas disponibles (40) y le compramos al proveedor el $66.67\%$ de su stock disponible (osea 20 de 30 cajas).
+De esta manera, podemos alcanzar el costo mínimo (de $ \$ 160$) si traemos del depósito la totalidad de las cajas disponibles (40) y le compramos al proveedor el $66.67\%$ de su stock disponible (o sea 20 de 30 cajas).
 \end{homeworkProblem}
 
 \begin{homeworkProblem}[-1][Lotería]
@@ -297,10 +297,10 @@ Forma Estándar:
 \begin{homeworkProblem}[-1][Turkeyco]
 Las variables de decisión son:
 \begin{itemize}
-	\item $B_1$: Cantidad de carne "blanca" utilizada en chuleta tipo 1.
-	\item $N_1$: Cantidad de carne "negra" utilizada en chuleta tipo 1.
-	\item $B_2$: Cantidad de carne "blanca" utilizada en chuleta tipo 2.
-	\item $N_2$: Cantidad de carne "negra" utilizada en chuleta tipo 2.
+	\item $B_1$: Cantidad de carne 'blanca' utilizada en chuleta tipo 1.
+	\item $N_1$: Cantidad de carne 'negra' utilizada en chuleta tipo 1.
+	\item $B_2$: Cantidad de carne 'blanca' utilizada en chuleta tipo 2.
+	\item $N_2$: Cantidad de carne 'negra' utilizada en chuleta tipo 2.
 	\item $P_1$: Cantidad de pavos del tipo 1 utilizados.
 	\item $P_2$: Cantidad de pavos del tipo 2 utilizados.
 \end{itemize}
@@ -323,7 +323,7 @@ Sujeta a:
 \end{align*}
 
 \insertarCodigo{lingo07.txt}{Ejercicio 07 - LINGO}
-Podemos observar entonces que lo mas conveniente para la empresa es utilizar para la confección de la chuleta numero 1, $35Kg$ de carne blanca y $15Kg$ de carne oscura, mientras que para la chuleta numero 2 las cantidades son $18Kg$ y $12Kg$ respectivamente. Por otra parte es conveniente adquirir casi 9 pavos del tipo 1 y un poco mas de 3 del tipo 2.
+Podemos observar entonces que lo más conveniente para la empresa es utilizar para la confección de la chuleta número 1, $35Kg$ de carne blanca y $15Kg$ de carne oscura, mientras que para la chuleta número 2 las cantidades son $18Kg$ y $12Kg$ respectivamente. Por otra parte es conveniente adquirir casi 9 pavos del tipo 1 y un poco más de 3 del tipo 2.
 
 \end{homeworkProblem}
 
@@ -363,8 +363,8 @@ Entonces, lo recomendable resulta la inversión de $13.33$ millones aproximadame
 \begin{homeworkProblem}[-1][Compañía de Seguros]
 Las variables de decisión son:
 \begin{itemize}
-	\item $X_1$: Unidades de "Riesgos Especiales" vendidas.
-	\item $X_2$: Unidades de "Hipotecas" vendidas.
+	\item $X_1$: Unidades de 'Riesgos Especiales' vendidas.
+	\item $X_2$: Unidades de 'Hipotecas' vendidas.
 \end{itemize}
 La función objetivo es: 
 \begin{equation}
@@ -386,8 +386,8 @@ Forma Estándar:
 \end{align*}
 \insertarImagen{09}
 \insertarTabla{09}{Tableau Simplex 09}
-Podemos observar que lo mas beneficioso seria la venta de 600 unidades del producto 1 ("Riesgo Especial") y 300 unidades del producto 2 ("Hipotecas").
-Tambien cabe aclarar que las horas administrativas no se llegan a consumir en su totalidad, existiendo un sobrante de 500, que podrían ser utilizadas en otras actividades.
+Podemos observar que lo más beneficioso sería la venta de 600 unidades del producto 1 ('Riesgo Especial') y 300 unidades del producto 2 ('Hipotecas').
+También cabe aclarar que las horas administrativas no se llegan a consumir en su totalidad, existiendo un sobrante de 500, que podrían ser utilizadas en otras actividades.
 \end{homeworkProblem}
 
 \begin{homeworkProblem}[-1][Criador de Perros]
@@ -427,11 +427,11 @@ En este caso, sugerimos al criador de perros el siguiente plan, con el cual podr
 \begin{homeworkProblem}[-1][Banco Gane]
 Las variables de decisión son:
 \begin{itemize}
-	\item  $X_1$: Dinero (en millones) que se destina a prestamos Personales.
-	\item  $X_2$: Dinero (en millones) que se destina a prestamos Automovilísticos.
-	\item  $X_3$: Dinero (en millones) que se destina a prestamos para el Hogar.
-	\item  $X_4$: Dinero (en millones) que se destina a prestamos Agrícolas.
-	\item  $X_5$: Dinero (en millones) que se destina a prestamos Comerciales.
+	\item  $X_1$: Dinero (en millones) que se destina a préstamos Personales.
+	\item  $X_2$: Dinero (en millones) que se destina a préstamos Automovilísticos.
+	\item  $X_3$: Dinero (en millones) que se destina a préstamos para el Hogar.
+	\item  $X_4$: Dinero (en millones) que se destina a préstamos Agrícolas.
+	\item  $X_5$: Dinero (en millones) que se destina a préstamos Comerciales.
 \end{itemize}
 La función objetivo es: 
 \begin{equation}
@@ -446,12 +446,12 @@ Sujeta a:
 \end{align*}
 \insertarTabla{11}{Tableau Simplex 11}
 \insertarCodigo{lingo11.txt}{Ejercicio 11 - LINGO}
-La mejor política de prestamos para el Banco Gane es la siguiente:
+La mejor política de préstamos para el Banco Gane es la siguiente:
 \begin{itemize}
-	\item Destinar 7,2 millones a prestamos para casas.
-	\item Destinar 4,8 millones a prestamos comerciales.
+	\item Destinar 7,2 millones a préstamos para casas.
+	\item Destinar 4,8 millones a préstamos comerciales.
 \end{itemize}
-De esta manera, la ganancia del banco seria de $\$993600$.
+De esta manera, la ganancia del banco sería de $\$993600$.
 \end{homeworkProblem}
 
 \begin{homeworkProblem}[-1][Papelera Moderna]
@@ -490,7 +490,7 @@ Podemos ver que existen múltiples soluciones:
 		\item Realizar 137,5 cortes con el esquema 5
 	\end{itemize}
 \end{itemize}
-Ambas estrategias nos permiten alcanzar un desperdicio de solo 400 pies
+Ambas estrategias nos permiten alcanzar un desperdicio de sólo 400 pies
 \end{homeworkProblem}
 
 \begin{homeworkProblem}[-1][Ciudad de Progreso]

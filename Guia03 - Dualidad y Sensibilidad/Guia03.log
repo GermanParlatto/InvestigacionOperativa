@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.4)  21 JAN 2017 18:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.4)  7 FEB 2017 06:48
 entering extended mode
 **./Guia03.tex
 (Guia03.tex
@@ -145,10 +145,36 @@ Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 ))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\graphics\e
-psfig.sty
-Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\fronte
+ndlayer\tikz.sty
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\basicl
+ayer\pgf.sty
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\utilit
+ies\pgfrcs.sty
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
+ities\pgfutil-common.tex
+\pgfutil@everybye=\toks19
+\pgfutil@tempdima=\dimen114
+\pgfutil@tempdimb=\dimen115
 
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
+ities\pgfutil-common-lists.tex))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
+ities\pgfutil-latex.def
+\pgfutil@abb=\box26
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\ms\everysh
+i.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
+ities\pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\basicl
+ayer\pgfcore.sty
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\graphics\g
 raphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -167,17 +193,290 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 )
-\Gin@req@height=\dimen114
-\Gin@req@width=\dimen115
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
 )
-\epsfxsize=\dimen116
-\epsfysize=\dimen117
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\system
+layer\pgfsys.sty
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\syst
+emlayer\pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
+ities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
+ities\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks22
+))
+\pgf@x=\dimen118
+\pgf@y=\dimen119
+\pgf@xa=\dimen120
+\pgf@ya=\dimen121
+\pgf@xb=\dimen122
+\pgf@yb=\dimen123
+\pgf@xc=\dimen124
+\pgf@yc=\dimen125
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count94
+\c@pgf@countb=\count95
+\c@pgf@countc=\count96
+\c@pgf@countd=\count97
+\t@pgf@toka=\toks23
+\t@pgf@tokb=\toks24
+\t@pgf@tokc=\toks25
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\syst
+emlayer\pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\syst
+emlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\syst
+emlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\syst
+emlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count98
+\pgfsyssoftpath@bigbuffer@items=\count99
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\syst
+emlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmath.code.tex
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathcalc.code.tex
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathutil.code.tex)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen126
+\pgfmath@count=\count100
+\pgfmath@box=\box27
+\pgfmath@toks=\toks26
+\pgfmath@stack@operand=\toks27
+\pgfmath@stack@operation=\toks28
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathfunctions.code.tex
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathfunctions.basic.code.tex)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathfunctions.trigonometric.code.tex)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathfunctions.random.code.tex)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathfunctions.comparison.code.tex)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathfunctions.base.code.tex)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathfunctions.round.code.tex)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathfunctions.misc.code.tex)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathfunctions.integerarithmetics.code.tex)))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count101
+))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen127
+\pgf@picmaxx=\dimen128
+\pgf@picminy=\dimen129
+\pgf@picmaxy=\dimen130
+\pgf@pathminx=\dimen131
+\pgf@pathmaxx=\dimen132
+\pgf@pathminy=\dimen133
+\pgf@pathmaxy=\dimen134
+\pgf@xx=\dimen135
+\pgf@xy=\dimen136
+\pgf@yx=\dimen137
+\pgf@yy=\dimen138
+\pgf@zx=\dimen139
+\pgf@zy=\dimen140
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen141
+\pgf@path@lasty=\dimen142
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen143
+\pgf@shorten@start@additional=\dimen144
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box28
+\pgf@hbox=\box29
+\pgf@layerbox@main=\box30
+\pgf@picture@serial@count=\count102
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen145
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen146
+\pgf@pt@y=\dimen147
+\pgf@pt@temp=\dimen148
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen149
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen150
+\pgf@sys@shading@range@num=\count103
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box31
+))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
+clayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\modu
+les\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box32
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\modu
+les\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\compat
+ibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen151
+\pgf@nodesepend=\dimen152
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\compat
+ibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\utilit
+ies\pgffor.sty
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\utilit
+ies\pgfkeys.sty
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
+ities\pgfkeys.code.tex))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\math\p
+gfmath.sty
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmath.code.tex))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
+ities\pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
+\pgfmath.code.tex)
+\pgffor@iter=\dimen153
+\pgffor@skip=\dimen154
+\pgffor@stack=\toks29
+\pgffor@toks=\toks30
+))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\fron
+tendlayer\tikz\tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\libr
+aries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count104
+\pgfplotmarksize=\dimen155
+)
+\tikz@lastx=\dimen156
+\tikz@lasty=\dimen157
+\tikz@lastxsaved=\dimen158
+\tikz@lastysaved=\dimen159
+\tikzleveldistance=\dimen160
+\tikzsiblingdistance=\dimen161
+\tikz@figbox=\box33
+\tikz@figbox@bg=\box34
+\tikz@tempbox=\box35
+\tikz@tempbox@bg=\box36
+\tikztreelevel=\count105
+\tikznumberofchildren=\count106
+\tikznumberofcurrentchild=\count107
+\tikz@fig@count=\count108
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\modu
+les\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count109
+\pgfmatrixcurrentcolumn=\count110
+\pgf@matrix@numberofcolumns=\count111
+)
+\tikz@expandcount=\count112
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\fron
+tendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\graphics\e
+psfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen162
+\epsfysize=\dimen163
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\base\input
 enc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks19
-\inpenc@posthook=\toks20
+\inpenc@prehook=\toks31
+\inpenc@posthook=\toks32
 
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\base\utf8.
 def
@@ -492,6 +791,53 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\tkz-graph\
+tkz-graph.sty
+Package: tkz-graph 2011/06/01 ctan v 1.00 base for graphs
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\misc\etex.
+sty
+Package: etex 2016/08/01 v2.7 eTeX basic definition package (PEB,DPC)
+\et@xins=\count113
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\base\ifthe
+n.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\xkeyval\xk
+eyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\xkeyval\
+xkeyval.tex
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\xkeyval\
+xkvutils.tex
+\XKV@toks=\toks33
+\XKV@tempa@toks=\toks34
+)
+\XKV@depth=\count114
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\fron
+tendlayer\tikz\libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\libr
+aries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen164
+))
+\c@tkz@gr@a=\count115
+\c@tkz@gr@b=\count116
+\c@tkz@gr@c=\count117
+\c@tkz@gr@e=\count118
+\c@tkz@gr@d=\count119
+\c@tkz@gr@p=\count120
+\c@tkz@gr@i=\count121
+\c@tkz@gr@n=\count122
+\c@tkz@gr@ta=\count123
+\c@tkz@gr@tb=\count124
+)
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\base\latex
 sym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
@@ -513,64 +859,64 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\amsmath\am
 sgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks21
-\ex@=\dimen118
+\@emptytoks=\toks35
+\ex@=\dimen165
 ))
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\amsmath\am
 sbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen119
+\pmbraise@=\dimen166
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\amsmath\am
 sopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count94
+\inf@bad=\count125
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count95
-\leftroot@=\count96
+\uproot@=\count126
+\leftroot@=\count127
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count97
-\DOTSCASE@=\count98
+\classnum@=\count128
+\DOTSCASE@=\count129
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen120
+\Mathstrutbox@=\box37
+\strutbox@=\box38
+\big@size=\dimen167
 LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
+\macc@depth=\count130
+\c@MaxMatrixCols=\count131
 \dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
-\tag@help=\toks22
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
-\andhelp@=\toks23
-\eqnshift@=\dimen121
-\alignsep@=\dimen122
-\tagshift@=\dimen123
-\tagwidth@=\dimen124
-\totwidth@=\dimen125
-\lineht@=\dimen126
-\@envbody=\toks24
+\c@parentequation=\count132
+\dspbrk@lvl=\count133
+\tag@help=\toks36
+\row@=\count134
+\column@=\count135
+\maxfields@=\count136
+\andhelp@=\toks37
+\eqnshift@=\dimen168
+\alignsep@=\dimen169
+\tagshift@=\dimen170
+\tagwidth@=\dimen171
+\totwidth@=\dimen172
+\lineht@=\dimen173
+\@envbody=\toks38
 \multlinegap=\skip47
 \multlinetaggap=\skip48
-\mathdisplay@stack=\toks25
+\mathdisplay@stack=\toks39
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\tabulary\t
 abulary.sty
 Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
-\TY@count=\count106
-\TY@linewidth=\dimen127
-\tymin=\dimen128
-\tymax=\dimen129
-\TY@tablewidth=\dimen130
+\TY@count=\count137
+\TY@linewidth=\dimen174
+\tymin=\dimen175
+\tymax=\dimen176
+\TY@tablewidth=\dimen177
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\amsfonts\a
 msfonts.sty
@@ -587,15 +933,15 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\amscls\ams
 thm.sty
 Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks26
-\thm@bodyfont=\toks27
-\thm@headfont=\toks28
-\thm@notefont=\toks29
-\thm@headpunct=\toks30
+\thm@style=\toks40
+\thm@bodyfont=\toks41
+\thm@headfont=\toks42
+\thm@notefont=\toks43
+\thm@headpunct=\toks44
 \thm@preskip=\skip49
 \thm@postskip=\skip50
 \thm@headsep=\skip51
-\dth@everypar=\toks31
+\dth@everypar=\toks45
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\fancyhdr\f
 ancyhdr.sty
@@ -613,308 +959,8 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\fancyhdr\e
 xtramarks.sty
 Package: extramarks 2016/08/27 2.1 Extra marks
-\@temptokenb=\toks32
+\@temptokenb=\toks46
 )
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\fronte
-ndlayer\tikz.sty
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\basicl
-ayer\pgf.sty
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\utilit
-ies\pgfrcs.sty
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
-ities\pgfutil-common.tex
-\pgfutil@everybye=\toks33
-\pgfutil@tempdima=\dimen131
-\pgfutil@tempdimb=\dimen132
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
-ities\pgfutil-common-lists.tex))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
-ities\pgfutil-latex.def
-\pgfutil@abb=\box28
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\ms\everysh
-i.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
-ities\pgfrcs.code.tex
-Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
-))
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\basicl
-ayer\pgfcore.sty
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\system
-layer\pgfsys.sty
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\syst
-emlayer\pgfsys.code.tex
-Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
-ities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks34
-\pgfkeys@temptoks=\toks35
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
-ities\pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks36
-))
-\pgf@x=\dimen133
-\pgf@y=\dimen134
-\pgf@xa=\dimen135
-\pgf@ya=\dimen136
-\pgf@xb=\dimen137
-\pgf@yb=\dimen138
-\pgf@xc=\dimen139
-\pgf@yc=\dimen140
-\w@pgf@writea=\write3
-\r@pgf@reada=\read1
-\c@pgf@counta=\count107
-\c@pgf@countb=\count108
-\c@pgf@countc=\count109
-\c@pgf@countd=\count110
-\t@pgf@toka=\toks37
-\t@pgf@tokb=\toks38
-\t@pgf@tokc=\toks39
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\syst
-emlayer\pgf.cfg
-File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
-)
-Driver file for pgf: pgfsys-pdftex.def
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\syst
-emlayer\pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\syst
-emlayer\pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-)))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\syst
-emlayer\pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count111
-\pgfsyssoftpath@bigbuffer@items=\count112
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\syst
-emlayer\pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcore.code.tex
-Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmath.code.tex
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathcalc.code.tex
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathutil.code.tex)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathparser.code.tex
-\pgfmath@dimen=\dimen141
-\pgfmath@count=\count113
-\pgfmath@box=\box29
-\pgfmath@toks=\toks40
-\pgfmath@stack@operand=\toks41
-\pgfmath@stack@operation=\toks42
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathfunctions.code.tex
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathfunctions.basic.code.tex)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathfunctions.trigonometric.code.tex)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathfunctions.random.code.tex)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathfunctions.comparison.code.tex)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathfunctions.base.code.tex)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathfunctions.round.code.tex)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathfunctions.misc.code.tex)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathfunctions.integerarithmetics.code.tex)))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count114
-))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen142
-\pgf@picmaxx=\dimen143
-\pgf@picminy=\dimen144
-\pgf@picmaxy=\dimen145
-\pgf@pathminx=\dimen146
-\pgf@pathmaxx=\dimen147
-\pgf@pathminy=\dimen148
-\pgf@pathmaxy=\dimen149
-\pgf@xx=\dimen150
-\pgf@xy=\dimen151
-\pgf@yx=\dimen152
-\pgf@yy=\dimen153
-\pgf@zx=\dimen154
-\pgf@zy=\dimen155
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen156
-\pgf@path@lasty=\dimen157
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen158
-\pgf@shorten@start@additional=\dimen159
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box30
-\pgf@hbox=\box31
-\pgf@layerbox@main=\box32
-\pgf@picture@serial@count=\count115
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen160
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen161
-\pgf@pt@y=\dimen162
-\pgf@pt@temp=\dimen163
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen164
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen165
-\pgf@sys@shading@range@num=\count116
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box33
-))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\basi
-clayer\pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
-)))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\modu
-les\pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box34
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\modu
-les\pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\compat
-ibility\pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen166
-\pgf@nodesepend=\dimen167
-)
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\compat
-ibility\pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\utilit
-ies\pgffor.sty
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\utilit
-ies\pgfkeys.sty
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
-ities\pgfkeys.code.tex))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\pgf\math\p
-gfmath.sty
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmath.code.tex))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\util
-ities\pgffor.code.tex
-Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\math
-\pgfmath.code.tex)
-\pgffor@iter=\dimen168
-\pgffor@skip=\dimen169
-\pgffor@stack=\toks43
-\pgffor@toks=\toks44
-))
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\fron
-tendlayer\tikz\tikz.code.tex
-Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\libr
-aries\pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count117
-\pgfplotmarksize=\dimen170
-)
-\tikz@lastx=\dimen171
-\tikz@lasty=\dimen172
-\tikz@lastxsaved=\dimen173
-\tikz@lastysaved=\dimen174
-\tikzleveldistance=\dimen175
-\tikzsiblingdistance=\dimen176
-\tikz@figbox=\box35
-\tikz@figbox@bg=\box36
-\tikz@tempbox=\box37
-\tikz@tempbox@bg=\box38
-\tikztreelevel=\count118
-\tikznumberofchildren=\count119
-\tikznumberofcurrentchild=\count120
-\tikz@fig@count=\count121
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\modu
-les\pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count122
-\pgfmatrixcurrentcolumn=\count123
-\pgf@matrix@numberofcolumns=\count124
-)
-\tikz@expandcount=\count125
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\fron
-tendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-)))
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\algorithms
 \algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -923,18 +969,14 @@ nment
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\float\floa
 t.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count126
-\float@exts=\toks45
+\c@float@type=\count138
+\float@exts=\toks47
 \float@box=\box39
-\@float@everytoks=\toks46
+\@float@everytoks=\toks48
 \@floatcapt=\box40
 )
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\base\ifthe
-n.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\@float@every@algorithm=\toks47
-\c@algorithm=\count127
+\@float@every@algorithm=\toks49
+\c@algorithm=\count139
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\algorithmi
 cx\algpseudocode.sty
@@ -945,15 +987,15 @@ cx\algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count128
-\c@ALG@rem=\count129
-\c@ALG@nested=\count130
+\c@ALG@line=\count140
+\c@ALG@rem=\count141
+\c@ALG@nested=\count142
 \ALG@tlm=\skip61
 \ALG@thistlm=\skip62
-\c@ALG@Lnr=\count131
-\c@ALG@blocknr=\count132
-\c@ALG@storecount=\count133
-\c@ALG@tmpcounter=\count134
+\c@ALG@Lnr=\count143
+\c@ALG@blocknr=\count144
+\c@ALG@storecount=\count145
+\c@ALG@tmpcounter=\count146
 \ALG@tmplength=\skip63
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -962,24 +1004,10 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 mtcount.sty
 Package: fmtcount 2015/05/05 v3.01
 
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\xkeyval\xk
-eyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\xkeyval\
-xkeyval.tex
-(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\xkeyval\
-xkvutils.tex
-\XKV@toks=\toks48
-\XKV@tempa@toks=\toks49
-)
-\XKV@depth=\count135
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\etoolbox\e
 toolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count136
+\etb@tempcnta=\count147
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\fmtcount\f
 cprefix.sty
@@ -988,17 +1016,17 @@ Package: fcprefix 2012/09/28
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\fmtcount\f
 cnumparser.sty
 Package: fcnumparser 2012/09/28
-\fc@digit@counter=\count137
+\fc@digit@counter=\count148
 ))
-\c@padzeroesN=\count138
-\fc@tmpcatcode=\count139
-\@DT@modctr=\count140
-\@ordinalctr=\count141
-\@orgargctr=\count142
-\@strctr=\count143
-\@tmpstrctr=\count144
-\@DT@loopN=\count145
-\@DT@X=\count146
+\c@padzeroesN=\count149
+\fc@tmpcatcode=\count150
+\@DT@modctr=\count151
+\@ordinalctr=\count152
+\@orgargctr=\count153
+\@strctr=\count154
+\@tmpstrctr=\count155
+\@DT@loopN=\count156
+\@DT@X=\count157
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\eurosym\eu
 rosym.sty
@@ -1011,7 +1039,7 @@ Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\multirow\b
 igstrut.sty
-\bigstrutjot=\dimen177
+\bigstrutjot=\dimen178
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\url\url.st
 y
@@ -1020,24 +1048,24 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\listings\l
 istings.sty
-\lst@mode=\count147
+\lst@mode=\count158
 \lst@gtempboxa=\box42
 \lst@token=\toks50
-\lst@length=\count148
-\lst@currlwidth=\dimen178
-\lst@column=\count149
-\lst@pos=\count150
-\lst@lostspace=\dimen179
-\lst@width=\dimen180
-\lst@newlines=\count151
-\lst@lineno=\count152
-\lst@maxwidth=\dimen181
+\lst@length=\count159
+\lst@currlwidth=\dimen179
+\lst@column=\count160
+\lst@pos=\count161
+\lst@lostspace=\dimen180
+\lst@width=\dimen181
+\lst@newlines=\count162
+\lst@lineno=\count163
+\lst@maxwidth=\dimen182
 
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\listings\l
 stmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count153
-\lst@skipnumbers=\count154
+\c@lstnumber=\count164
+\lst@skipnumbers=\count165
 \lst@framebox=\box43
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\listings\l
@@ -1049,12 +1077,12 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\tools\tabu
 larx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
-\TX@col@width=\dimen182
-\TX@old@table=\dimen183
-\TX@old@col=\dimen184
-\TX@target=\dimen185
-\TX@delta=\dimen186
-\TX@cols=\count155
+\TX@col@width=\dimen183
+\TX@old@table=\dimen184
+\TX@old@col=\dimen185
+\TX@target=\dimen186
+\TX@delta=\dimen187
+\TX@cols=\count166
 \TX@ftn=\toks51
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\l3packages
@@ -1074,31 +1102,31 @@ L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
 L3 Module: l3str 2016/03/24 v6441 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/03/24 v6441 L3 Integers
-\c_max_int=\count156
-\l_tmpa_int=\count157
-\l_tmpb_int=\count158
-\g_tmpa_int=\count159
-\g_tmpb_int=\count160
+\c_max_int=\count167
+\l_tmpa_int=\count168
+\l_tmpb_int=\count169
+\g_tmpa_int=\count170
+\g_tmpb_int=\count171
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count161
+\g__prg_map_int=\count172
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2016/03/26 v6464 L3 Messages
 L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
-\l_iow_line_count_int=\count162
-\l__iow_target_count_int=\count163
-\l__iow_current_line_int=\count164
-\l__iow_current_word_int=\count165
-\l__iow_current_indentation_int=\count166
+\l_iow_line_count_int=\count173
+\l__iow_target_count_int=\count174
+\l__iow_current_line_int=\count175
+\l__iow_current_word_int=\count176
+\l__iow_current_indentation_int=\count177
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
-\c_zero_dim=\dimen187
-\c_max_dim=\dimen188
-\l_tmpa_dim=\dimen189
-\l_tmpb_dim=\dimen190
-\g_tmpa_dim=\dimen191
-\g_tmpb_dim=\dimen192
+\c_zero_dim=\dimen188
+\c_max_dim=\dimen189
+\l_tmpa_dim=\dimen190
+\l_tmpb_dim=\dimen191
+\g_tmpa_dim=\dimen192
+\g_tmpb_dim=\dimen193
 \c_zero_skip=\skip64
 \c_max_skip=\skip65
 \l_tmpa_skip=\skip66
@@ -1112,18 +1140,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count167
-\l_keys_choice_int=\count168
+\g__keyval_level_int=\count178
+\l_keys_choice_int=\count179
 L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
-\c__fp_leading_shift_int=\count169
-\c__fp_middle_shift_int=\count170
-\c__fp_trailing_shift_int=\count171
-\c__fp_big_leading_shift_int=\count172
-\c__fp_big_middle_shift_int=\count173
-\c__fp_big_trailing_shift_int=\count174
-\c__fp_Bigg_leading_shift_int=\count175
-\c__fp_Bigg_middle_shift_int=\count176
-\c__fp_Bigg_trailing_shift_int=\count177
+\c__fp_leading_shift_int=\count180
+\c__fp_middle_shift_int=\count181
+\c__fp_trailing_shift_int=\count182
+\c__fp_big_leading_shift_int=\count183
+\c__fp_big_middle_shift_int=\count184
+\c__fp_big_trailing_shift_int=\count185
+\c__fp_Bigg_leading_shift_int=\count186
+\c__fp_Bigg_middle_shift_int=\count187
+\c__fp_Bigg_trailing_shift_int=\count188
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box44
 \l_tmpa_box=\box45
@@ -1132,13 +1160,14 @@ L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \g_tmpb_box=\box48
 L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
 \l__coffin_internal_box=\box49
-\l__coffin_internal_dim=\dimen193
-\l__coffin_offset_x_dim=\dimen194
-\l__coffin_offset_y_dim=\dimen195
-\l__coffin_x_dim=\dimen196
-\l__coffin_y_dim=\dimen197
-\l__coffin_x_prime_dim=\dimen198
-\l__coffin_y_prime_dim=\dimen199
+\l__coffin_internal_dim=\dimen194
+\l__coffin_offset_x_dim=\dimen195
+\l__coffin_offset_y_dim=\dimen196
+\l__coffin_x_dim=\dimen197
+\l__coffin_y_dim=\dimen198
+\l__coffin_x_prime_dim=\dimen199
+Normal \dimen register pool exhausted, switching to extended pool.
+\l__coffin_y_prime_dim=\dimen256
 \c_empty_coffin=\box50
 \l__coffin_aligned_coffin=\box51
 \l__coffin_aligned_internal_coffin=\box52
@@ -1147,63 +1176,63 @@ L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
 \l__coffin_display_coffin=\box55
 \l__coffin_display_coord_coffin=\box56
 \l__coffin_display_pole_coffin=\box57
-\l__coffin_display_offset_dim=\dimen256
-\l__coffin_display_x_dim=\dimen257
-\l__coffin_display_y_dim=\dimen258
+\l__coffin_display_offset_dim=\dimen257
+\l__coffin_display_x_dim=\dimen258
+\l__coffin_display_y_dim=\dimen259
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
 L3 Module: l3candidates 2016/05/13 v6484 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen259
-\l__box_bottom_dim=\dimen260
-\l__box_left_dim=\dimen261
-\l__box_right_dim=\dimen262
-\l__box_top_new_dim=\dimen263
-\l__box_bottom_new_dim=\dimen264
-\l__box_left_new_dim=\dimen265
-\l__box_right_new_dim=\dimen266
+\l__box_top_dim=\dimen260
+\l__box_bottom_dim=\dimen261
+\l__box_left_dim=\dimen262
+\l__box_right_dim=\dimen263
+\l__box_top_new_dim=\dimen264
+\l__box_bottom_new_dim=\dimen265
+\l__box_left_new_dim=\dimen266
+\l__box_right_new_dim=\dimen267
 \l__box_internal_box=\box58
-\l__coffin_bounding_shift_dim=\dimen267
-\l__coffin_left_corner_dim=\dimen268
-\l__coffin_right_corner_dim=\dimen269
-\l__coffin_bottom_corner_dim=\dimen270
-\l__coffin_top_corner_dim=\dimen271
-\l__coffin_scaled_total_height_dim=\dimen272
-\l__coffin_scaled_width_dim=\dimen273
+\l__coffin_bounding_shift_dim=\dimen268
+\l__coffin_left_corner_dim=\dimen269
+\l__coffin_right_corner_dim=\dimen270
+\l__coffin_bottom_corner_dim=\dimen271
+\l__coffin_top_corner_dim=\dimen272
+\l__coffin_scaled_total_height_dim=\dimen273
+\l__coffin_scaled_width_dim=\dimen274
 L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\l3kernel\l
 3pdfmode.def
 File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count178
+\l__driver_color_stack_int=\count189
 \l__driver_tmp_box=\box59
 ))
 Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count179
-\l__xparse_m_args_int=\count180
-\l__xparse_mandatory_args_int=\count181
-\l__xparse_processor_int=\count182
-\l__xparse_v_nesting_int=\count183
+\l__xparse_current_arg_int=\count190
+\l__xparse_m_args_int=\count191
+\l__xparse_mandatory_args_int=\count192
+\l__xparse_processor_int=\count193
+\l__xparse_v_nesting_int=\count194
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\booktabs\b
 ooktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen274
-\lightrulewidth=\dimen275
-\cmidrulewidth=\dimen276
-\belowrulesep=\dimen277
-\belowbottomsep=\dimen278
-\aboverulesep=\dimen279
-\abovetopsep=\dimen280
-\cmidrulesep=\dimen281
-\cmidrulekern=\dimen282
-\defaultaddspace=\dimen283
-\@cmidla=\count184
-\@cmidlb=\count185
-\@aboverulesep=\dimen284
-\@belowrulesep=\dimen285
-\@thisruleclass=\count186
-\@lastruleclass=\count187
-\@thisrulewidth=\dimen286
+\heavyrulewidth=\dimen275
+\lightrulewidth=\dimen276
+\cmidrulewidth=\dimen277
+\belowrulesep=\dimen278
+\belowbottomsep=\dimen279
+\aboverulesep=\dimen280
+\abovetopsep=\dimen281
+\cmidrulesep=\dimen282
+\cmidrulekern=\dimen283
+\defaultaddspace=\dimen284
+\@cmidla=\count195
+\@cmidlb=\count196
+\@aboverulesep=\dimen285
+\@belowrulesep=\dimen286
+\@thisruleclass=\count197
+\@lastruleclass=\count198
+\@thisrulewidth=\dimen287
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\multirow\m
 ultirow.sty)
@@ -1229,40 +1258,83 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box60
 )
-\tc@llx=\dimen287
-\tc@lly=\dimen288
-\tc@urx=\dimen289
-\tc@ury=\dimen290
+\tc@llx=\dimen288
+\tc@lly=\dimen289
+\tc@urx=\dimen290
+\tc@ury=\dimen291
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\adjustbox\
 tc-pdftex.def
 File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen291
-\adjbox@Height=\dimen292
-\adjbox@Depth=\dimen293
-\adjbox@Totalheight=\dimen294
+\adjbox@Width=\dimen292
+\adjbox@Height=\dimen293
+\adjbox@Depth=\dimen294
+\adjbox@Totalheight=\dimen295
 
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\ifoddpage\
 ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count188
+\c@checkoddpage=\count199
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\ltxmisc\va
 rwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box61
-\sift@deathcycles=\count189
-\@vwid@loff=\dimen295
-\@vwid@roff=\dimen296
+Normal \count register pool exhausted, switching to extended pool.
+\sift@deathcycles=\count277
+\@vwid@loff=\dimen296
+\@vwid@roff=\dimen297
 ))
-\c@partCounter=\count190
-\c@homeworkProblemCounter=\count191
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\fron
+tendlayer\tikz\libraries\tikzlibraryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2008/07/14 v3.0.1a (rcs-revision 1.3)
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\fron
+tendlayer\tikz\libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\libr
+aries\shapes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box62
+\pgfnodeparttwobox=\box63
+\pgfnodepartthreebox=\box64
+\pgfnodepartfourbox=\box65
+\pgfnodeparttwentybox=\box66
+\pgfnodepartnineteenbox=\box67
+\pgfnodeparteighteenbox=\box68
+\pgfnodepartseventeenbox=\box69
+\pgfnodepartsixteenbox=\box70
+\pgfnodepartfifteenbox=\box71
+\pgfnodepartfourteenbox=\box72
+\pgfnodepartthirteenbox=\box73
+\pgfnodeparttwelvebox=\box74
+\pgfnodepartelevenbox=\box75
+\pgfnodeparttenbox=\box76
+\pgfnodepartninebox=\box77
+\pgfnodeparteightbox=\box78
+\pgfnodepartsevenbox=\box79
+\pgfnodepartsixbox=\box80
+\pgfnodepartfivebox=\box81
+)))
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\fron
+tendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+(C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\pgf\fron
+tendlayer\tikz\libraries\tikzlibrarybabel.code.tex
+File: tikzlibrarybabel.code.tex 2013/06/24 v3.0.1a (rcs-revision 1.1)
+)
+\c@partCounter=\count278
+\c@homeworkProblemCounter=\count279
 .................................................
 . LaTeX info: "xparse/define-environment"
 . 
-. Defining environment 'homeworkProblem' with sig. 'O{-1} o' on line 120.
+. Defining environment 'homeworkProblem' with sig. 'O{-1} o' on line 123.
 .................................................
 ) (Guia03.aux
 LaTeX Info: Redefining \. on input line 7.
@@ -1290,16 +1362,16 @@ LaTeX Font Info:    ... okay on input line 12.
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\context\base\sup
 p-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count192
-\scratchdimen=\dimen297
-\scratchbox=\box62
-\nofMPsegments=\count193
-\nofMParguments=\count194
+\scratchcounter=\count280
+\scratchdimen=\dimen298
+\scratchbox=\box82
+\nofMPsegments=\count281
+\nofMParguments=\count282
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count195
-\MPscratchDim=\dimen298
-\MPnumerator=\count196
-\makeMPintoPDFobject=\count197
+\MPscratchCnt=\count283
+\MPscratchDim=\dimen299
+\MPnumerator=\count284
+\makeMPintoPDFobject=\count285
 \everyMPtoPDFconversion=\toks53
 )
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\generic\oberdiek
@@ -1389,7 +1461,7 @@ G,.JBIG2,.JB2,.eps]
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count198
+\c@lstlisting=\count286
 LaTeX Font Info:    Try loading font information for U+lasy on input line 14.
 
 (C:\Users\Ramiro\Desktop\latex\Latex\miktex\texmfs\install\tex\latex\base\ulasy
@@ -1435,7 +1507,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10] (xls/tabla01.tex) [11] (xls/tabla02.tex)) [12]
+[10] (xls/Tabla01.tex) [11] (xls/Tabla02.tex)) [12]
 (tex/03.Problemas.01-Dakota.tex (xls/02.01.01.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1540,20 +1612,37 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[44] (xls/02.11.03.tex)) (tex/03.Problemas.12-Laboratorio.tex [45]
-(xls/02.12.01.tex) (xls/02.12.02.tex)
+[44] (xls/02.11.03.tex) [45]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+! LaTeX Error: \begin{document} ended by \end{homeworkProblem}.
 
-[46]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{homeworkProblem}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.50 \end{homeworkProblem}
+                          
+Things are pretty mixed up, but I think the worst is over.
+
+) (tex/03.Problemas.12-Laboratorio.tex (xls/02.12.01.tex) [46]
+(xls/02.12.02.tex)
 
 LaTeX Warning: Command \O invalid in math mode on input line 50.
 
-) (tex/03.Problemas.13-GranM.tex (xls/02.12.01.tex) (xls/02.12.02.tex)
+) (tex/03.Problemas.13-GranM.tex (xls/02.12.01.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[47]) [48] (Guia03.aux
+[47] (xls/02.12.02.tex)) [48] (Guia03.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 )
@@ -1562,13 +1651,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25235 strings out of 493335
- 476917 string characters out of 3129371
- 544873 words of memory out of 3000000
- 28116 multiletter control sequences out of 15000+200000
+ 26832 strings out of 493335
+ 520353 string characters out of 3129371
+ 650897 words of memory out of 3000000
+ 29683 multiletter control sequences out of 15000+200000
  18251 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,17n,56p,10385b,1221s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,17n,68p,10385b,1233s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Ramiro/Desktop/latex/Latex/miktex/texmfs/install/fonts/type1/public
 /amsfonts/cm/cmbsy10.pfb><C:/Users/Ramiro/Desktop/latex/Latex/miktex/texmfs/ins
 tall/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ramiro/Desktop/latex/L
@@ -1582,19 +1671,18 @@ xmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ramiro/Desktop
 onts/cm/cmmib10.pfb><C:/Users/Ramiro/Desktop/latex/Latex/miktex/texmfs/install/
 fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ramiro/Desktop/latex/Latex/m
 iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ramiro/
-Desktop/latex/Latex/miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.p
+Desktop/latex/Latex/miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.p
 fb><C:/Users/Ramiro/Desktop/latex/Latex/miktex/texmfs/install/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb><C:/Users/Ramiro/Desktop/latex/Latex/miktex/texmfs/insta
-ll/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ramiro/Desktop/latex/Latex
-/miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Rami
-ro/Desktop/latex/Latex/miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cms
-y8.pfb><C:/Users/Ramiro/Desktop/latex/Latex/miktex/texmfs/install/fonts/type1/p
-ublic/amsfonts/cm/cmti12.pfb><C:/Users/Ramiro/Desktop/latex/Latex/miktex/texmfs
-/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Ramiro/Desktop/lat
-ex/Latex/miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Guia03.pdf (48 pages, 320617 bytes).
+c/amsfonts/cm/cmr8.pfb><C:/Users/Ramiro/Desktop/latex/Latex/miktex/texmfs/insta
+ll/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ramiro/Desktop/latex/Lat
+ex/miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ram
+iro/Desktop/latex/Latex/miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+ti12.pfb><C:/Users/Ramiro/Desktop/latex/Latex/miktex/texmfs/install/fonts/type1
+/public/amsfonts/cm/cmtt8.pfb><C:/Users/Ramiro/Desktop/latex/Latex/miktex/texmf
+s/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Guia03.pdf (48 pages, 307807 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
+ 228 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

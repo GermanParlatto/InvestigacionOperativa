@@ -29,11 +29,11 @@ Forma estándar:
     0.50&X_1 + 0.40X_2 + 0.40X_3 + 0X_4 + 1X_5 + 0X_6 = 150 \\
     0.10&X_1 + 0.15X_2 + 0.20X_3 + 0X_4 + 0X_5 + 1X_6 = 60\\
 \end{align*}
-\insertarTabla{02.04.01.tex}{Tableau Simplex Optimo}
-De la tabla anterior podemos observar que el plan de producción para alcanzar la ganancia optima consiste en la producción de $300\ lt$ de helado de vainilla y $75\ Lt$ de helado de dulce de leche. En cuanto a los sobrantes, contaríamos con unos $20\ lt$ de leche. Sin embargo, tanto el azúcar como la crema se usaron en su totalidad. Si contáramos con un Kg mas de azúcar y crema veríamos un incremento en nuestra ganancia de $\$1.875$ y $\$1$ respectivamente.
+\insertarTabla{02.04.01.tex}{Tableau Simplex Óptimo}
+De la tabla anterior podemos observar que el plan de producción para alcanzar la ganancia Óptima consiste en la producción de $300\ lt$ de helado de vainilla y $75\ Lt$ de helado de dulce de leche. En cuanto a los sobrantes, contaríamos con unos $20\ lt$ de leche. Sin embargo, tanto el azúcar como la crema se usaron en su totalidad. Si contáramos con un Kg más de azúcar y crema veríamos un incremento en nuestra ganancia de $\$1.875$ y $\$1$ respectivamente.
 
 \subsubsection{Modelo Dual}
-El problema dual se puede interpretar como la búsqueda del costo mínimo al que se esta dispuesto a pagar cada unidad de cada recurso. Por otra parte, los lados izquierdos de cada restricción hacen referencia a la imputación de cada recurso a cada una de las actividades de la empresa, mientras que el lado derecho de la misma ecuación indica la ganancia por unidad que es realizada la actividad.
+El problema dual se puede interpretar como la búsqueda del costo mínimo al que se ésta dispuesto a pagar cada unidad de cada recurso. Por otra parte, los lados izquierdos de cada restricción hacen referencia a la imputación de cada recurso a cada una de las actividades de la empresa, mientras que el lado derecho de la misma ecuación indica la ganancia por unidad que es realizada la actividad.
 \begin{align*}
     Min\ W = 200&Y_1 +150Y_2 + 60Y_3 \\
     s.a.: 0.45&Y_1 + 0.50Y_2 +0.10Y_3 \ge 1\\
@@ -48,7 +48,7 @@ Dual Estándar
           0.50&Y_1 + 0.40Y_2 +0.15Y_3 + 0Y_4 - 1Y_5 + 0Y_6 + 0\mu_1 + 1\mu_2 + 0\mu_3 = 0.90\\
           0.40&Y_1 + 0.40Y_2 +0.20Y_3 + 0Y_4 + 0Y_5 - 1Y_6 + 0\mu_1 + 0\mu_2 + 1\mu_3 = 0.95\\
 \end{align*}
-\insertarTabla{02.04.02.tex}{Tableau Dual Optimo}
+\insertarTabla{02.04.02.tex}{Tableau Dual Óptimo}
 
 \subsubsection{Aumento Ganancia de DDL}
 Intervalo de variación de $c_3$:
@@ -60,13 +60,13 @@ Intervalo de variación de $c_3$:
     c_3 \le 1.543 \wedge c_3 \le 1.2 \wedge c_3 \ge 0.9
 }
 Entonces   $0.9 \le c_3 \le 1.2$. \\
-Podemos ver que la solución optima no cambia ya que $c_3$ sigue en su rango de variación.
+Podemos ver que la solución Óptima no cambia ya que $c_3$ sigue en su rango de variación.
 El nuevo valor del funcional es de $345$.
-\insertarTabla{02.04.03.tex}{Simplex Optimo, modificación DDL+}
+\insertarTabla{02.04.03.tex}{Simplex Óptimo, modificación DDL+}
 
 \subsubsection{Disminución Ganancia de DDL}
-En el caso de disminuir el precio del lt de helado de dulce de leche a $\$0.92$, como el mismo sigue estando dentro del rango de variación permitido, sigue siendo optima la solución original. El nuevo valor del funcional es de $\$339$ (en este caso se sufrió una desmejora).
-\insertarTabla{02.04.04.tex}{Simplex Optimo, modificación DDL-}
+En el caso de disminuir el precio del lt de helado de dulce de leche a $\$0.92$, como el mismo sigue estando dentro del rango de variación permitido, sigue siendo Óptima la solución original. El nuevo valor del funcional es de $\$339$ (en este caso se sufrió una desmejora).
+\insertarTabla{02.04.04.tex}{Simplex Óptimo, modificación DDL-}
 
 
 \subsubsection{Crema en mal estado}
@@ -79,7 +79,7 @@ Intervalo de Variación de $b_3$
 }{
     b_3 \ge 150 \wedge b_3 \le 75 \wedge b_3 \ge 56.25
 }
-Entonces podemos observar que el "nuevo" valor de $b_3 \in \corche{56.25,75}$. Tambien resulta que la nueva solución es factible:
+Entonces podemos observar que el "nuevo" valor de $b_3 \in \corche{56.25,75}$. Tambíen resulta que la nueva solución es factible:
 \begin{align*}
     B^{-1}.b_{nuevo}=b^{*}=
     \\
@@ -109,7 +109,7 @@ Intervalo de variación de $b_2$:
 }{
     b_2 \le 60 \wedge b_2 \ge 120 \wedge b_2 \le 160
 }
-Como el nuevo valor del recurso "Kg de Azúcar" no esta dentro del rango de variación ($120 \le b_2 \le 160$), debemos reiterar para determinar la nueva solución optima. \\
+Como el nuevo valor del recurso 'Kg de Azúcar' no ésta dentro del rango de variación ($120 \le b_2 \le 160$), debemos re iterar para determinar la nueva solución Óptima. \\
 \insertarTabla{02.04.05.tex}{Mas azúcar...}
 Entonces, 
 \begin{align*}
@@ -119,5 +119,5 @@ Entonces,
 En base a lo anteriormente expuesto, nos conviene adquirir los $15\ Kg$ de azúcar que nos ofrece el proveedor.
 
 \subsubsection{Sensibilidad de la Leche}
-En este problema, la Leche representa un recurso sobrante, ya que la variable de holgura que lo representa forma parte de la solución optima (es una VB).El valor de dicha variable es de 20 y, obviamente, su precio sombra es de 0. Entonces, podríamos disminuir la existencia de leche hasta 20 unidades y aumentar todo lo que quisiéramos la misma sin afecta la factibilidad. Sin embargo, si quisiéramos disminuir mas de 20 lt de leche la factibilidad variaría.
+En este problema, la Leche representa un recurso sobrante, ya que la variable de holgura que lo representa forma parte de la solución Óptima (es una VB).El valor de dicha variable es de 20 y, obviamente, su precio sombra es de 0. Entonces, podríamos disminuir la existencia de leche hasta 20 unidades y aumentar todo lo que quisiéramos la misma sin afecta la factibilidad. Sin embargo, si quisiéramos disminuir más de 20 lt de leche la factibilidad variaría.
 \end{homeworkProblem}

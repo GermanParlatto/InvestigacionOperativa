@@ -79,12 +79,12 @@
    \padzeroes[2]{\decimal{#1}}
 }
 \newcommand{\enterProblemHeader}[1]{
-    \nobreak\extramarks{}{Punto \printNum{#1} cont. en pag. siguiente\ldots}\nobreak{}
-    \nobreak\extramarks{Punto \printNum{#1} (cont.)}{Punto \printNum{#1} cont. en pag. siguiente\ldots}\nobreak{}
+    \nobreak\extramarks{}{Punto \printNum{#1} cont. en pág. siguiente\ldots}\nobreak{}
+    \nobreak\extramarks{Punto \printNum{#1} (cont.)}{Punto \printNum{#1} cont. en pág. siguiente\ldots}\nobreak{}
 }
 
 \newcommand{\exitProblemHeader}[1]{
-    \nobreak\extramarks{Punto \printNum{#1} (cont.)}{Punto \printNum{#1} cont. en pag. siguiente\ldots}\nobreak{}
+    \nobreak\extramarks{Punto \printNum{#1} (cont.)}{Punto \printNum{#1} cont. en pág. siguiente\ldots}\nobreak{}
     \stepcounter{#1}
     \nobreak\extramarks{Punto \printNum{#1}}{}\nobreak{}
 }
@@ -149,7 +149,7 @@
 }
 
 \renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
-\renewcommand{\lstlistingname}{Solucion por Software}
+\renewcommand{\lstlistingname}{Solución por Software}
 %
 % Various Helper Commands
 %
