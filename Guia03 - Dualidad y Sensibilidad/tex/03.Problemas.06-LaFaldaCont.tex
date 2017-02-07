@@ -1,0 +1,53 @@
+
+\begin{homeworkProblem}[-1][La falda cont.]
+Las variables de decisión son:
+\begin{itemize}
+	\item $X_1$: cantidad de cajas que se solicitan al deposito
+	\item $X_2$: cantidad de cajas  que se solicitan al proveedor 
+\end{itemize}
+La función objetivo es: 
+\begin{equation}
+	Min\ Z = 1\fraccorche{\$}{C_d}X_1\corche{C_d} + 6\fraccorche{\$}{C_p}X_2\corche{C_p}
+\end{equation}
+Sujeta a:
+\begin{align*}
+	1\fraccorche{Kg_A}{C_d}X_1\corche{C_d} + 2\fraccorche{Kg_A}{C_p}X_2\corche{C_p} &\ge 80 \corche{Kg_A}\\
+	5\fraccorche{Kg_Q}{C_p}X_2\corche{C_p} &\ge 60 \corche{Kg_Q} \\
+	X_1\corche{C_d} &\le 40\corche{C_d} \\
+	X_2\corche{C_p} &\le 30 \corche{C_p} \\
+	X_1,X_2 &\ge 0
+\end{align*}
+Forma Estándar:
+\begin{align*}
+	1X_1 + 6X_2 + 0X_3 + &0X_4 + 0X_5 + 0X_6 + M\mu_1 + M\mu_2 \\
+	1X_1 + 2X_2 - 1X_3 +&0X_4 +0X_5 + 0x_6 + 1\mu_1 + 0\mu_2 = 80 \\
+	0X_1 + 2X_2 + 0X_3 -&1X_4 +0X_5 + 0x_6 + 0\mu_1 + 1\mu_2 = 10 \\
+	1X_1 + 0X_2 - 0X_3 -&0X_4 + 1X_5 + 0X_6 + 0\mu_1 + 0\mu_2 = 40 \\
+	0X_1 + 1X_2 - 0X_3 -&0X_4 + 0X_5 + 0X_6 + 0\mu_1 + 0\mu_2 = 30 \\
+	&X_1,X_2 \ge 0
+\end{align*}
+\subsubsection{Paro de Transportistas}
+Intervalo de variación de $c_1$:
+\llavesR{
+    6\times \paren{-1/2} + 0c_1 \le 0 \\
+    6\times \paren{-1/2} + 1c_1 \le 0 \\
+    6\times \paren{1/2} + 0c_1 \le 0 \\
+}{
+    c_1 \le 3
+}
+Entonces la solución original continua siendo optima, con un nuevo valor de 240, resultando en un aumento de \$80.
+\subsubsection{Error Administrativo}
+Esto no afecta nuestra solución original, ya que la misma incluía la adquisición de solo 20 cajas del proveedor.
+\subsubsection{Demanda de Quinao}
+Si se diera el caso de una disminución en la demanda de quinoa podríamos vender los recursos "Cajas de Salud Vital" a otros proveedores, y al mismo tiempo disminuir la cantidad disponibles del mismo ya que no requerimos tantas unidades de quinoa.
+\subsubsection{Nuevo proveedor}
+Para determinar cuanto es lo máximo que estamos dispuestos a pagar (o mejor dicho, sin incurrir en perdidas) debemos analizar el problema dual asociado.
+Problema Dual:
+\begin{align*}
+    Max\ W = 80&Y_1 + 50Y_2 + 40Y_3 + 30Y_4 \\
+    s.a.: 1&Y_1 + 0Y_2 \le 1 \\
+    2&Y_1 + 5Y_2 \le 6 \\
+    &Y_1,Y_2 \ge 0
+\end{align*}
+Podemos ver entonces que los precios máximos que nos encontramos dispuestos a pagar son respectivamente de $\$1$ y $\$6$ por un kg de Amarato y Quinoa
+\end{homeworkProblem}

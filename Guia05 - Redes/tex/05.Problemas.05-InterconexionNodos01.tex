@@ -1,0 +1,39 @@
+\begin{homeworkProblem}[-1][Interconexion de Nodos]
+
+
+
+\begin{figure}[h]
+    \centering
+    \begin{adjustbox}{max width=\textwidth}
+        \begin{tikzpicture}[
+            shorten >=2pt,
+            line width=0.4mm,
+            node distance=2.25cm,
+            on grid,auto
+        ] 
+            \node[state] (n1)                {1}; 
+            \node[state] (n7) [right of=n1]  {7};
+            \node[state] (n8) [right of=n7]  {8};
+            \node[state] (n2) [below of=n7]  {2}; 
+            \node[state] (n3) [right of=n8]  {3}; 
+            \node[state] (n4) [right of=n2]  {4};
+            \node[state] (n5) [right of=n4]  {5};
+            \node[state] (n6) [below of=n1]  {6};
+
+            \path[->] 
+                (n1)    edge    node        {17}   (n6)
+                        edge    node        {19}   (n7)
+                (n2)    edge    node        {17}   (n4)
+                (n4)    edge    node        {15}   (n5)
+                (n7)    edge    node        {18}   (n2)
+                (n7)    edge    node        {12}   (n8)
+                (n8)    edge    node        {18}   (n3);
+                
+        \end{tikzpicture}
+    \end{adjustbox}
+    \caption{Tendido de Lineas}
+\end{figure}
+
+Con el tendido que se indica en la figura precedente, se logra un costo minimo de 98 u.m.
+
+\end{homeworkProblem}

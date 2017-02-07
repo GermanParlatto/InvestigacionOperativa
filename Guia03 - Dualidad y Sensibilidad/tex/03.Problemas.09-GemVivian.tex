@@ -1,0 +1,124 @@
+
+
+ 
+\begin{homeworkProblem}[-1][Gem de Vivian]
+\subsubsection{Modelo Programación Lineal}
+
+Las variables de decisión son:
+\begin{itemize}
+    \item $X_1$: Cantidad de joyas tipo 1 producidas. \\
+    \item $X_2$: Cantidad de joyas tipo 2 producidas. 
+\end{itemize}
+La función objetivo:
+\begin{align*}
+    Max\ Z = \paren{10-5}\fraccorche{\$}{T_1}X_1\corche{T_1} + \paren{6-4}\fraccorche{\$}{T_2}X_2\corche{T_2}
+\end{align*}
+Sujeta a las siguientes restricciones:
+\begin{align*}
+    2&X_1 + 1X_2 \le 30 \\
+    4&X_1 + 1X_2 \le 50 \\
+    1&X_1 + 0X_2 \ge 11 \\
+    &X_1,X_2 \ge 0
+\end{align*}
+Forma estándar:
+\begin{align*}
+    Max\ Z = 5&X_1 + 2X_2 + 0X_3 + 0X_4 + 0X_5 - M\mu_1 \\
+    s.a.: 2&X_1 + 1X_2 + 1X_3 + 0X_4 + 0X_5 + 0\mu_1 = 30 \\
+          4&X_1 + 1X_2 + 0X_3 + 1X_4 + 0X_5 + 0\mu_1 = 50 \\
+          1&X_1 + 0X_2 + 0X_3 + 0X_4 - 1X_5 + 1\mu_1 = 11
+\end{align*}
+\insertarTabla{02.09.01.tex}{Solución Optima Primal}
+La tabla anterior nos indica que se deben producir 11 joyas del tipo 1 y 6 del tipo 2. El recurso militante en este caso serán los diamantes, sobrando 2 rubíes. Si consiguiéramos un diamante mas nuestra ganancia aumentaría en \$2
+\subsubsection{46 Diamantes}
+Modelo Dual:
+\begin{align*}
+    Min\ W = 30&Y_1 + 50Y_2 + 11Y_3 \\
+    s.a.: 2&Y_1 + 4Y_2 + 1Y_3 - 1Y_4 + 0Y_5 + 1\mu_1 + 0\mu_2 = 5 \\ 
+     1&Y_1 + 1Y_2 + 0Y_3 + 0Y_4 - 1Y_5 + 0\mu_1 + 1\mu_2 = 2 \\ 
+     &Y_1,Y_2 \ge 0 \\ -&Y_3 \ge 0
+\end{align*}
+\insertarTabla{02.09.02.tex}{Tabla Dual Optima}
+Rango de variación de $b_2$:
+\llavesR{
+    -11\times \paren{-2} -  1b_2 \le 0 \\
+    -11\times \paren{-4} - 1b_2 \le 0 
+}{
+    b_2 \ge 22 \wedge b_2 \ge 44
+}
+\begin{align*}
+    B^{-1}.b_n = b^{*} \\
+    \begin{bmatrix}
+        1 & -1 & 2 \\
+        0 & 1 & -4 \\
+        0 & 0 & 1 
+    \end{bmatrix}.
+    \begin{bmatrix}
+        30 \\
+        46 \\
+        11
+    \end{bmatrix}=
+    \begin{bmatrix}
+        6 \\
+        2\\
+        11
+    \end{bmatrix}
+\end{align*}
+Podemos ver que aun con la variación en la cantidad de diamantes, la solución sigue siendo tanto optima como factible, siendo la nueva solución:
+\insertarTabla{02.09.03.tex}{Nueva solución Optima 01}
+
+\subsubsection{12 joyas \RN{1}}
+Intervalo de variación de $c_2$
+\llavesR{
+    5\times 0 + c_2 \ge 0 \\
+    5\times \paren{-1} + 4c_2 \ge 0
+}{
+    c_2 \ge 0 \wedge c_2 \ge 1.25
+}
+\begin{align*}
+B^{-1}.c_k=c_k^{*}\\
+    \begin{bmatrix}
+        0 & 1 \\
+        -1 & 4
+    \end{bmatrix}.
+    \begin{bmatrix}
+        5 \\
+        1.5        
+    \end{bmatrix}=
+    \begin{bmatrix}
+        1.5 \\
+        1
+    \end{bmatrix}
+\end{align*}
+\insertarTabla{02.09.04.tex}{Nueva Solución Optima 02}
+Podemos ver que la solución nuevamente es tanto optima como factible, arrojando un resultado de 45 en este caso.
+
+\subsubsection{Nueva Joya}
+Rango de variación de $b_3$.
+\llavesR{
+    -50 -2b_3 \le 0 \\
+    -50 -4b_3 \le 0
+}{
+    b_3 \ge -2.5 \wedge b_3 \ge -12.5
+}
+\begin{align*}
+    B^{-1}.b_n = b^{*} \\
+    \begin{bmatrix}
+        1 & -1 & 2 \\
+        0 & 1 & -4 \\
+        0 & 0 & 1 
+    \end{bmatrix}.
+    \begin{bmatrix}
+        30 \\
+        50 \\
+        12
+    \end{bmatrix}=
+    \begin{bmatrix}
+        4 \\
+        2\\
+        12
+    \end{bmatrix}
+\end{align*}
+En este caso la solución también sigue siendo optima y factible, siendo esta:
+\insertarTabla{02.09.05.tex}{Nueva Solución Optima 03}
+\end{homeworkProblem}
+

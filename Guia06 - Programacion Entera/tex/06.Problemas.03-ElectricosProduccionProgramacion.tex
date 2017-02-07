@@ -1,0 +1,39 @@
+
+
+\begin{homeworkProblem}[-1][Industria: Servicios Eléctricos - Sector: Producción - Objeto: Programación]
+La función objetivo en este caso es:
+\begin{align*}
+    MIN\ = &6\paren{X_{11} + X_{12} + X_{13}}& &+&
+     &5\paren{X_{21} + X_{22} + X_{23}}& &+& \\
+      &8\paren{X_{31} + X_{32} + X_{33}}& &+&
+	&4000\paren{Y_{11} + Y_{12} + Y_{13} - A1 - A2}& &+& \\
+    &3000\paren{Y_{21} + Y_{23} + Y_{23} - B1 - B2}& &+&
+     &2000\paren{Y_{31} + Y_{32} + Y_{33} - C1 - C2}&
+\end{align*}
+Sujeta a las siguientes restricciones:
+\begin{align*}
+    \paren{X_{11} + X_{21} + X_{31}} \geq 2500\\
+    \paren{X_{12} + X_{22} + X_{32}} \geq 1800\\
+    \paren{X_{13} + X_{23} + X_{33}} \geq 3500
+\end{align*}
+\begin{align*}
+    &400Y_{11} \le X_{11}& &300Y_{21} \le X_{21}& &500Y_{31} \le X_{31}& \\
+    &400Y_{12} \le X_{12}& &300Y_{22} \le X_{22}& &500Y_{32} \le X_{32}& \\
+    &400Y_{13} \le X_{13}& &300Y_{23} \le X_{23}& &500Y_{33} \le X_{33}& \\
+    &2300Y_{11} \geq X_{11}& &2000Y_{21} \geq X_{21}& &3300Y_{31} \geq X_{31}& \\
+    &2300Y_{12} \geq X_{12}& &2000Y_{22} \geq X_{22}& &3300Y_{32} \geq X_{32}& \\
+    &2300Y_{13} \geq X_{13}& &2000Y_{23} \geq X_{23}& &3000Y_{33} \geq X_{33}& 
+\end{align*}
+\begin{align*}
+    \paren{1-Y_{11}} + \paren{1-Y_{12}} + A1\geq 1\\
+    \paren{1-Y_{12}} + \paren{1-Y_{13}} + A2\geq 1\\
+    \paren{1-Y_{21}} + \paren{1-Y_{22}} + B1\geq 1\\
+    \paren{1-Y_{22}} + \paren{1-Y_{23}} + B2\geq 1\\
+    \paren{1-Y_{31}} + \paren{1-Y_{32}} + C1\geq 1\\
+    \paren{1-Y_{32}} + \paren{1-Y_{33}} + C2\geq 1
+\end{align*}
+Las variables de decisión de la forma $X_{ij}$ representan la producción del generador $i$ en el periodo $j$. Por otra parte, las variables de activación asociadas $Y_{ij}$ nos indican si el generador $i$ estuvo activo en el periodo $j$.
+Por ultimo, las variables $[A|B|C]_{1|2}$ nos permiten determinar si el generador A,B,C estuvo activo en periodos continuos y por lo tanto no debemos pagar el costo de puesta en marcha del mismo.
+\end{homeworkProblem}
+
+

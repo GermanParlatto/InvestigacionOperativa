@@ -1,0 +1,173 @@
+\begin{homeworkProblem}[-1][Criador de Aves]
+
+\subsubsection{Método Simplex}
+El objetivo es minimizar los costos del criador de aves satisfaciendo la dieta de los animales.
+Las variables de decisión son:
+\begin{itemize}
+  \item $X_1$ Cantidad de alimento del tipo 1 adquirido.
+  \item $X_2$ Cantidad de alimento del tipo 2 adquirido.
+\end{itemize}
+Función Objetivo: 
+\ecuacion{
+    Min\ Z = 50\fraccorche{\$}{Kg_1}X_1\corche{Kg_1} + 25\fraccorche{\$}{Kg_2}X_2\corche{Kg_2}
+}{020301}
+Restricciones:
+\begin{align*}
+  0.1\fraccorche{Kg_{Gns}}{Kg_1}X_1\corche{Kg_1} + 0.3\fraccorche{Kg_{Gns}}{Kg_2}X_2\corche{Kg_2} &\ge 8\corche{Kg_{Gns}} \\
+  0.3\fraccorche{Kg_{Car}}{Kg_1}X_1\corche{Kg_1} + 0.4\fraccorche{Kg_{Car}}{Kg_2}X_2\corche{Kg_2} &\ge 19\corche{Kg_{Car}} \\
+  0.3\fraccorche{Kg_{Crc}}{Kg_1}X_1\corche{Kg_1} + 0.1\fraccorche{Kg_{Crc}}{Kg_2}X_2\corche{Kg_2} &\ge 7\corche{Kg_{Crc}} \\
+  X_1,X_2 &\ge 0 \\
+\end{align*}
+Forma estándar:
+\begin{align*}
+    Min\ Z = 50&X_1 + 23X_2 + 0X_3 + 0X_4 + 0X_5 + M\mu_1 + M\mu_2 + M\mu_3 \\
+    0.1&X_1 + 0.3X_2 - 1X_3 + 0X_4 + 0X_5 + 1\mu_1 + 0\mu_2 + 0\mu_3 = 8 \\
+    0.3&X_1 + 0.4X_2 + 0X_3 - 1X_4 + 0X_5 + 0\mu_1 + 1\mu_2 + 0\mu_3 = 19 \\
+    0.3&X_1 + 0.1X_2 + 0X_3 + 0X_4 - 1X_5 + 0\mu_1 + 0\mu_2 + 1\mu_3 = 7 \\
+    &X_1,X_2 \ge 0
+\end{align*}
+\insertarTabla{02.03.01.tex}{Tableau Simplex Optimo}
+El plan de producción optimo hallado nos indica que utilizando: 
+\begin{itemize}
+  \item $10$ Kg del alimento tipo 1.
+  \item $40$ Kg del alimento tipo 2.
+\end{itemize}
+lograríamos que los costos desciendan al mínimo de $\$1500$. Con esta composición de los alimentos, la necesidad de grasas no saturadas se ve incluso sobre satisfecha, mientras que resultaría muy beneficioso si la dieta de los animales requiriera un kilogramo menos de componentes ricos en calcio (nuestro costos disminuiría en $\$138.89$) y un menos beneficioso si requirieran un kilogramo menos de carbohidratos (una disminución de $\$27.78$)
+
+\subsubsection{Dual Asociado}
+\begin{align*}
+    Max\ W = 8&Y_1 + 19Y_2 + 7Y_3 \\
+    s.a.: 0.1&Y_1 + 0.3Y_2 + 0.3Y_3 \le 50 \\
+    0.3&Y_ + 0.4Y_2 + 0.1Y_3 \le 25
+\end{align*}
+La función objetivo representa la maximizacion de los precios de venta de los recursos con los que se cuenta. El lado izquierdo de cada restricción representa el consumo de recursos de cada actividad, mientras que el derecho indica el precio de venta o ganancia de dicha actividad, por lo que resulta lógico establecer la restricción de que el precio de venta de los recursos deba ser mayor que la ganancia que obtendríamos si destinásemos esos recursos a la producción de bienes y servicios. \\
+Forma estándar:
+\begin{align*}
+    Max\ W = 8&Y_1 + 19Y_2 + 7Y_3 + 0Y_4 + 0Y_5 \\
+     0.1&Y_1 + 0.3Y_2 + 0.3Y_3 + 1Y_4 + 0Y_5 = 50 \\
+     0.3&Y_1 + 0.4Y_2 + 0.1Y_3 + 0Y_4 + 1Y_5 = 25
+\end{align*}
+\insertarTabla{02.03.02.tex}{Tableau Dual Optima}
+
+
+\subsubsection{Cambio en la Dieta 01}
+\llavesR{
+    7\times \paren{-0.56} + 0.89b_2 \ge 0\\
+    7\times \paren{4.44} + 1.14b_2 \ge 0\\
+    7\times \paren{-3-33} + 3.33b_2 \ge 0
+}{
+    b_2 \ge 4.4 \wedge b_2 \ge 7 \wedge b_2 \le 28
+}
+\begin{align*}
+    7 \le b_2 \le 28
+\end{align*}
+\insertarTabla{02.03.03.tex}{Modificación dual optimo}
+
+\begin{align*}
+  &B^{-1}.b = b^{*} \\
+  &\begin{bmatrix}
+   0 & 3.33 & -3.33 \\
+   -1 & 0.89 & -0.56 \\
+   0 & -1.11 & 4.44 
+  \end{bmatrix}.
+  \begin{bmatrix}
+   8 \\
+   10 \\
+   7
+  \end{bmatrix} =
+  \begin{bmatrix}
+   9.99 \\
+   \textbf{-3.02} \\
+   19.98
+  \end{bmatrix}
+\end{align*}
+Si bien la solución sigue siendo optima, la misma no es factible, por lo que debemos re iterar. De esta manera, llegamos a la nueva solución:
+\insertarTabla{02.03.04.tex}{Solución optima con modificación}
+
+\subsubsection{Cambio en la Dieta 02}
+Gracias al ejercicio anterior sabemos que el rango de variación de $b_2$ es $7 \le b_2 \le 28$, por lo que un valor de 29 produce que la solución deje de ser optima. De igual manera, la misma tampoco es factible:
+\begin{align*}
+  &B^{-1}.b = b^{*} \\
+  &\begin{bmatrix}
+   0 & 3.33 & -3.33 \\
+   -1 & 0.89 & -0.56 \\
+   0 & -1.11 & 4.44 
+  \end{bmatrix}.
+  \begin{bmatrix}
+   8 \\
+   29 \\
+   7
+  \end{bmatrix} =
+  \begin{bmatrix}
+   73.26 \\
+   13.89 \\
+   \textbf{-1.11}
+  \end{bmatrix}
+\end{align*}
+
+\subsubsection{Aumento del costo del Alimento}
+Intervalo de variación de $c_1$: 
+\llavesR{
+    25 \times \paren{-3.33} + 1.11c_1 \le 0 \\
+    25 \times \paren{3.33}  - 4.44c_1 \le 0 \\
+}{
+    c_1 \le 75 \wedge c_1 \ge 18.75
+}
+Con estos datos no es posible asegurar que la actividad que representa la compra del alimento 1 forme parte de la solución. La nueva solución con esta modificación seria: 
+\insertarTabla{02.03.05.tex}{Simplex Optimo con modificación de alimento}
+
+\subsubsection{Rangos de variación \& Precio Sombra}
+Intervalo de variación de $b_1$:
+\begin{align*}
+    3 \le b_1 \le \infty
+\end{align*}
+Intervalo de variación de $b_2$:
+\llavesR{
+    7\times \paren{-0.56} + 0.89b_2 \ge 0\\
+    7\times \paren{4.44} + 1.14b_2 \ge 0\\
+    7\times \paren{-3.33} + 3.33b_2 \ge 0
+}{
+    b_2 \ge 4.4 \wedge b_2 \ge 7 \wedge b_2 \le 28
+}
+\begin{align*}
+    7 \le b_2 \le 28
+\end{align*}
+Intervalo de variación de $b_3$:
+\llavesR{
+    19\times \paren{0.89} - 0.56b_3 \ge 0\\
+    19\times \paren{-1.11} + 4.44b_3  \ge 0\\
+    19\times \paren{3.33} + -3.33b_3 \ge 0
+}{
+    b_3 \ge 4.75 \wedge b_3 \le 30.2 \wedge b_3 \le 19
+}
+\begin{align*}
+    4.75 \le b_3 \le 19
+\end{align*}
+Intervalo de variación de $c_1$: 
+\llavesR{
+    25 \times \paren{-3.33} + 1.11c_1 \le 0 \\
+    25 \times \paren{3.33}  - 4.44c_1 \le 0 \\
+}{
+    c_1 \le 75 \wedge c_1 \ge 18.75
+}
+\begin{align*}
+    18.75 \le c_1 \le 75
+\end{align*}
+
+Intervalo de variación de $c_2$: 
+\llavesR{
+    50 \times \paren{1.11} - 3.33c_2 \le 0 \\
+    50 \times \paren{-4.44}  + 3.33c_2 \le 0 \\
+}{
+    c_2 \ge 16.67 \wedge c_2 \le 66.67
+}
+\begin{align*}
+    16.67 \le c_2 \le 66.67
+\end{align*}
+
+Precios Sombra:
+\begin{itemize}
+    \item $-27.78$ por cada Kg de Carbohidratos que se elimine como requerimiento de la dieta de los animales, conseguiríamos un decremento en el costo total de $\$27,78$
+    \item $-138.89$ por cada Kg de Compuestos ricos en calcio que se elimine como requerimiento de la dieta de los animales, conseguiríamos un decremento en el costo total de $\$138.89$
+\end{itemize}
+\end{homeworkProblem}

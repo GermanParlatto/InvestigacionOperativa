@@ -1,0 +1,21 @@
+
+
+\begin{homeworkProblem}[-1][Instalación de Alta Montaña]
+Se busca maximizar la utilidad de los equipos de reparación que el operario puede llevar a la montaña atendiendo a el limite de peso que el mismo puede cargar. Se trata de un caso del \textbf{Problema de la Mochila}\\
+Variables de Decisión:
+\begin{itemize}
+    \item $Y_i$ si el operario lleva el equipo $i$.
+\end{itemize}
+Función Objetivo:
+\begin{align*}
+    Max\ Z = 100Y_1 + 60Y_2 + 70Y_3 + 15Y_4 + 15Y_5
+\end{align*}
+Sujeta a:
+\begin{align*}
+    &   52Y_1 + 23Y_2 + 35Y_3 + 15Y_4 +7Y_5 \leq 60\\
+    &Y_1,Y_2,Y_3,Y_4,Y_5 \in \{0,1\}
+\end{align*}
+Luego de cargar el problema en \textit{LINGO} el mismo indica que lo mas conveniente es llevar los equipos 2 y 3 consiguiendo una utilidad en reparaciones de 130
+\end{homeworkProblem}
+
+

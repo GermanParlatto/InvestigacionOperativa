@@ -1,0 +1,110 @@
+\begin{homeworkProblem}[-1][Maximo, Seccion Aurea]
+Siendo los datos iniciales:
+\begin{align*}
+    &r=0.618\quad \varepsilon = 0.1 \\
+    &a=0\quad  b=2\\
+\end{align*}
+
+
+\subsubsection{Iteracion 01}
+\begin{align*}
+    L=b-a=2-0=2 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_1=b - r\paren{b-a}= 0.764 \\
+    &x_2=a + r\paren{b-a}= 1.236 
+\end{align*}
+\begin{align*}
+    &f(x_1)=6 \quad f(x_2)=4.473 \\
+    &f(x_1) \geq f(x_2) \rightarrow \text{ Nuevo Intervalo } = \paren{a,x_2}
+\end{align*}
+
+
+\subsubsection{Iteracion 02}
+\begin{align*}
+    L=x_2-a=1.236-0=1.236 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_3=x_2 - r\paren{x_2-a}= 0.472 \\
+    &x_4=a + r\paren{x_2-a}= 0.764
+\end{align*}
+\begin{align*}
+    &f(x_3)=8.947 \quad f(x_4)=6 \\
+    &f(x_3) \geq f(x_4) \rightarrow \text{ Nuevo Intervalo } = \paren{a,x_4}
+\end{align*}
+
+
+\subsubsection{Iteracion 03}
+\begin{align*}
+    L=x_4-a=0.764-0=0.764 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_5=x_4 - r\paren{x_4-a}= 0.292 \\
+    &x_6=a + r\paren{x_4-a}= 0.472
+\end{align*}
+\begin{align*}
+    &f(x_5)=14 \quad f(x_6)=8.947 \\
+    &f(x_5) \geq f(x_6) \rightarrow \text{ Nuevo Intervalo } = \paren{a,x_6}
+\end{align*}
+
+\subsubsection{Iteracion 04}
+\begin{align*}
+    L=x_6-a=0.472-0=0.472 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_7=x_6 - r\paren{x_6-a}= 0.18 \\
+    &x_8=a + r\paren{x_6-a}= 0.292
+\end{align*}
+\begin{align*}
+    &f(x_7)=22.4 \quad f(x_8)=14 \\
+    &f(x_7) \geq f(x_8) \rightarrow \text{ Nuevo Intervalo } = \paren{a,x_8}
+\end{align*}
+
+\subsubsection{Iteracion 05}
+\begin{align*}
+    L=x_8-a=0.292-0=0.292 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_9=x_8 - r\paren{x_8-a}= 0.112\\
+    &x_{10}=a + r\paren{x_8-a}= 0.18
+\end{align*}
+\begin{align*}
+    &f(x_9)=35.286 \quad f(x_{10})=22.402 \\
+    &f(x_9) \geq f(x_{10}) \rightarrow \text{ Nuevo Intervalo } = \paren{a,x_{10}}
+\end{align*}
+
+
+\subsubsection{Iteracion 06}
+\begin{align*}
+    L=x_{10}-a=0.18-0=0.18 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_{11}=x_{10} - r\paren{x_{10}-a}= 0.069\\
+    &x_{12}=a + r\paren{x_{10}-a}= 0.112
+\end{align*}
+\begin{align*}
+    &f(x_{11})=58.06 \quad f(x_{12})=35.826 \\
+    &f(x_{11}) \geq f(x_{12}) \rightarrow \text{ Nuevo Intervalo } = \paren{a,x_{12}}
+\end{align*}
+
+\subsubsection{Iteracion 07}
+\begin{align*}
+    L=x_{12}-a=0.112-0=0.112\rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_{13}=x_{12} - r\paren{x_{12}-a}= 0.043\\
+    &x_{14}=a + r\paren{x_{12}-a}= 0.069
+\end{align*}
+\begin{align*}
+    &f(x_{13})=93.066 \quad f(x_{14})=58.04 \\
+    &f(x_{13}) \geq f(x_{14}) \rightarrow \text{ Nuevo Intervalo } = \paren{a,x_{14}}
+\end{align*}
+
+\subsubsection{Iteracion 08}
+\begin{align*}
+    L=x_{14}-a=0.069-0=0.069\rightarrow L \leq \varepsilon
+\end{align*}
+
+Por lo tanto, con un error de $0.069$ podemos decir que existe en $x=0.043$ un maximo.
+
+\end{homeworkProblem}

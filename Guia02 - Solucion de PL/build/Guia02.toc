@@ -1,0 +1,23 @@
+\select@language {spanish}
+\contentsline {section}{Ejercicios}{3}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {1}} - Modelos Lineales}{3}
+\contentsline {subsubsection}{Inciso A}{3}
+\contentsline {subsubsection}{Inciso B}{4}
+\contentsline {subsubsection}{Inciso C}{5}
+\contentsline {subsubsection}{Inciso D}{6}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {2}} - Simplex Modelos Lineales}{7}
+\contentsline {subsubsection}{Inciso A}{7}
+\contentsline {subsubsection}{Inciso B}{8}
+\contentsline {subsubsection}{Inciso C}{10}
+\contentsline {subsubsection}{Inciso D}{11}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {3}} - Compa\IeC {\~n}\IeC {\'\i }a}{11}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {4}} - Granja Modelo}{13}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {5}} - Almac\IeC {\'e}n La Falda}{14}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {6}} - Loter\IeC {\'\i }a}{16}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {7}} - Turkeyco}{18}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {8}} - Importador}{20}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {9}} - Compa\IeC {\~n}\IeC {\'\i }a de Seguros}{22}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {10}} - Criador de Perros}{24}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {11}} - Banco Gane}{26}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {12}} - Papelera Moderna}{29}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {13}} - Ciudad de Progreso}{30}

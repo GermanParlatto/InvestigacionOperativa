@@ -1,0 +1,80 @@
+\select@language {spanish}
+\contentsline {section}{Ejercicios}{4}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {1}} - Modelo \textup {\uppercase {i}}}{4}
+\contentsline {subsubsection}{Tabla Original}{4}
+\contentsline {subsubsection}{Unidad $R_1$}{4}
+\contentsline {subsubsection}{Unidad $R_2$}{4}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {2}} - Modelo \textup {\uppercase {ii}}}{5}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {3}} - Programas Lineales}{5}
+\contentsline {subsubsection}{Problema A}{5}
+\contentsline {subsubsection}{Problema B}{7}
+\contentsline {subsubsection}{Problema C}{8}
+\contentsline {subsubsection}{Problema D}{9}
+\contentsline {subsubsection}{Comparaci\IeC {\'o}n}{11}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {4}} - Propiedades}{12}
+\contentsline {section}{Soluci\IeC {\'o}n de Problemas}{13}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {1}} - Dakota}{13}
+\contentsline {subsubsection}{Simplex}{13}
+\contentsline {subsubsection}{Variaci\IeC {\'o}n de $c_3$}{14}
+\contentsline {subsubsection}{Precios Sombra}{14}
+\contentsline {subsubsection}{18 hs de acabado}{15}
+\contentsline {subsubsection}{Mesas para PC}{15}
+\contentsline {subsubsection}{Problema Dual}{15}
+\contentsline {subsubsection}{Estudio de Mercado}{16}
+\contentsline {subsubsection}{Una correcci\IeC {\'o}n en el Estudio de Mercado}{16}
+\contentsline {subsubsection}{Mesas, si o si}{17}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {2}} - Citrus}{17}
+\contentsline {subsubsection}{M\IeC {\'a}xima Ganancia}{17}
+\contentsline {subsubsection}{Nuevos Tanques}{19}
+\contentsline {subsubsection}{Oferta del Competidor}{21}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {3}} - Criador de Aves}{21}
+\contentsline {subsubsection}{M\IeC {\'e}todo Simplex}{21}
+\contentsline {subsubsection}{Dual Asociado}{22}
+\contentsline {subsubsection}{Cambio en la Dieta 01}{23}
+\contentsline {subsubsection}{Cambio en la Dieta 02}{24}
+\contentsline {subsubsection}{Aumento del costo del Alimento}{24}
+\contentsline {subsubsection}{Rangos de variaci\IeC {\'o}n \& Precio Sombra}{25}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {4}} - Helader\IeC {\'\i }a}{26}
+\contentsline {subsubsection}{Modelo Lineal}{26}
+\contentsline {subsubsection}{M\IeC {\'e}todo Simplex}{26}
+\contentsline {subsubsection}{Modelo Dual}{27}
+\contentsline {subsubsection}{Aumento Ganancia de DDL}{28}
+\contentsline {subsubsection}{Disminuci\IeC {\'o}n Ganancia de DDL}{28}
+\contentsline {subsubsection}{Crema en mal estado}{29}
+\contentsline {subsubsection}{Mas az\IeC {\'u}car!}{29}
+\contentsline {subsubsection}{Sensibilidad de la Leche}{30}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {5}} - Empresita}{30}
+\contentsline {subsubsection}{Modelo Matem\IeC {\'a}tico}{30}
+\contentsline {subsubsection}{Resoluci\IeC {\'o}n LINDO}{31}
+\contentsline {subsubsection}{Interpretaci\IeC {\'o}n de LINDO}{31}
+\contentsline {subsubsection}{Planteo Dual}{33}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {6}} - La falda cont.}{33}
+\contentsline {subsubsection}{Paro de Transportistas}{34}
+\contentsline {subsubsection}{Error Administrativo}{34}
+\contentsline {subsubsection}{Demanda de Quinao}{34}
+\contentsline {subsubsection}{Nuevo proveedor}{34}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {7}} - Loter\IeC {\'\i }a cont.}{35}
+\contentsline {subsubsection}{No me convence...}{35}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {8}} - Criador de perros cont.}{37}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {9}} - Gem de Vivian}{38}
+\contentsline {subsubsection}{Modelo Programaci\IeC {\'o}n Lineal}{38}
+\contentsline {subsubsection}{46 Diamantes}{39}
+\contentsline {subsubsection}{12 joyas \textup {\uppercase {i}}}{40}
+\contentsline {subsubsection}{Nueva Joya}{41}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {10}} - Tour Operador}{42}
+\contentsline {subsubsection}{Modelo Lineal}{42}
+\contentsline {subsubsection}{Interpretaci\IeC {\'o}n}{43}
+\contentsline {subsubsection}{10 pilotos mas}{43}
+\contentsline {subsubsection}{M\IeC {\'\i }nimo 14 artefactos}{44}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {11}} - David, Diana y Lidia}{44}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n e Interpretaci\IeC {\'o}n}{44}
+\contentsline {subsubsection}{Cambio en ganancia Pedestal}{44}
+\contentsline {subsubsection}{Y ademas el de pared}{45}
+\contentsline {subsubsection}{Mas trabajo}{45}
+\contentsline {subsubsection}{Lidia, Lidia}{45}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {12}} - Laboratorio}{46}
+\contentsline {subsubsection}{Plan de Producci\IeC {\'o}n}{46}
+\contentsline {subsubsection}{Informe}{46}
+\contentsline {subsubsection}{Mas almac\IeC {\'e}n}{46}
+\contentsline {subsubsection}{Nuevo Producto}{47}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {13}} - Gran M...}{47}

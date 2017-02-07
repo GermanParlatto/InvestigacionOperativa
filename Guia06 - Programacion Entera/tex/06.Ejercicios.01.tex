@@ -1,0 +1,86 @@
+
+\def\nodoA{
+    $y_1=1$\\
+    $y_2=0.776$\\
+    $y_3=1$\\
+    \nodepart{two}
+    {
+        $J=129.1$
+    }
+}
+
+\def\nodoB{
+    $y_1=1$\\
+    $y_2=0$\\
+    $y_3=1$\\
+    \nodepart{two}
+    {
+        $J=126$
+    }
+}
+
+\def\nodoC{
+    $y_1=0.978$\\
+    $y_2=1$\\
+    $y_3=1$\\
+    \nodepart{two}
+    {
+        $J=129.1$
+    }
+}
+
+\def\nodoD{
+    $y_1=0$\\
+    $y_2=1$\\
+    $y_3=1$\\
+    \nodepart{two}
+    {
+        $J=44$
+    }
+}
+
+\def\nodoE{
+    $y_1=1$\\
+    $y_2=1$\\
+    $y_3=0.595$\\
+    \nodepart{two}
+    {
+        $J=113.8$
+    }
+}
+
+\begin{homeworkProblem}[-1][Ejercicio 01]
+
+\begin{align*}
+    Max\ J = 86&y_1 + 4y_2 + 40y_3 \\
+    s.a.:\quad\quad 774&y_1 +76y_2 + 42y_3 \leq 875 \\
+    67&y_1 + 27y_2 + 53y_3 \leq 875 \\
+    &y_1,y_2,y_3 \in \{0,1\}
+\end{align*}
+
+
+\insertarBranchAndBound{
+    \node[parent node,rectangle split parts=2](A){\nodoA};
+    \node[parent node,fill=black!15!green,below left =2.25cm and 1cm of A](B){\nodoB};
+    \node[parent node,below right =2.25cm and 1cm of A](C){\nodoC};
+    \node[parent node,below left =2.25cm and 1cm of C](D){\nodoD};
+    \node[parent node,below right =2.25cm and 1cm of C](E){\nodoE};
+}{
+    (A.south)/\flechaDivision/(B)  /midway/left/y_2=0,
+    (A.south)/\flechaDivision/(C)  /midway/right/y_2=1,
+    (C.south)/\flechaDivision/(D)  /midway/left/y_1=0,
+    (C.south)/\flechaDivision/(E)  /midway/right/y_1=0
+}{
+    Branch \& Bound, Ejercicio 01
+}
+
+Entonces la solución optima para el problema entero es:
+\begin{itemize}
+    \item $y_1=1$.
+    \item $y_2=0$.
+    \item $y_3=1$.
+\end{itemize}
+
+\end{homeworkProblem}
+
+

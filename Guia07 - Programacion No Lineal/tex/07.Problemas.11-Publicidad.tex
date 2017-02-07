@@ -1,0 +1,50 @@
+\begin{homeworkProblem}[-1][Publicidad]
+
+\subsubsection{Programa Lineal}
+Variables de Decision:
+\begin{itemize}
+    \item $x$: cantidad de minutos a comprar de comerciales en tv.
+    \item $y$: cantidad de minutos a comprar de comerciales en radio.
+\end{itemize}
+Funcion Objetivo:
+\begin{align*}
+    Max\ Z = -2x^2-y^2+xy+8x+3y
+\end{align*}
+Sujeta a:
+\begin{align*}
+    3000x+1000y\leq 10000 \\ x,y\geq0
+\end{align*}
+\subsubsection{Solucion}
+Para obtener el mejor rendimiento del dinero destinado a publicidad, recomendamos que la compañia adquiera $2.46$ minutos de comerciales en TV y $2.6$ en radio. De seguir este plan, los ingresos obtenidos ascenderian a los $15017.86$
+
+\textbf{Condicion Necesaria:}\\
+Aplicamos el metodo de los multiplicadores de Lagrange.
+\begin{align*}
+    &L(x,y,\lambda)=-2x^2-y@+xy+8x+3y+\lambda\paren{10000-3000x-1000y}\\
+    &\nabla L = \paren{-x+y+8-3000\lambda;-2y+x+3-1000\lambda ;10000 - 3000x-1000y} = (0;0;0)\\
+    &x = \frac{69}{28} \\
+    &y = \frac{73}{28} \\
+    &\lambda = \frac{1}{4000}
+\end{align*}
+
+
+\textbf{Condicion Suficiente:}\\
+\begin{align*}
+    \mathcal{H}\paren{\frac{69}{28},\frac{73}{28},\frac{1}{4000}}=
+    \large{\begin{bmatrix}[2]
+        0 & \frac{\partial g}{\partial x}  & \frac{\partial g}{\partial y} \\
+         \frac{\partial g}{\partial x}  & \frac{\partial^2 L}{\partial^2 x} & \frac{\partial^2 L}{\partial x \partial y} \\
+         \frac{\partial g}{\partial y} & \frac{\partial^2 L}{\partial y \partial x}& \frac{\partial^2 L }{\partial^2 y } 
+    \end{bmatrix}} = \begin{bmatrix}
+       0 & 3000 & 1000 \\
+       3000 & -4 & 1 \\
+       1000 & 1 & -2
+    \end{bmatrix}
+\end{align*}
+Analizando los determinantes del Hessiano Orlado, observamos que la condicion suficiente de optimo local es verificada por el punto hallado anteriormente, con loq ue podemos asegurar entonces que el mismo es un maximo.
+
+\subsubsection{Gastar \$1000 extras?}
+Teniendo en cuenta el valor de $\lambda$ el cual representa que tanto mejoraria nuestro funcional por unidad monetaria extra que se disponga
+nos inclinamos a des aconsejar la compra de minutos de publicidad extra, ya que de hacer esto, si bien la ganancia aumentaria, la inversion necesaria para obtener esta mejora seria mayor que dicha diferencia.
+
+\end{homeworkProblem}

@@ -1,0 +1,100 @@
+\begin{homeworkProblem}[-1][Ruta mas Segura]
+
+
+
+\begin{tikzpicture}[shorten >=2pt,line width=0.4mm,node distance=2cm,on grid,auto]
+ 
+    \node[state] (n1)                       {1}; 
+    \node[state] (n2) [above right=2cm and 3cm of n1]  {2}; 
+    \node[state] (n3) [below right=2cm and 5cm of n1]  {3}; 
+    \node[state] (n4) [right=4cm of n2]  {4};
+    \node[state] (n5) [right=4cm of n3]  {5};
+    \node[state] (n6) [right=4cm of n4]  {6};
+    \node[state] (n7) [below right=2cm and 3cm of n6]  {7};
+
+    \path[->] 
+        (n1)    edge    node        {0.2}   (n2)
+                edge    node  [swap]      {0.9}   (n3)
+        (n2)    edge    node         {0.6}   (n3)
+                edge    node        {0.8}   (n4)
+        (n3)    edge    node   [swap]     {0.1}   (n4)
+                edge    node   [swap]      {0.3}   (n5)
+        (n4)    edge    node        {0.4}   (n5)
+                edge    node        {0.35}   (n6)
+        (n5)    edge    node   [swap]      {0.25}   (n7)
+        (n6)    edge    node        {0.5}   (n7);
+        
+\end{tikzpicture}
+
+Si bien la red anterior representa las posibilidaes de no ser detenido, para poder resolverlo como un problema de ruta mas corta caluclamos el opuesto del logaritmo decimal de los valores, de manera de muscar minimizar las posibilidades de ser detenidos, como se ve en la siguiente red:
+
+\begin{tikzpicture}[shorten >=2pt,,line width=0.4mm,node distance=2cm,on grid,auto]
+ 
+    \node[state] (n1)                       {1}; 
+    \node[state] (n2) [above right=2cm and 3cm of n1]  {2}; 
+    \node[state] (n3) [below right=2cm and 5cm of n1]  {3}; 
+    \node[state] (n4) [right=4cm of n2]  {4};
+    \node[state] (n5) [right=4cm of n3]  {5};
+    \node[state] (n6) [right=4cm of n4]  {6};
+    \node[state] (n7) [below right=2cm and 3cm of n6]  {7};
+
+    \path[->] 
+        (n1)    edge    node        {0.69}   (n2)
+                edge[blue]    node  [swap]      {0.045}   (n3)
+        (n2)    edge    node         {0.22}   (n3)
+                edge    node        {0.096}   (n4)
+        (n3)    edge    node   [swap]  {1}   (n4)
+                edge[blue]    node   [swap]      {0.52}   (n5)
+        (n4)    edge    node        {0.39}   (n5)
+                edge    node        {0.45}   (n6)
+        (n5)    edge[blue]    node   [swap]      {0.6}   (n7)
+        (n6)    edge    node        {0.3}   (n7);
+        
+\end{tikzpicture}
+
+\insertarTabla{01.02.01.tex}{Iteraciones}
+
+La ruta mas corta (la que tiene menos posibilidades de ser detectado) es la que recorre los nodos $1\rightarrow3\rightarrow5$
+%
+%\begin{tikzpicture}
+%  \node[vertex] (n1) at (0,0)  {1};
+%  \node[vertex] (n2) at (2,2)  {2};
+%  \node[vertex] (n3) at (3,-2) {3};
+%  \node[vertex] (n4) at (4,2) {4};
+%  \node[vertex] (n5) at (5, -2) {5};
+%  \node[vertex] (n6) at (6, 2) {6};
+%  \node[vertex] (n6) at (7,0) {7};
+%
+%  \foreach \from/\to/\te in {
+%      n1/n2/45,
+%    n1/n3/45,
+%    n1/n5/45,
+%    n2/n1/45,
+%    n2/n3/45,
+%    n2/n4/45,
+%    n2/n5/45,
+%    n2/n6/45,
+%    n3/n1/45,
+%    n3/n2/45,
+%    n3/n5/45,
+%    n3/n6/45,
+%    n4/n2/45,
+%    n4/n5/45,
+%    n4/n6/45,
+%    n5/n1/45,
+%    n5/n2/45,
+%    n5/n3/45,
+%    n5/n4/45,
+%    n5/n6/45,
+%    n6/n2/45,
+%    n6/n3/45,
+%    n6/n4/45,
+%    n6/n5/45
+%  }{
+%    \draw (\from) -- node [pos=0.15, anchor=north east] {$\te$} (\to) ;
+%  }
+%
+%  \end{tikzpicture}
+
+
+\end{homeworkProblem}

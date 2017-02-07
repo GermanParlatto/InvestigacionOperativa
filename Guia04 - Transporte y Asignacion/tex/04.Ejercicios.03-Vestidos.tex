@@ -1,0 +1,25 @@
+\begin{homeworkProblem}[-1][Vestidos]
+Se busca minimizar los costos en los que se incurre para satisfacer la demanda de vestidos. A continuación se presenta un cuadro que contiene información sobre la cantidad máxima de vestidos que se puede comprar a cada proveedor, junto con el costo de cada tipo (notes que la ultima columna representan los vestidos que no se le compran a un proveedor y no un tipo extra):
+\insertarTabla{01.03.01.tex}{Tabla de Costos}
+La función objetivo es:
+\begin{align*}
+    Min\ Z = \sum_{i=1}^{5}{\sum_{j=1}^{5}{C_{ij}X_{ij}}}
+\end{align*}
+Sujeta a:
+\begin{align*}
+    &\corche{\text{Max Perez}}& &\sum_{j=1}^{5}{X_{1j}}\corche{v} = 300\corche{v}& \\
+    &\corche{\text{Max Quiroga}}& &\sum_{j=1}^{5}{X_{2j}}\corche{v} = 350\corche{v}& \\
+    &\corche{\text{Max Ruiz}}& &\sum_{j=1}^{5}{X_{3j}}\corche{v} = 250\corche{v}& \\
+    &\corche{\text{Max Suarez}}& &\sum_{j=1}^{5}{X_{4j}}\corche{v} = 200\corche{v}& \\
+    &\corche{\text{Max Tonelli}}& &\sum_{j=1}^{5}{X_{5j}}\corche{v} = 300\corche{v}& \\
+    &\corche{\text{Tipo A}}& &\sum_{i=1}^{5}{X_{i1}}\corche{v} = 300\corche{v}& \\
+    &\corche{\text{Tipo B}}& &\sum_{i=1}^{5}{X_{i2}}\corche{v} = 300\corche{v}& \\
+    &\corche{\text{Tipo C}}& &\sum_{i=1}^{5}{X_{i3}}\corche{v} = 300\corche{v}& \\
+    &\corche{\text{Tipo D}}& &\sum_{i=1}^{5}{X_{i4}}\corche{v} = 300\corche{v}& \\
+    &\corche{\text{Sin comprar}}& &\sum_{i=1}^{5}{X_{i5}}\corche{v} = 200\corche{v}& \\
+\end{align*}
+La siguiente tabla muestra el plan de compra optimo:
+\insertarTabla{01.03.02.tex}{Solución Optima}
+\end{homeworkProblem}
+
+

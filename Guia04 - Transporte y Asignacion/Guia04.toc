@@ -1,0 +1,13 @@
+\select@language {spanish}
+\contentsline {section}{Ejercicios}{3}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {1}} - \textit {News Monthly}}{3}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {2}} - Distribuci\IeC {\'o}n de Frutas}{4}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {3}} - Vestidos}{6}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {4}} - Agricultor}{8}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {5}} - JoShop}{9}
+\contentsline {subsubsection}{Asignaci\IeC {\'o}n Optima}{9}
+\contentsline {subsubsection}{Quinto Trabajador}{11}
+\contentsline {subsubsection}{Quinta Tarea}{12}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {6}} - Competencia Relevos}{13}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {7}} - Tomas y la Cerveza}{15}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {8}} - MKJ}{15}

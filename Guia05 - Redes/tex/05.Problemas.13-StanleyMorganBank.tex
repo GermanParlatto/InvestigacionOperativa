@@ -1,0 +1,77 @@
+\begin{homeworkProblem}[-1][Stanley Morgan]
+
+\newcommand{\datos}[2]{#1 \nodepart{lower} #2}
+\def\vert{3cm}
+
+
+\begin{figure}[h]
+    \centering
+    \begin{adjustbox}{max width=\textwidth}
+        \begin{tikzpicture}[
+            font={\fontsize{8pt}{10}\selectfont},
+            shorten >=1pt,,line width=0.4mm,
+            node distance=1cm,on grid,auto
+        ]
+    
+            \node[circle, draw] (n0)                                      {Inicio}; 
+            \node[circle split, draw] (na) [below left=\vert and 3cm  of n0]   {\datos{A}{6}};
+            \node[circle split, draw] (nb) [below=\vert of n0]                 {\datos{B}{3}}; 
+            \node[circle split, draw] (nc) [below right=\vert and 3cm of n0]   {\datos{C}{4}}; 
+            \node[circle split, draw] (nd) [below left=\vert and 1.5cm of na]   {\datos{D}{4}}; 
+            \node[circle split, draw] (ne) [below right=\vert and 1.5cm of na]   {\datos{E}{7}}; 
+            \node[circle split, draw] (nf) [below left=\vert and 1.5cm of nc]   {\datos{F}{4}}; 
+            \node[circle split, draw] (ng) [below right=\vert and 1.5cm of nc]   {\datos{G}{6}}; 
+            \node[circle split, draw] (nh) [below left=\vert and 1.5cm of nd]   {\datos{H}{3}}; 
+            \node[circle split, draw] (ni) [below left=\vert and 1.5cm of ne]   {\datos{I}{5}}; 
+            \node[circle split, draw] (nj) [below right=\vert and 1.5cm of ne]   {\datos{J}{4}}; 
+            \node[circle split, draw] (nk) [below left=\vert and 1.5cm of ng]   {\datos{K}{3}}; 
+            \node[circle split, draw] (nl) [below right=\vert and 1.5cm of ng]   {\datos{L}{5}}; 
+            \node[circle split, draw] (nm) [below left=\vert and 1.5cm of nj]   {\datos{M}{6}}; 
+            \node[circle split, draw] (nn) [below right=\vert and 1.5cm of nj]   {\datos{N}{5}}; 
+            \node[circle, draw] (f) [below right=\vert and 1.5cm of nm]   {Fin}; 
+
+            \path[->]
+                (n0)    edge    node    {} (na)
+                        edge[blue]     node    {} (nb)
+                        edge[blue]     node    {} (nc)
+                (na)    edge    node    {} (nd)
+                        edge    node    {} (ni)
+                (nb)    edge[blue]    node    {} (ne)
+                (nc)    edge    node    {} (nf)
+                        edge[blue]    node    {} (ng)
+                (nd)    edge    node    {} (nh)
+                (ne)    edge[blue]    node    {} (nj)
+                (nf)    edge    node    {} (nk)
+                (ng)    edge[blue]    node    {} (nl)
+                (nh)    edge    node    {} (nm)
+                (ni)    edge    node    {} (nm)
+                (nj)    edge[blue]    node    {} (nm)
+                (nk)    edge    node    {} (nn)
+                (nl)    edge[blue]    node    {} (nn)
+                (nm)    edge[blue]    node    {} (f)
+                (nn)    edge[blue]    node    {} (f)
+                
+
+                    ;
+        \end{tikzpicture}
+    \end{adjustbox}
+    \caption{Ruta Critica}
+\end{figure}
+
+\subsubsection{Trayectorias y Longitudes}
+\begin{itemize}
+    \item Inicio-A-D-H-M-Terminacion $\rightarrow \quad 19$
+    \item Inicio-A-I-M-Terminacion $\rightarrow \quad 17$
+    \item Inicio-B-E-J-M-Terminacion $\rightarrow \quad 20$
+    \item Inicio-C-F-K-N-Terminacion $\rightarrow \quad 16$
+    \item Inicio-C-G-L-N-Terminacion $\rightarrow \quad 20$
+\end{itemize}
+\subsubsection{Tiempos}
+\insertarTabla{01.13.01.tex}{Finalizaciones y Holgura}
+\subsubsection{Retrasos}
+\begin{itemize}
+    \item La tarea I tiene una holgura de 2, entonces si dicha tarea se demora 2 semanas mas la duracion total del proyecto sera de 20 semanas.
+    \item La tarea H tiene una holgura de 1, entonces si dicha tarea se demora 2 semanas mas la duracion total del proyecto sera de 21 semanas.
+    \item La tarea J tiene una holgura de 0, entonces si dicha tarea se demora 2 semanas mas la duracion total del proyecto sera de 22 semanas.
+\end{itemize}
+\end{homeworkProblem}

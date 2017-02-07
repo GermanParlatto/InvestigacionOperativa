@@ -1,0 +1,31 @@
+MODEL:
+
+!
+        Xij: cantidad a transportar del nodo I al J
+        B: demandas y ofertas de cada nodo. Demanda de Origen igual y singo contrario a demanda de Fin. 
+        ARCOS: arcos entre nodos.
+        Uij: capacidad maxima del lazo ij.
+        Cij: costo por enviar una unidad del nodo I al J.
+        INCIDENCIA: Matriz de incidencia. Arcos sobre nodos.
+;
+
+SETS:
+        NODOS: B;
+        ARCOS: U, C, X;
+        M (NODOS, ARCOS): INCIDENCIA;
+ENDSETS
+
+DATA:
+NODOS    = ORIG CA01 CA02 CA03 CA04 RF01 RF02 RF03 RF04 CD01 CD02 CD03 CD04 DEST;
+B        =  150    0    0    0    0    0    0    0    0    0    0    0    0     -150;
+ARCOS    = ORC1 ORC2 ORC3 ORC4 C1R1 C1R2 C1R3 C1R4 C2R1 C2R2 C2R3 C2R4 C3R1 C3R2 C3R3 C3R4 C4R1 C4R2 C4R3 C4R4 R1D1 R1D2 R1D3 R1D4 R2D1 R2D2 R2D3 R2D4 R3D1 R3D2 R3D3 R3D4 R4D1 R4D2 R4D3 R4D4 D1DS D2DS D3DS D4DS ORDS;
+U        =   28   24   28   36   11   07   02   08   05   04   08   07   07   03   12   06   08   09   04   15  05   09   06   04   08   07   09   05   04   06   07   08   12   11   09   07   29   33   31   24 150;                 
+C        = 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 500;
+INCIDENCIA = 
+!ORIG;  01 01 01 01   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00    01
+!CA01;  -1 00 00 00   01 01 01 01   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00    00
+!CA02;  00 -1 00 00   00 00 00 00   01 01 01 01   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00    00
+!CA03;  00 00 -1 00   00 00 00 00   00 00 00 00   01 01 01 01   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00    00
+!CA04;  00 00 00 -1   00 00 00 00   00 00 00 00   00 00 00 00   01 01 01 01   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00    00
+
+        

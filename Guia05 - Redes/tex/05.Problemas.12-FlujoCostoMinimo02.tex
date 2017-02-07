@@ -1,0 +1,50 @@
+\begin{homeworkProblem}[-1][Flujo de costo Minimo 02]
+
+\begin{figure}[h]
+    \centering
+    \begin{adjustbox}{max width=\textwidth, max height=0.35\textheight}
+        \begin{tikzpicture}[
+            transform shape,
+            ->, >=stealth',
+            auto, node distance=3cm,
+            thick,
+            main node/.style={
+                circle, draw, font=\sffamily\Large\bfseries
+            }
+        ]
+
+        \node[main node] (p1) at (00,00)  {P1};
+        \node[main node] (p2) at (00,-3)  {P2};
+        \node[main node] (p3) at (00,-6)  {P3};
+        \node[main node] (a1) at (04,-1.5)  {A1};
+        \node[main node] (a2) at (04,-4.5)  {A2};
+        \node[main node] (f1) at (8,-1.5)  {F1};
+        \node[main node] (f2) at (8,-4.5)  {F2};
+
+
+        \path[->] 
+                (p1)    edge    node[near start]   {0} (a1)
+                        edge    node[near start]    {6} (a2)
+                (p2)    edge    node[near start]    {6} (a1)
+                        edge    node[near start]    {0} (a2)
+                (p3)    edge    node[near start]    {0} (a1)
+                        edge    node[near start]    {4} (a2)
+                (a1)    edge    node[near start]    {6} (f1)
+                        edge    node[near start]    {0} (f2)
+                (a2)    edge    node[near start]    {4} (f1)
+                        edge    node[near start]    {6} (f2);
+        \end{tikzpicture}
+    \end{adjustbox}
+\end{figure}
+\FloatBarrier
+
+El plan mensual optimo (segun \textbf{LINGO}) es:
+\begin{itemize}
+    \item Ordenar 6 embarques al proveedor 1 y 2.
+    \item Ordenar 4 embarques al proveedor 3.
+    \item Enviar 6 embarques desde el almacen 1 a la fabrica 1.
+    \item Enviar 4 embarques desde el almacen 2 a la fabrica 1 y 6 a la fabrica 2.
+\end{itemize}
+Con este plan se logra un costo igual a \$374460.
+
+\end{homeworkProblem}

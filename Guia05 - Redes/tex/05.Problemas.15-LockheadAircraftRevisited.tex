@@ -1,0 +1,46 @@
+\begin{homeworkProblem}[-1][Aceleracion Lockhead]
+
+\subsubsection{Programa Lineal}
+Variables de Decision
+\begin{itemize}
+    \item $X_j$: Cantidad de semanas a acelerar la tarea $j$.
+    \item $Y_j$: Fecha de inicio cercano de la actividad $j$.
+\end{itemize}
+Funcion Objetivo:
+\begin{align*}
+    Min\ Z = 5X_a + &7X_b + 8X_c + 4X_d + 5X_e + \\
+                    &6X_f + 3X_g + 4X_h + 9X_i + 2X_j
+\end{align*}
+
+Sujeta a:
+\begin{align*}
+    &X_a \leq 4& &X_b \leq 3& &X_c \leq 5& &X_d \leq 3& &X_e \leq 5& \\
+    &X_f \leq 7& &X_g \leq 2& &X_h \leq 3& &X_i \leq 4& &X_j\leq 2& \\
+\end{align*}
+\begin{align*}
+   &Y_a \geq Y_{ini}& &Y_b \geq Y_{ini}& &Y_c \geq Y_a + 32 - X_a& \\ 
+   &Y_d \geq Y_b + 28 - X_b& &Y_e \geq Y_b + 28 - X_b& &Y_f \geq Y_b + 28 - X_b& \\ 
+   &Y_g \geq Y_d + 16 - X_d& &Y_h \geq Y_e + 32 - X_e& &Y_h \geq Y_g + 17 - X_g& \\ 
+   &Y_i \geq Y_e + 32 - X_e& &Y_i \geq Y_g+17-X_g& &Y_j \geq Y_c + 36 - X_c&\\
+   &Y_j \geq Y_f + 54 - X_f& &Y_{fin} \geq Y_h+20-X_h& &Y_{fin} \geq Y_i+34-X_i&\\
+   && &Y_{fin} \geq Y_j+18-X_j& &&
+\end{align*}
+\begin{align*}
+    &Y_{ini}=0& &Y_{fin}\leq92& &X_j\geq0 \quad \forall j& &Y_j\geq 0 \quad \forall j&
+\end{align*}
+
+\subsubsection{Solucion}
+\insertarTabla{01.15.01.tex}{Datos}
+\insertarTabla{01.15.02.tex}{Solucion}
+
+La solucion hallada mediante el uso del software \textbf{LINGO} coincide con lo expuesto en la tabla anterior. La misma indica que la solucion optima consiste en acelerar 3 semanas las tareas \textbf{B} y \textbf{F} y 2 semanas la tarea \textbf{J}; para poder afrontar esta aceleracion debemos contar con 43 millones de pesos, logrando que la duracion del proyecto sea de 92 semanas.
+
+\subsubsection{Informe}
+Invirtiendo 43 millones de pesos logramos reducir la duracion total del proyecto a 92 semanas. Las tareas que debemos acelerar para lograr este tiempo son:
+\begin{itemize}
+    \item Tarea B: 3 Semanas.
+    \item Tarea F: 3 Semanas.
+    \item Tarea J: 2 Semanas.
+\end{itemize}
+
+\end{homeworkProblem}

@@ -1,0 +1,48 @@
+\begin{homeworkProblem}[-1][Tour Operador]
+
+\subsubsection{Modelo Lineal}
+Variables de decisión:
+\begin{itemize}
+    \item $X_1$ cantidad de turbo reactores a adquirir.
+    \item $X_2$ cantidad de aviones a hélice a comprar.
+    \item $X_3$ cantidad de helicópteros a adquirir.
+\end{itemize}
+Función Objetivo:
+\begin{align*}
+    Min\ Z = 1200\fraccorche{\euro}{dia.TR}X_1\corche{TR} + 600\fraccorche{\euro}{dia.AH}X_2\corche{AH} + 300\fraccorche{\euro}{dia.H}X_3\corche{H}
+\end{align*}
+Sujeta a las siguientes restricciones: 
+\begin{align*}
+    3\fraccorche{Mill\euro}{TR}X_1\corche{TR} + 1\fraccorche{Mill\euro}{AH}X_2\corche{AH} + 0.5\fraccorche{Mill\euro}{H}X_3\corche{H} &\le 28\corche{Mill\euro} \\ 
+    1X_1 + 1X_2 + 1X_3 &\ge 15 \\
+    2\fraccorche{pil}{TR}X_1\corche{TR} + 1\fraccorche{pil}{AH}X_2\corche{AH} + 1\fraccorche{pil}{H}X_3\corche{H} &\le 15\corche{pil} \\ 
+    2\fraccorche{Az}{TR}X_1\corche{TR} + 1\fraccorche{Az}{AH}X_2\corche{AH} &\le 16\corche{Az} \\
+    1\fraccorche{Co}{AH}X_2\corche{AH} &\ge 3\corche{Co}\\
+    4000\fraccorche{Pas}{mes.TR}X_1\corche{TR} &\ge 8000\fraccorche{Pas}{mes} \\
+    300\fraccorche{Pas}{mes.AH}X_2\corche{AH}  + 100\fraccorche{Pas}{mes.H}X_3\corche{H} &\ge 500\fraccorche{Pas}{mes} \\
+    X_1,X_2,X_3 &\ge 0
+\end{align*}
+
+Forma Estándar:{\footnotesize
+\begin{align*}
+    Min\ Z = 1200X_1 + 600&X_2 + 300X_3 + 0X_4 + 0X_5 + 0X_6 + \\ 0&X_7 + 0X_8 + 0X_9 + 0X_{10} + M\mu_1 + M\mu_2 + M\mu_3 + M\mu_4
+\end{align*}  
+\begin{align*} 
+    &s.a.: \\ 3&X_1 + 1X_2 + 0.5X_3 + 1X_4 + 0X_5 + 0X_6 + 0X_7 + 0X_8 + 0X_9 + 0X_{10} + 0\mu_1 + 0\mu_2 + 0\mu_3 + 0\mu_4  = 28 \\
+    1&X_1 + 1X_2 + 1X_3 + 0X_4 - 1X_5 + 0X_6 + 0X_7 + 0X_8 + 0X_9 + 0X_{10} + 1\mu_1 + 0\mu_2 + 0\mu_3 + 0\mu_4  = 15 \\
+    2&X_1 + 1X_2 + 1X_3 + 0X_4 - 0X_5 + 1X_6 + 0X_7 + 0X_8 + 0X_9 + 0X_{10} + 0\mu_1 + 0\mu_2 + 0\mu_3 + 0\mu_4  = 10 \\
+    2&X_1 + 1X_2 + 1X_3 + 0X_4 - 0X_5 + 0X_6 + 1X_7 + 0X_8 + 0X_9 + 0X_{10} + 0\mu_1 + 0\mu_2 + 0\mu_3 + 0\mu_4  = 16 \\
+    0&X_1 + 1X_2 + 0X_3 + 0X_4 - 0X_5 + 0X_6 + 0X_7 - 1X_8 + 0X_9 + 0X_{10} + 0\mu_1 + 1\mu_2 + 0\mu_3 + 0\mu_4  = 4 \\
+    4000&X_1 + 0X_2 + 0X_3 + 0X_4 - 0X_5 + 0X_6 + 0X_7 + 0X_8 - 1X_9 + 0X_{10} + 0\mu_1 + 0\mu_2 + 1\mu_3 + 0\mu_4  = 8000 \\
+    0&X_1 + 300X_2 + 100X_3 + 0X_4 - 0X_5 + 0X_6 + 0X_7 + 0X_8 + 0X_9 -  1X_{10} + 0\mu_1 + 0\mu_2 + 0\mu_3 + 1\mu_4  = 500 
+\end{align*}}
+\insertarTabla{02.10.01.tex}{Solución "Optima"}
+Se puede apreciar que el modelo resulta in factible...
+\subsubsection{Interpretación}
+El costo que se alcanzara sera de 5100 millones de euros. Para llegar a este numero, deberemos comprar 2 turbocompresores, 3 aviones a hélice y 3 helicópteros, consumiendo 10.5 millones del presupuesto asignado. En cuanto al personal, se ha contratado a la cantidad máxima de copilotos y 9 azafatas.
+\subsubsection{10 pilotos mas}
+\insertarCodigo{lindo10.txt}{Análisis de Sensibilidad LINDO}
+En este caso, al ser una variable no básica la solución no se modifica.
+\subsubsection{Mínimo 14 artefactos}
+Debido a que el rango de variación de los "artefactos" es de $\corche{5,18}$, comprar 14 no nos afecta.
+\end{homeworkProblem}

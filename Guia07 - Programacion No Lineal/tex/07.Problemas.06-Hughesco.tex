@@ -1,0 +1,69 @@
+\begin{homeworkProblem}[-1][Hughesco]
+Siendo los datos iniciales:
+\begin{align*}
+    &r=0.618\quad \varepsilon = 50 \\
+    &a=0\quad  b=600\\
+\end{align*}
+
+
+\subsubsection{Iteracion 01}
+\begin{align*}
+    L=b-a=600-0=600 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_1=b - r\paren{b-a}= 229.2 \\
+    &x_2=a + r\paren{b-a}= 370.8 
+\end{align*}
+\begin{align*}
+    &f(x_1)=39 \quad f(x_2)=81 \\
+    &f(x_1) \leq f(x_2) \rightarrow \text{ Nuevo Intervalo } = \paren{x_1,b}
+\end{align*}
+
+
+\subsubsection{Iteracion 02}
+\begin{align*}
+    L=b-x_1=600-229.2=370.8 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_3=b - r\paren{b-x_1}= 370.7 \\
+    &x_4=x_1 + r\paren{b-x_1}= 458.2
+\end{align*}
+\begin{align*}
+    &f(x_3)=81 \quad f(x_4)=82 \\
+    &f(x_3) \leq f(x_4) \rightarrow \text{ Nuevo Intervalo } = \paren{x_3,b}
+\end{align*}
+
+\subsubsection{Iteracion 03}
+\begin{align*}
+    L=b-x_3=600-370.7=229.3 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_5=b - r\paren{b-x_3}= 458.29 \\
+    &x_6=x_3 + r\paren{b-x_3}= 512.40
+\end{align*}
+\begin{align*}
+    &f(x_5)=82 \quad f(x_6)=79 \\
+    &f(x_5) \geq f(x_6) \rightarrow \text{ Nuevo Intervalo } = \paren{x_3,x_5}
+\end{align*}
+
+\subsubsection{Iteracion 04}
+\begin{align*}
+    L=x_5-x_3=458.29-370.7=87.59 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_7=x_5 - r\paren{x_5-x_3}= 404.15 \\
+    &x_8=x_3 + r\paren{x_5-x_3}= 424.83
+\end{align*}
+\begin{align*}
+    &f(x_7)=85 \quad f(x_8)=84 \\
+    &f(x_7) \geq f(x_8) \rightarrow \text{ Nuevo Intervalo } = \paren{x_3,x_7}
+\end{align*}
+
+\subsubsection{Iteracion 05}
+\begin{align*}
+    L=x_7-X-3=404.15-370.7=33.45 \rightarrow L \leq \varepsilon
+\end{align*}
+
+Por lo tanto, con un error de $33.45$ podemos decir que existe en $x=404$ un maximo.
+
+\end{homeworkProblem}

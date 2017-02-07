@@ -1,0 +1,125 @@
+
+\def\nodoA{
+    $x_1=2.25$\\
+    $x_2=5.75$\\
+    \nodepart{two}
+    {
+        $Z=-41.25$
+    }
+}
+
+\def\nodoB{
+    $x_1=2$\\
+    $x_2=3.89$\\
+    \nodepart{two}
+    {
+        $Z=-41.1$
+    }
+}
+
+\def\nodoC{
+    $x_1=3$\\
+    $x_2=3$\\
+    \nodepart{two}
+    {
+        $Z=-39$
+    }
+}
+
+\def\nodoD{
+    $x_1=3$\\
+    $x_2=3$\\
+    \nodepart{two}
+    {
+        $Z=-39$
+    }
+}
+
+\def\nodoE{
+    $x_1=1.8$\\
+    $x_2=4.4$\\
+    \nodepart{two}
+    {
+        $Z=-41$
+    }
+}
+
+\def\nodoF{
+    $x_1=1$\\
+    $x_2=4.4$\\
+    \nodepart{two}
+    {
+        $Z=-40.5$
+    }
+}
+
+\def\nodoG{
+    {\large
+         No \\ Factible 
+    }
+    \nodepart{two}
+    {
+        $Z= - $
+    }    
+}
+
+\def\nodoH{
+    $x_1=1$\\
+    $x_2=4$\\
+    \nodepart{two}
+    {
+        $Z=-37$
+    }
+}
+
+\def\nodoI{
+    $x_1=0$\\
+    $x_2=5$\\
+    \nodepart{two}
+    {
+        $Z=-40$
+    }
+}
+
+\begin{homeworkProblem}[-1][Ejercicio 02]
+
+\begin{align*}
+    Min\ Z = -5&x_1 -8x_2 \\
+    s.a.:\quad\quad 1&x_1 \ 1x_2 v\leq 6 \\
+    5&x_1 + 9x_2 \leq 45 \\
+    &x_1,x_2 \in \mathbb{Z}^+
+\end{align*}
+
+
+\insertarBranchAndBound{
+    \node[parent node,rectangle split parts=2](A){\nodoA};
+    \node[parent node,below left =2.25cm and 1cm of A](B){\nodoB};
+    \node[parent node,below right =2.25cm and 1cm of A](C){\nodoC};
+    \node[parent node,below left =2.25cm and 1cm of B](D){\nodoD};
+    \node[parent node,below right =2.25cm and 1cm of B](E){\nodoE};
+    \node[parent node,below left =2.25cm and 1cm of E](F){\nodoF};
+    \node[parent node,fill=black!20!red,below right =2.25cm and 1cm of E](G){\nodoG};
+    \node[parent node,below left =2.25cm and 1cm of F](H){\nodoH};
+    \node[parent node,fill=black!15!green,below right =2.25cm and 1cm of F](I){\nodoI};
+}{
+    (A.south)/\flechaDivision/(B)  /midway/left/x_1\leq2,
+    (A.south)/\flechaDivision/(C)  /midway/right/x_1\geq3,
+    (B.south)/\flechaDivision/(D)  /midway/left/x_2\leq3,
+    (B.south)/\flechaDivision/(E)  /midway/right/x_2\geq4,
+    (E.south)/\flechaDivision/(F)  /midway/left/x_2\leq4,
+    (E.south)/\flechaDivision/(G)  /midway/right/x_1\geq2,
+    (F.south)/\flechaDivision/(H)  /midway/left/x_2\leq4,
+    (F.south)/\flechaDivision/(I)  /midway/right/x_2\geq5
+}{
+    Branch \& Bound, Ejercicio 02
+}
+
+Entonces la solución optima para el problema entero es:
+\begin{itemize}
+    \item $x_1=0$.
+    \item $x_2=5$.
+\end{itemize}
+
+\end{homeworkProblem}
+
+

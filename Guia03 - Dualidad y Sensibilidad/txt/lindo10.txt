@@ -1,0 +1,17 @@
+                OBJ COEFFICIENT RANGES
+VARIABLE        CURRENT         ALLOWABLE       ALLOWABLE
+                 COEF           INCREASE        DECREASE
+    X1     1200.000000           INFINITY      899.999939
+    X2      600.000000           INFINITY      300.000000
+    X3      300.000000         300.000000      300.000000
+                
+                RIGHTHAND SIDE RANGES
+     ROW         CURRENT         ALLOWABLE         ALLOWABLE
+                   RHS           INCREASE          DECREASE
+       2       28.000000          INFINITY        17.500000
+       3        8.000000          0.000000         3.000000
+       4       10.000000          INFINITY         0.000000
+       5       16.000000          INFINITY         9.000000
+       6        3.000000          3.000000         3.000000
+       7     8000.000000          0.000000      7999.999512
+       8      500.000000        700.000000         INFINITY

@@ -1,0 +1,56 @@
+
+
+\begin{homeworkProblem}[-1][Sophilios]
+Variables:
+\begin{itemize}
+    \item $X_1$ cantidad de vasijas de fondo oscuro a comprar.
+    \item $X_2$ cantidad de vasijas de fondo claro a comprar.
+    \item $
+    Y_d =
+    \begin{cases}
+        1   &\mbox{\text{si}}\quad\quad X_1+X_2\ge 0 \\
+        0   &\mbox{\text{si no }}\quad
+    \end{cases}
+    $
+    \item $
+    Y_o =
+    \begin{cases}
+        1   &\mbox{\text{si}}\quad\quad X_1 \ge 1 \\
+        0   &\mbox{\text{si no }}\quad
+    \end{cases}
+    $
+    \item $
+    Y_c =
+    \begin{cases}
+        1   &\mbox{\text{si}}\quad\quad X_2 \ge 1 \\
+        0   &\mbox{\text{si no }}\quad
+    \end{cases}
+    $
+    \item $
+    Y_p =
+    \begin{cases}
+        1   &\mbox{\text{si}}\quad\quad X_1+X_2\ge 9 \\
+        0   &\mbox{\text{si no }}\quad
+    \end{cases}
+    $
+    
+\end{itemize}
+
+Función Objetivo:
+\begin{align*}
+    Min\ Z = 20X_1 + 28X_2 - \paren{100Y_d} - \paren{X_1+X_2}\times\paren{10\paren{1-Y_p}+8Y_p}
+\end{align*}
+Sujeta a:
+\begin{align*}
+    &X_1+X_2\geq 10Y_d\\
+    &X_1 \geq 1Y_o\\
+    &X_2 \geq 1Y_c\\
+    &Y_o + Y_c \leq 1 \\
+    &X_1+X_2 \geq 9Y_p \\
+    &X_1\geq A.Y_o \\
+    &X_2\geq B.Y_c \\
+    &X_1,X_2\in \mathbb{Z}^+\quad\quad Y_c,Y_o,Y_p \in \{0,1\}
+\end{align*}
+\end{homeworkProblem}
+
+

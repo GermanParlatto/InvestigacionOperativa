@@ -1,0 +1,109 @@
+\begin{homeworkProblem}[-1][Minimo, Seccion Aurea]
+Siendo los datos iniciales:
+\begin{align*}
+    &r=0.618\quad \varepsilon = 0.1 \\
+    &a=-1\quad  b=1\\
+\end{align*}
+
+\subsubsection{Iteracion 01}
+\begin{align*}
+    L=b-a=1-(-1)=2 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_1=b - r\paren{b-a}= -0.236 \\
+    &x_2=a + r\paren{b-a}= 0.236 
+\end{align*}
+\begin{align*}
+    &f(x_1)=0.236 \quad f(x_2)=0.236 \\
+    &f(x_1) \geq f(x_2) \rightarrow \text{ Nuevo Intervalo } = \paren{x_1,b}
+\end{align*}
+
+
+\subsubsection{Iteracion 02}
+\begin{align*}
+    L=b-x_1=1-(-0.236)=1.236 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_3=b - r\paren{b-x_1}= 0.236\\
+    &x_4=x_1 + r\paren{b-x_1}= 0.527
+\end{align*}
+\begin{align*}
+    &f(x_3)=0.236 \quad f(x_4)=0.527 \\
+    &f(x_3) \leq f(x_4) \rightarrow \text{ Nuevo Intervalo } = \paren{x_1,x_4}
+\end{align*}
+
+
+\subsubsection{Iteracion 03}
+\begin{align*}
+    L=x_4-x_1=0.527-(-0.236)=0.763 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_5=x_4 - r\paren{x_4-x_1}= 0.055 \\
+    &x_6=x_1 + r\paren{x_4-x_1}= 0.236
+\end{align*}
+\begin{align*}
+    &f(x_5)=0.055 \quad f(x_6)=0.236 \\
+    &f(x_5) \leq f(x_6) \rightarrow \text{ Nuevo Intervalo } = \paren{x_1,x_6}
+\end{align*}
+
+\subsubsection{Iteracion 04}
+\begin{align*}
+    L=x_6-x_1=0.236-(-0.236)=0.472 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_7=x_6 - r\paren{x_6-x_1}= -0.055 \\
+    &x_8=x_1 + r\paren{x_6-x_1}= 0.055
+\end{align*}
+\begin{align*}
+    &f(x_7)=0.055 \quad f(x_8)=0.055 \\
+    &f(x_7) \geq f(x_8) \rightarrow \text{ Nuevo Intervalo } = \paren{x_7,x_6}
+\end{align*}
+
+\subsubsection{Iteracion 05}
+\begin{align*}
+    L=x_6-x_7=0.236-(-0.55)=0.291 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_9=x_6 - r\paren{x_6-x_7}= 0.055\\
+    &x_{10}=x_7 + r\paren{x_6-x_7}= 0.124
+\end{align*}
+\begin{align*}
+    &f(x_9)=0.055 \quad f(x_{10})=0.124 \\
+    &f(x_9) \leq f(x_{10}) \rightarrow \text{ Nuevo Intervalo } = \paren{x_7,x_{10}}
+\end{align*}
+
+
+\subsubsection{Iteracion 06}
+\begin{align*}
+    L=x_{10}-x_7=0.124-(-0.055)=0.069 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_{11}=x_{10} - r\paren{x_{10}-x_7}= 0.013\\
+    &x_{12}=x_7 + r\paren{x_{10}-x_7}= 0.055
+\end{align*}
+\begin{align*}
+    &f(x_{11})=0.013 \quad f(x_{12})=0.055 \\
+    &f(x_{11}) \leq f(x_{12}) \rightarrow \text{ Nuevo Intervalo } = \paren{x_7,x_{12}}
+\end{align*}
+
+\subsubsection{Iteracion 07}
+\begin{align*}
+    L=x_{12}-x_7=0.055-(-0.055)=0.011 \rightarrow L \geq \varepsilon
+\end{align*}
+\begin{align*}
+    &x_{13}=x_{12} - r\paren{x_{12}-x_7}= -0.013\\
+    &x_{14}=x_7 + r\paren{x_{12}-x_7}= 0.013
+\end{align*}
+\begin{align*}
+    &f(x_{13})=0.013 \quad f(x_{14})=0.013\\
+    &f(x_{13}) \geq f(x_{14}) \rightarrow \text{ Nuevo Intervalo } = \paren{x_{13},x_{12}}
+\end{align*}
+
+\subsubsection{Iteracion 08}
+\begin{align*}
+    L=L=x_{12}-x_{13}=0.055-(-0.013)=0.068\rightarrow L \leq \varepsilon
+\end{align*}
+
+Por lo tanto, con un error de $0.068$ podemos decir que existe en $x=0.013$ un minimo.
+
+\end{homeworkProblem}

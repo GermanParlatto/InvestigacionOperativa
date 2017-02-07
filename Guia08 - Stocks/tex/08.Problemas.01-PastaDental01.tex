@@ -1,0 +1,84 @@
+\begin{homeworkProblem}[-1][Pasta Dental]
+\subsubsection{Cantidad de Jarabe de Sorbitol retirado}
+Los datos con los que contamos son:
+\begin{itemize}
+    \item Demanda $D=5000\fraccorche{Kg}{Dia}$
+    \item Costo de Mantenimiento $c_1=0.02\fraccorche{\$}{Kg.Mes}$
+    \item Costo de Pedido/Orden $K=1200\fraccorche{\$}{Orden}$
+    \item Parámetro de Dimensionamiento $T=1$
+\end{itemize}
+Entonces:
+\begin{align*}
+    q_0=\sqrt{
+        \frac{
+            2\times 1200\fraccorche{\$}{Orden}\times 5000\fraccorche{Kg}{Dia} \times 30\fraccorche{Dia}{Mes}
+            }{
+                0.02\fraccorche{\$}{Kg.Mes}\times 1\corche{Orden}
+            }
+        }
+        =
+        134164.0786\fraccorche{Kg}{Orden}
+\end{align*}
+La cantidad optima a adquirir en cada orden que se le realiza al proveedor es de 134164.08 Kg.
+
+\subsubsection{Reposición de Jarabe}
+Sabiendo que $n$ es la cantidad de pedidos en un periodo $T$, $t$ la duración del periodo entre reaprovisionamientos, $D$ la demanda del periodo $T$ y $q_0$ el lote optimo por orden, entonces:
+\begin{align*}
+    n=\frac{D}{q_0}=\frac{T}{t} \rightarrow t = \frac{q\times T}{D}
+\end{align*}
+\begin{align*}
+    t = \frac{
+            134164.08\fraccorche{Kg}{Orden}\times 1 \corche{Orden}
+        }{
+            5000\fraccorche{Kg}{Dia}\times 30\fraccorche{Dia}{Mes}
+        } =  0.8944\corche{Mes} \approx 27\corche{Dia}       
+\end{align*}
+Por lo tanto debemos reaprovisionar los stocks de jarabe de sorbitol una vez cada 26/27 días.
+
+\subsubsection{Gastos Anuales}
+Sabiendo la composición del costo total esperado:
+\begin{align*}
+    &CTE& &=& &Compra& &+& &Preparacion& &+& &Retencion& \\
+    \intertext{Entonces podemos expresar el mismo como:} \\
+    &CTE& &=& &\paren{b\times D}& &+& &\paren{k\times \frac{D}{q_0}}& &+& &\paren{\frac{1}{2}\times c_1 \times q_0 \times T}& \\
+    \intertext{Reemplazando por los correspondientes valores} \\
+    &CTE& &=& &0&
+     &+&
+      &\paren{ 16099.68\fraccorche{\$}{A\text{ñ}o}}&  &+& 
+      &\paren{16099.68\fraccorche{\$}{A\text{ñ}o}}&  \\
+\end{align*}
+
+
+\subsubsection{Gráfica de Costos}
+\insertarImagen{04}
+
+\subsubsection{Recortes}
+Podríamos cambiar el proveedor del almacenamiento. De esa manera, el valor del costo total disminuiría debido a que la función de costo de almacenamiento poseería una pendiente mas cercana al eje X.
+
+\subsubsection{Mayor Demanda de Sorbitol}
+\begin{align*}
+    q_0=\sqrt{
+        \frac{
+            2\times 1200\fraccorche{\$}{Orden}\times \paren{5000\times 1.3}\fraccorche{Kg}{Dia} \times 30\fraccorche{Dia}{Mes}
+            }{
+                0.02\fraccorche{\$}{Kg.Mes}\times 1\corche{Orden}
+            }
+        }
+        =
+        152970.58\fraccorche{Kg}{Orden}
+\end{align*}
+\begin{align*}
+    CTE = 1200\fraccorche{\$}{Orden}&\times \frac{\paren{1800000\times 1.3}\fraccorche{Kg}{Mes}}{152970.58\fraccorche{Kg}{Orden}} \\ &+ 0.5\times 152970.58\fraccorche{Kg}{Orden}\times 0.24\fraccorche{\$}{Kg.A\text{ñ}o}=36712.94
+\end{align*}
+
+\subsubsection{Otra Estrategia}
+Si se mantiene el primer valor calculado de lote optimo:
+\begin{align*}
+    CTE = 1200\fraccorche{\$}{Orden}&\times \frac{\paren{1800000\times 1.3}\fraccorche{Kg}{Mes}}{134164.08\fraccorche{Kg}{Orden}} \\ &+ 0.5\times 134164.08\fraccorche{Kg}{Orden}\times 0.24\fraccorche{\$}{Kg.A\text{ñ}o}=37029.28
+\end{align*}
+Entonces:
+\begin{align*}
+    \frac{37029.28}{36712.94}=1.008
+\end{align*}
+Por lo que no modificar la política nos lleva a incurrir en un costo de casi un 1\% mas.
+\end{homeworkProblem}

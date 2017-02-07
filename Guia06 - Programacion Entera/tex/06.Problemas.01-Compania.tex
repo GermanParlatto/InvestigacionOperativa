@@ -1,0 +1,49 @@
+
+
+\begin{homeworkProblem}[-1][Compañía]
+\subsubsection{Problema Lineal}
+Variables de decisión:
+\begin{itemize}
+    \item $X_1$ cantidad de plantas del tipo A.
+    \item $X_2$ cantidad de plantas del tipo B.
+\end{itemize}
+Función Objetivo
+\begin{align*}
+   Max\ Z = 4\fraccorche{um}{A}&X_1\corche{A} + 3\fraccorche{um}{B}X_2\corche{B} 
+\end{align*}
+Sujeta a:
+\begin{align*}
+    2\fraccorche{ing}{A}X_1\corche{A} + 1\fraccorche{ing}{B}X_1\corche{B} \leq 18\corche{ing} \\
+    1\fraccorche{eco}{A}X_1\corche{A} + 3\fraccorche{eco}{B}X_1\corche{B} \leq 15\corche{eco} \\
+    &X_1,X_2\geq 0
+\end{align*}
+Según \textit{LINGO} la solución optima consiste en establecer 8 plantas del tipo A y 2 del tipo B, obteniendo un beneficio de 38u.m.
+
+
+\subsubsection{Gravámenes}
+Variables de decisión:
+\begin{itemize}
+    \item $X_1$ cantidad de plantas del tipo A.
+    \item $X_2$ cantidad de plantas del tipo B.
+    \item $X_3$ Unidades producidas.
+    \item $X_4$ Unidades por las que nos penalizan.
+\end{itemize}
+Función Objetivo
+\begin{align*}
+   Max\ Z = 4\fraccorche{um}{A}&X_1\corche{A} + 3\fraccorche{um}{B}X_2\corche{B} + 0X_3 - 2\fraccorche{um}{u}X_4\corche{u}
+\end{align*}
+Sujeta a:
+\begin{align*}
+    2\fraccorche{ing}{A}X_1\corche{A} + 1\fraccorche{ing}{B}X_1\corche{B} \leq 18\corche{ing} \\
+    1\fraccorche{eco}{A}X_1\corche{A} + 3\fraccorche{eco}{B}X_1\corche{B} \leq 15\corche{eco} \\
+    600\fraccorche{u}{A}X_1\corche{A} + 1800\fraccorche{u}{B}X_1\corche{B} \geq 5400\corche{u} \\
+    600\fraccorche{u}{A}X_1\corche{A} + 1800\fraccorche{u}{B}X_1\corche{B} = X_3\corche{u} \\
+    \paren{X_3 - 2500}\corche{u} = X_4\corche{u} \\
+    &X_1,X_2\geq 0
+\end{align*}
+
+Según \textit{LINGO} la solución optima consiste en establecer 9 plantas del tipo A y 0 del tipo B, produciendo exactamente 5400 unidades, siendo penalizados por 2900 y teniendo una perdida igual a $-5764$
+
+\end{homeworkProblem}
+
+

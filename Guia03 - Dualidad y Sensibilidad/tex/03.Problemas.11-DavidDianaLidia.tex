@@ -1,0 +1,51 @@
+\begin{homeworkProblem}[-1][David, Diana y Lidia]
+
+\subsubsection{Solución e Interpretación}
+\begin{align*}
+    Max Z = 300\fraccorche{\$}{Pe}X_1\corche{Pe} + 200\fraccorche{\$}{Pa}X_2\corche{Pa} \\
+\end{align*}
+\begin{align*}
+    6\fraccorche{e}{Pe}X_1\corche{Pe} + 4\fraccorche{e}{Pa}X_2\corche{Pa} \le 40\corche{e} \\
+    8\fraccorche{l}{Pe}X_1\corche{Pe} + 4\fraccorche{l}{Pa}X_2\corche{Pa} \le 40\corche{l} \\
+    3\fraccorche{en}{Pe}X_1\corche{Pe} + 3\fraccorche{en}{Pa}X_2\corche{Pa} \le 20\corche{en} \\
+\end{align*}
+\insertarTabla{02.11.01.tex}{Solución Optima}
+La tabla anterior nos indica que debemos producir 3 y un tercio de relojes de cada tipo, para obtener una ganancia total de \$1667 aproximadamente. En este caso, el recurso limitante resultan ser las horas de ensamblaje.
+
+\subsubsection{Cambio en ganancia Pedestal}
+La solución sigue siendo optima, obteniendo una ganancia de \$1914,75. \\
+\insertarTabla{02.11.02.tex}{Nueva Solución Optima}
+\subsubsection{Y ademas el de pared}
+En este caso, sin embargo, no podemos decir lo mismo en este caso.
+\insertarTabla{02.11.03.tex}{Nueva solución NO optima}
+\subsubsection{Mas trabajo}
+Según los precios sombra y costos reducidos, sabemos que:
+\begin{itemize}
+    \item 1 hora extra de David produce $\$0$ extra de ganancia
+    \item 1 hora extra de Daiana produce $\$25$ extra de ganancia
+    \item 1 hora extra de Lidia produce $\$33.33$ extra de ganancia
+\end{itemize}
+Por lo tanto, resulta mas beneficioso que sea Lidia quien trabaje una hora extra.
+
+\subsubsection{Lidia, Lidia}
+En este caso, el aumento de horas de Lidia resulta valido (la solución sigue siendo factible) mejorando nuestra ganancia en $\$166.66$
+\begin{align*}
+    B^{-1}.b_n = b^{*} \\
+    \begin{bmatrix}
+        1 & -0.5 & -0.62 \\
+        0 & 0.25 & -0.33 \\
+        0 & -0.25 & 0.67 
+    \end{bmatrix}.
+    \begin{bmatrix}
+        40 \\
+        40 \\
+        25
+    \end{bmatrix}=
+    \begin{bmatrix}
+        3.25 \\
+        1.68\\
+        6.68
+    \end{bmatrix}
+\end{align*}
+
+\end{homeworkProblem}

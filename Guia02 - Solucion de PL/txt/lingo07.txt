@@ -1,0 +1,43 @@
+  Global optimal solution found.
+  Objective value:                              177.5556
+  Infeasibilities:                              0.000000
+  Total solver iterations:                             4
+  Elapsed runtime seconds:                          0.03
+
+  Model Class:                                        LP
+
+  Total variables:                      6
+  Nonlinear variables:                  0
+  Integer variables:                    0
+
+  Total constraints:                   13
+  Nonlinear constraints:                0
+
+  Total nonzeros:                      28
+  Nonlinear nonzeros:                   0
+
+
+
+                                Variable           Value        Reduced Cost
+                                      B1        35.00000            0.000000
+                                      N1        15.00000            0.000000
+                                      B2        18.00000            0.000000
+                                      N2        12.00000            0.000000
+                                      P1        8.666667            0.000000
+                                      P2        3.222222            0.000000
+
+                                     Row    Slack or Surplus      Dual Price
+                                       1        177.5556            1.000000
+                                       2        0.000000            2.577778
+                                       3        0.000000            1.622222
+                                       4        0.000000          -0.4444444
+                                       5        0.000000          -0.4444444
+                                       6        0.000000            1.555556
+                                       7        0.000000            1.111111
+                                       8        15.00000            0.000000
+                                       9        12.00000            0.000000
+                                      10        35.00000            0.000000
+                                      11        18.00000            0.000000
+                                      12        8.666667            0.000000
+                                      13        3.222222            0.000000
+

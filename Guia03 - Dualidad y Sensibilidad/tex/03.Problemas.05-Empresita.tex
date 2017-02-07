@@ -1,0 +1,55 @@
+
+
+\begin{homeworkProblem}[-1][Empresita]
+\subsubsection{Modelo Matemático}
+El objetivo es que la empresa maximice sus ganancias.\\
+Las variables de decisión son:
+\begin{itemize}
+    \item $X_1$ cantidad del producto 1 a fabricar.
+    \item $X_2$ cantidad del producto 2 a fabricar.
+    \item $X_3$ cantidad del producto 3 a fabricar.
+\end{itemize}
+Función Objetivo:
+\ecuacion{
+    Max\ Z = 463\fraccorche{\$}{U_1}X_1\corche{U_1} + 371.7\fraccorche{\$}{U_2}X_2\corche{U_2} + 556.4\fraccorche{\$}{U_3}X_3\corche{U_3}
+}{020501}
+Restringida a:
+\begin{align*}
+    5\fraccorche{Hs_{MO}}{U_1}X_1\corche{U_1} + 4\fraccorche{Hs_{MO}}{U_2}X_2\corche{U_2} + 6\fraccorche{Hs_{MO}}{U_3}X_3\corche{U_3} &\le 1200\corche{Hs_{MO}} \\
+    0.2\fraccorche{Kg_{MP}}{U_1}X_1\corche{U_1} + 0.3\fraccorche{Kg_{MP}}{U_2}X_2\corche{U_2} + 0.1\fraccorche{Kg_{MP}}{U_3}X_3\corche{U_3} &\le 300\corche{Kg_{MP}} \\
+    1.1\fraccorche{Hs_{MA}}{U_1}X_1\corche{U_1} + 0.8\fraccorche{Hs_{MA}}{U_2}X_2\corche{U_2} + 1.3\fraccorche{Hs_{MA}}{U_3}X_3\corche{U_3} &\le 800\corche{Hs_{MA}} \\
+    X_3\corche{U_3} &\ge 70\corche{U_3} \\
+    X_2\corche{U_2} &\le 200\corche{U_2} \\
+    X_1,X_2,X_3 &\ge 0
+\end{align*}
+Forma Estándar: 
+\begin{align*}
+    Max\ Z = 463.3&X_1 + 371.1X_2 + 556.4X_3 + 0X_4 + 0X_5 + 0X_6 + 0X_7 + 0X_8 + M\mu_1 \\
+    s.a.: 5&X_1 + 4X_2 + 6X_3 + 1X_4 + 0X_5 + 0X_6 + 0X_7 + 0X_8 + 0\mu_1 = 1200 \\
+    0.2&X_1 + 0.3X_2 + 0.1X_3 + 0X_4 + 1X_5 + 0X_6 + 0X_7 + 0X_8 + 0\mu_1 = 300 \\
+    1.1&X_1 + 0.8X_2 + 1.3X_3 + 0X_4 + 0X_5 + 1X_6 + 0X_7 + 0X_8 + 0\mu_1 = 800 \\
+    0&X_1 + 0X_2 + 1X_3 + 0X_4 + 0X_5 + 0X_6 - 1X_7 + 0X_8 + 1\mu_1 = 70 \\
+    0&X_1 + 1X_2 + 0X_3 + 0X_4 + 0X_5 + 0X_6 + 0X_7 + 1X_8 + 0\mu_1 = 200 \\
+\end{align*}
+\subsubsection{Resolución LINDO}
+\insertarTabla{02.05.01.tex}{Tableau Simplex Optimo}
+\subsubsection{Interpretación de LINDO}
+\insertarCodigo{lindo05.txt}{Problema 05 - LINDO}
+A partir del reporte de LINDO se pueden extraer las siguientes conclusiones: 
+\begin{itemize}
+    \item Se necesitaron solo 2 iteraciones para alcanzar la solución optima del problema.
+    \item El valor optimo del funcional es de $\$111429.50$
+    \item El plan de producción optimo consiste en la fabricación de 195 unidades del producto 2. 70 del producto 3 y ninguna unidad del primer producto
+    \item Para lograr lo antes mencionado, se consumirá la totalidad de las horas de mano de obra disponible, 247 horas de maquinaria y 65,5 de materia prima.
+    \item Siendo la mano de obra el recurso que nos limita en este caso (la restricción activa), lo que podemos notar debido a que posee un precio sombra de 92,92 lo que indica que estaríamos dispuestos a pagar hasta esa cantidad con tal de contar con una unidad mas del recurso, o dicho de otra forma eso es lo que mejoraría nuestra ganancia en coas de contar con dicha unidad extra.
+\end{itemize}
+
+\subsubsection{Planteo Dual}
+\begin{align*}
+    Min\ W = 1200&Y_1 + 300Y_2 + 800Y_3 + 70Y_4 + 200Y_5 \\
+    s.a.:5&Y_1 + 0.2Y_2 + 1.1Y_3 \ge 500 \\
+    4&Y_1 + 0.3Y_2 + 0.8Y_3 \ge 400 \\
+    6&Y_1 + 0.1Y_2 + 1.3Y_3 \ge 600
+\end{align*}
+El problema dual, en cada una de sus restricciones nos impone que si vendemos la misma cantidad de recursos que se necesitan para completar cada una de las actividades, entonces si o si la ganancia debe ser mayor, ya que caso contrario no resulta beneficioso.
+\end{homeworkProblem} 

@@ -1,0 +1,33 @@
+\documentclass{tarea}
+
+
+\renewcommand{\hmwkTitle}{Guia 04: Transporte y Asignación}
+\renewcommand{\hmwkDueDate}{04 de Diciembre de 2016}
+\renewcommand{\hmwkClass}{Investigación Operativa}
+\renewcommand{\hmwkClassInstructor}{C.C. Lauritto \& Ing. Casanova}
+\renewcommand{\hmwkAuthorName}{\textbf{ Ravera P. \& Rivera R.}}
+
+
+
+\begin{document}
+
+\caratula
+\tableofcontents
+\pagebreak
+
+\section{Ejercicios}
+
+  \importarArchivo{04.Ejercicios.01-NewsMonthly.tex}
+\pagebreak
+\importarArchivo{04.Ejercicios.02-DistribuidoraFrutas.tex}
+\importarArchivo{04.Ejercicios.03-Vestidos.tex}
+\importarArchivo{04.Ejercicios.04-Agricultor.tex}
+\importarArchivo{04.Ejercicios.05-JoShop.tex}
+\importarArchivo{04.Ejercicios.06-CompetenciaRelevos.tex}
+\importarArchivo{04.Ejercicios.07-TomasYLaCerveza.tex}
+\importarArchivo{04.Ejercicios.08-MKJ.tex}
+
+
+	
+
+\end{document}

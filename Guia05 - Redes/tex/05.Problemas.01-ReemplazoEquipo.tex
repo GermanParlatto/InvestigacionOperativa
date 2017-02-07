@@ -1,0 +1,58 @@
+\begin{homeworkProblem}[-1][Reemplazo de Equipos]
+
+%\tikzstyle{vertex}=[auto=left,circle,fill=black!25,minimum size=20pt,inner sep=0pt]
+Problema Lineal:
+\begin{align*}
+    Min\ Z = 4000X_{12} + &4300X_{23} + 4800X_{34} + 4900X_{45} \\ + &5400X_{13} 
+    + 9800X_{14} + 6200X_{24} + 8700X_{25} + 7100X_{35}
+\end{align*}
+Sujeto a:
+\begin{align*}
+    &\sum_{j=1}^{n-1}{X_{1j}}=1 \\
+    &\sum_{i=1}^{n-1}{X_{i5}}=1 \\
+    &\sum_{i=1}^{5}{X_{ik}} = \sum_{j=1}^{5}{X_{kj}}\quad\quad
+    \forall k \neq 1,5 \\
+    &\forall i,j \in \left\{1,2,3,4,5\right\} X_{ij} \in \left\{0,1\right\}
+\end{align*}
+
+\begin{figure}[h]
+    \centering
+    \begin{adjustbox}{max width=\textwidth}
+        \begin{tikzpicture}[
+            transform shape,
+            ->, >=stealth',
+            auto, node distance=3cm,
+            thick,
+            main node/.style={
+                circle, draw, font=\sffamily\Large\bfseries
+            }
+        ]
+
+        \node[main node] (n1) at (0,0)  {1};
+        \node[main node] (n2) at (4,0)  {2};
+        \node[main node] (n3) at (8,0) {3};
+        \node[main node] (n4) at (12,0) {4};
+        \node[main node] (n5) at (16,0) {5};
+
+        \foreach \from/\to/\te/\out\in in {
+            n1/n2/4000/0/180,
+            n1/n3/5400/30/150,
+            n1/n4/9800/330/210,
+            n2/n3/4300/0/180,
+            n2/n4/6200/30/150,
+            n2/n5/8700/330/210,
+            n3/n4/4800/0/180,
+            n3/n5/7100/30/150,
+            n4/n5/4800/0/180
+        }{
+            \draw [->] (\from)  [out=\out, in=\in] to node {$\te$} (\to) ;
+        }
+        \end{tikzpicture}
+    \end{adjustbox}
+    \caption{Grafo 01}
+\end{figure}
+
+\insertarTabla{01.01.01.tex}{Iteraciones del Metodo}
+En la tabla anterior se aprecia que la ruta mas corta es $1\rightarrow 3\rightarrow 5$, lo que significa que nos conviene adquirir el equipo en el primer año y renovarlo cada 2 años.
+
+\end{homeworkProblem}

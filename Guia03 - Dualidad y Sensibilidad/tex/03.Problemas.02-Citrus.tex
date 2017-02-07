@@ -1,0 +1,115 @@
+\begin{homeworkProblem}[-1][Citrus]
+\subsubsection{Máxima Ganancia}
+El objetivo es maximizar las ganancias de la empresa.
+Las variables de decisión son:
+\begin{itemize}
+  \item $X_1$ Litros de jugo de naranja a destilar.
+  \item $X_2$ Litros de jugo de pomelo a destilar.
+\end{itemize}
+Para el jugo de naranja, la tasa de conversión de "puro" a concentrado es: $\frac{25-17.5}{25} = 0.7$ \\
+Para el jugo de pomelo, la tasa de conversión es: $ \frac{20-10}{20} = 0.5$ \\
+Si se destilan $25\ lt$ de jugo de naranja en una hora, entonces cada litro se destila en $0.04\ hs$. Análogamente, para el jugo de pomelo este valor es de $0.05\ hs$. \\
+Función Objetivo: 
+\ecuacion{
+  Max\ Z = \paren{0.55\times 0.7}\fraccorche{\$}{Lt_N}X_1\corche{Lt_N} + \paren{0.4\times 0.5}\fraccorche{\$}{Lt_P}X_2\corche{Lt_P} 
+}{020201}
+Restricciones:
+\begin{align*}
+  0.04\fraccorche{Hs}{Lt_N}X_1\corche{Lt_N} + 0.05\fraccorche{Hs}{Lt_P}X_2\corche{Lt_P} &\le 150\corche{Hs} \\
+  0.7\fraccorche{Lt_T}{Lt_N}X_1\corche{Lt_N}                                            &\le 1000\corche{Lt_T} \\
+  0.5\fraccorche{Lt_T}{Lt_P}X_2\corche{Lt_P}                                            &\le 1000\corche{Lt_T} \\
+  X_1,X_2 &\ge 0 
+\end{align*}
+Forma estándar:
+\begin{align*}
+    Max\ Z = 0.385&X_1 + 0.2X_2 + 0X_3 + 0X_4 + 0X_5 \\
+    0.04&X_1 + 0.05X_2 + 1X_3 + 0X_4 + 0X_5 = 150 \\
+    1&X_1 + 0X_2 + 0X_3 + 1X_4 + 0X_5 = 1000 \\
+    0&X_1 + 1X_2 + 0X_3 + 0X_4 + 1X_5 = 1000 \\
+    &X_1,X_2 \ge 0
+\end{align*}
+\insertarTabla{02.02.01.tex}{Tableau Simplex Optimo}
+El plan de producción optimo hallado nos indica que utilizando: 
+\begin{itemize}
+  \item $1428.57$ litros de jugo de naranja.
+  \item $1857.14$ litros de jugo de pomelo.
+\end{itemize}
+De esta manera, alcanzamos una ganancia de $\$928.57$. Si pudiéramos disponer de una hora mas de maquina, nuestra ganancia aumentaría en $\$0.33$. De igual manera, si nuestro tanque de almacenamiento tuviera un litro mas de capacidad, la ganancia aumentaría en $\$4$.
+
+\subsubsection{Nuevos Tanques}
+
+Dual Estándar
+\begin{align*}
+  Min\ W = 150&Y_1 + 1000Y_2 + 1000Y_3 + 0Y_4 + 0Y_5 + M\mu_1 + M\mu_2 \\
+  0.04&Y_1 + 1Y_2 + 0Y_3 - 1Y_4 + 0Y_5 + 1\mu_1 + 0\mu_2 = 0.385 \\
+  0.05&Y_1 + 0Y_2 + 0Y_3 + 0Y_4 - 1Y_5 + 0\mu_1 + 1\mu_2 = 0.2 
+\end{align*}
+\insertarTabla{02.02.02.tex}{Tableau Dual Optimo}
+\llavesR{
+  150\times 10 - 0.57b_2 \le 0 \\
+  150\times 0 -1.43b_2 \le 0 \\
+  150\times \paren{-20} + 1.14b_2 \le 0\\
+}{
+  b_2 \ge 2631.58 \wedge b_2 \le 2631.58
+}
+Para resolver el problema de si nos conviene o no la compra de uno o ambos tanques, re calculamos (utilizando SW) el funcional y comparamos si la variación en el mismo (ganancia o perdida debido al cambio de los tanques) es mayor que la inversión (el precio de cada tanque) requerida. \\ \\
+\textbf{Opción A - Tanque 1500 lt a \$500} \\
+\begin{itemize}
+  \item Cambio de tanque para jugo de Naranja:
+  \begin{align*}
+    777.5 - 928.57 \ge 500 \\
+    - 151.07 \ngeq 500 
+  \end{align*}
+  \item Cambio de tanque para jugo de Pomelo:
+  \begin{align*}
+    685 - 928.57 \ge 500 \\
+    - 243.57 \ngeq 500 
+  \end{align*}
+  \item Cambio de tanque para ambos jugos:
+  \begin{align*}
+    877.5 - 928.57 \ge 500 \\
+    - 51.07 \ngeq 500 
+  \end{align*}
+\end{itemize}
+Por lo tanto, en ningún caso nos resulta redituable adquirir el tanque de 1500 lt.\\ \\ \\
+\textbf{Opción B - Tanque 2500 lt a \$800} \\
+\begin{itemize}
+  \item Cambio de tanque para jugo de Naranja:
+  \begin{align*}
+    1162.5 - 928.57 \ge 800 \\
+    233.93 \ngeq 800 
+  \end{align*}
+  \item Cambio de tanque para jugo de Pomelo:
+  \begin{align*}
+    825 - 928.57 \ge 800 \\
+    - 103.57 \ngeq 800 
+  \end{align*}
+  \item Cambio de tanque para ambos jugos:
+  \begin{align*}
+    877.5 - 928.57 \ge 800 \\
+    233.93 \ngeq 800 
+  \end{align*}
+\end{itemize}
+Por lo tanto, en ningún caso nos resulta redituable adquirir el tanque de 2500 lt.\\ \\ 
+\textbf{Opción C - Tanque 3000 lt a \$1000} \\
+\begin{itemize}
+  \item Cambio de tanque para jugo de Naranja:
+  \begin{align*}
+    1275 - 928.57 \ge 1000 \\
+    346.43 \ngeq 1000 
+  \end{align*}
+  \item Cambio de tanque para jugo de Pomelo:
+  \begin{align*}
+    825 - 928.57 \ge 1000 \\
+    - 103.57 \ngeq 1000 
+  \end{align*}
+  \item Cambio de tanque para ambos jugos:
+  \begin{align*}
+    1275 - 928.57 \ge 1000 \\
+    346.43 \ngeq 1000 
+  \end{align*}
+\end{itemize}
+Por lo tanto, en ningún caso nos resulta redituable adquirir el tanque de 3000 lt.
+\subsubsection{Oferta del Competidor}
+Si revisamos la tabla optima del simple, vemos que por cada hora extra de maquinaria el funcional mejoraría en \$4, por lo que adquirir horas extras a \$8.2 no solo no nos conviene, si no que estaríamos incurriendo en un resultado negativo.
+\end{homeworkProblem}

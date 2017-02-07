@@ -1,0 +1,246 @@
+\begin{homeworkProblem}[-1][Flujo Maximo de Informacion]
+
+\centerline{Inicial}
+\begin{figure}[h]
+    \centering
+    \begin{adjustbox}{max width=\textwidth, max height=0.35\textheight}
+        \begin{tikzpicture}[
+            transform shape,
+            ->, >=stealth',
+            auto, node distance=3cm,
+            thick,
+            main node/.style={
+                circle, draw, font=\sffamily\Large\bfseries
+            }
+        ]
+
+        \node[main node] (n1) at (-2,00)  {1};
+        \node[main node] (n2) at (03,03)  {2};
+        \node[main node] (n3) at (03,-3)  {3};
+        \node[main node] (n4) at (09,-3)  {4};
+        \node[main node] (n5) at (09,03)  {5};
+        \node[main node] (n6) at (14,00)  {6};
+
+        \foreach \from/\to/\te/\out/\in in {
+            n1/n2/15/65/180,n2/n1/0/180/65,
+            n1/n3/18/295/180,n3/n1/0/180/295,
+            n2/n5/12/0/180,n5/n2/7/180/0,
+            n2/n3/10/270/90,n3/n2/0/90/270,
+            n3/n5/6/45/225,n5/n3/0/225/45,
+            n3/n4/11/0/180,n4/n3/0/180/0,
+            n3/n6/15/305/290,n6/n3/0/290/305,
+            n4/n5/26/90/270,n5/n4/14/270/90,
+            n4/n6/12/10/250,n6/n4/0/250/10,
+            n5/n6/9/350/110,n6/n5/0/110/350
+        }{
+            \draw [-] (\from)  [out=\out, in=\in] to node[very near start] {$\te$} (\to) ;
+        }
+        \end{tikzpicture}
+    \end{adjustbox}
+\end{figure}
+\FloatBarrier
+
+\centerline{Trayectoria de Aumento 01: $1-(15)-2-(12)-5-(9)-6\ =\ 9$}
+\begin{figure}[h]
+    \centering
+    \begin{adjustbox}{max width=\textwidth, max height=0.35\textheight}
+        \begin{tikzpicture}[
+            transform shape,
+            ->, >=stealth',
+            auto, node distance=3cm,
+            thick,
+            main node/.style={
+                circle, draw, font=\sffamily\Large\bfseries
+            }
+        ]
+
+        \node[main node] (n1) at (-2,00)  {1};
+        \node[main node] (n2) at (03,03)  {2};
+        \node[main node] (n3) at (03,-3)  {3};
+        \node[main node] (n4) at (09,-3)  {4};
+        \node[main node] (n5) at (09,03)  {5};
+        \node[main node] (n6) at (14,00)  {6};
+
+        \foreach \from/\to/\te/\out/\in in {
+            n1/n2/6/65/180,n2/n1/9/180/65,
+            n1/n3/18/295/180,n3/n1/0/180/295,
+            n2/n5/3/0/180,n5/n2/16/180/0,
+            n2/n3/10/270/90,n3/n2/0/90/270,
+            n3/n5/6/45/225,n5/n3/0/225/45,
+            n3/n4/11/0/180,n4/n3/0/180/0,
+            n3/n6/15/305/290,n6/n3/0/290/305,
+            n4/n5/26/90/270,n5/n4/14/270/90,
+            n4/n6/12/10/250,n6/n4/0/250/10,
+            n5/n6/0/350/110,n6/n5/9/110/350
+        }{
+            \draw [-] (\from)  [out=\out, in=\in] to node[very near start] {$\te$} (\to) ;
+        }
+        \end{tikzpicture}
+    \end{adjustbox}
+\end{figure}
+\FloatBarrier
+\pagebreak
+
+
+\centerline{Trayectoria de Aumento 02: $1-(6)-2-(10)-3-(6)-5-(14)-4-(12)-6\ =\ 6$}
+\begin{figure}[h]
+    \centering
+    \begin{adjustbox}{max width=\textwidth, max height=0.35\textheight}
+        \begin{tikzpicture}[
+            transform shape,
+            ->, >=stealth',
+            auto, node distance=3cm,
+            thick,
+            main node/.style={
+                circle, draw, font=\sffamily\Large\bfseries
+            }
+        ]
+
+        \node[main node] (n1) at (-2,00)  {1};
+        \node[main node] (n2) at (03,03)  {2};
+        \node[main node] (n3) at (03,-3)  {3};
+        \node[main node] (n4) at (09,-3)  {4};
+        \node[main node] (n5) at (09,03)  {5};
+        \node[main node] (n6) at (14,00)  {6};
+
+        \foreach \from/\to/\te/\out/\in in {
+            n1/n2/0/65/180,n2/n1/15/180/65,
+            n1/n3/18/295/180,n3/n1/0/180/295,
+            n2/n5/3/0/180,n5/n2/16/180/0,
+            n2/n3/4/270/90,n3/n2/6/90/270,
+            n3/n5/0/45/225,n5/n3/6/225/45,
+            n3/n4/11/0/180,n4/n3/0/180/0,
+            n3/n6/15/305/290,n6/n3/0/290/305,
+            n4/n5/32/90/270,n5/n4/8/270/90,
+            n4/n6/6/10/250,n6/n4/6/250/10,
+            n5/n6/0/350/110,n6/n5/9/110/350
+        }{
+            \draw [-] (\from)  [out=\out, in=\in] to node[very near start] {$\te$} (\to) ;
+        }
+        \end{tikzpicture}
+    \end{adjustbox}
+\end{figure}
+\FloatBarrier
+
+\centerline{Trayectoria de Aumento 03: $1-(18)-3-(15)-6\ =\ 15$}
+\begin{figure}[h]
+    \centering
+    \begin{adjustbox}{max width=\textwidth, max height=0.35\textheight}
+        \begin{tikzpicture}[
+            transform shape,
+            ->, >=stealth',
+            auto, node distance=3cm,
+            thick,
+            main node/.style={
+                circle, draw, font=\sffamily\Large\bfseries
+            }
+        ]
+
+        \node[main node] (n1) at (-2,00)  {1};
+        \node[main node] (n2) at (03,03)  {2};
+        \node[main node] (n3) at (03,-3)  {3};
+        \node[main node] (n4) at (09,-3)  {4};
+        \node[main node] (n5) at (09,03)  {5};
+        \node[main node] (n6) at (14,00)  {6};
+
+        \foreach \from/\to/\te/\out/\in in {
+            n1/n2/0/65/180,n2/n1/15/180/65,
+            n1/n3/3/295/180,n3/n1/15/180/295,
+            n2/n5/3/0/180,n5/n2/16/180/0,
+            n2/n3/4/270/90,n3/n2/6/90/270,
+            n3/n5/0/45/225,n5/n3/6/225/45,
+            n3/n4/11/0/180,n4/n3/0/180/0,
+            n3/n6/0/305/290,n6/n3/15/290/305,
+            n4/n5/32/90/270,n5/n4/8/270/90,
+            n4/n6/6/10/250,n6/n4/6/250/10,
+            n5/n6/0/350/110,n6/n5/9/110/350
+        }{
+            \draw [-] (\from)  [out=\out, in=\in] to node[very near start] {$\te$} (\to) ;
+        }
+        \end{tikzpicture}
+    \end{adjustbox}
+\end{figure}
+\FloatBarrier
+\pagebreak
+
+\centerline{Trayectoria de Aumento 04: $1-(18)-3-(15)-4-()-6\ =\ 3$}
+\begin{figure}[h]
+    \centering
+    \begin{adjustbox}{max width=\textwidth, max height=0.35\textheight}
+        \begin{tikzpicture}[
+            transform shape,
+            ->, >=stealth',
+            auto, node distance=3cm,
+            thick,
+            main node/.style={
+                circle, draw, font=\sffamily\Large\bfseries
+            }
+        ]
+
+        \node[main node] (n1) at (-2,00)  {1};
+        \node[main node] (n2) at (03,03)  {2};
+        \node[main node] (n3) at (03,-3)  {3};
+        \node[main node] (n4) at (09,-3)  {4};
+        \node[main node] (n5) at (09,03)  {5};
+        \node[main node] (n6) at (14,00)  {6};
+
+        \foreach \from/\to/\te/\out/\in in {
+            n1/n2/0/65/180,n2/n1/15/180/65,
+            n1/n3/0/295/180,n3/n1/18/180/295,
+            n2/n5/3/0/180,n5/n2/16/180/0,
+            n2/n3/4/270/90,n3/n2/6/90/270,
+            n3/n5/0/45/225,n5/n3/6/225/45,
+            n3/n4/8/0/180,n4/n3/3/180/0,
+            n3/n6/0/305/290,n6/n3/15/290/305,
+            n4/n5/32/90/270,n5/n4/8/270/90,
+            n4/n6/3/10/250,n6/n4/9/250/10,
+            n5/n6/0/350/110,n6/n5/9/110/350
+        }{
+            \draw [-] (\from)  [out=\out, in=\in] to node[very near start] {$\te$} (\to) ;
+        }
+        \end{tikzpicture}
+    \end{adjustbox}
+\end{figure}
+\FloatBarrier
+
+A continuacion, la red de flujo maximo (igual a 33)
+\begin{figure}[h]
+    \centering
+    \begin{adjustbox}{max width=\textwidth, max height=0.35\textheight}
+        \begin{tikzpicture}[
+            transform shape,
+            ->, >=stealth',
+            auto, node distance=3cm,
+            thick,
+            main node/.style={
+                circle, draw, font=\sffamily\Large\bfseries
+            }
+        ]
+
+        \node[main node] (n1) at (-2,00)  {1};
+        \node[main node] (n2) at (03,03)  {2};
+        \node[main node] (n3) at (03,-3)  {3};
+        \node[main node] (n4) at (09,-3)  {4};
+        \node[main node] (n5) at (09,03)  {5};
+        \node[main node] (n6) at (14,00)  {6};
+
+        \foreach \from/\to/\te/\out/\in in {
+            n1/n2/15/65/180,
+            n1/n3/18/295/180,
+            n2/n5/16/50/130,n5/n2/3/180/0,
+            n2/n3/6/270/90,
+            n3/n5/6/45/225,
+            n3/n4/3/0/180,
+            n3/n6/15/305/290,
+            n4/n5/8/60/300,n5/n4/32/240/120,
+            n4/n6/9/10/250,
+            n5/n6/9/350/110
+        }{
+            \draw [->] (\from)  [out=\out, in=\in] to node[blue] {$\te$} (\to) ;
+        }
+        \end{tikzpicture}
+    \end{adjustbox}
+\end{figure}
+\FloatBarrier
+\pagebreak
+\end{homeworkProblem}

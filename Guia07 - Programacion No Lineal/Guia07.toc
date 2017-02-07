@@ -1,0 +1,26 @@
+\select@language {spanish}
+\contentsline {section}{Solucion de Problemas}{3}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {1}} - Hughesco}{3}
+\contentsline {subsubsection}{Iteracion 01}{3}
+\contentsline {subsubsection}{Iteracion 02}{3}
+\contentsline {subsubsection}{Iteracion 03}{3}
+\contentsline {subsubsection}{Iteracion 04}{4}
+\contentsline {subsubsection}{Iteracion 05}{4}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {2}} - Ascenso Acelerado}{4}
+\contentsline {subsubsection}{Ascenso Acelerado}{4}
+\contentsline {subsubsection}{Newton Raphrson}{5}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {3}} - Optimizacion no Restringida}{5}
+\contentsline {subsubsection}{Ascenso Acelerado}{5}
+\contentsline {subsubsection}{Sistema de Ecuaciones}{6}
+\contentsline {subsubsection}{Trayectoria}{7}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {4}} - Municipalidad y Hospital}{7}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {5}} - Dos mercados}{8}
+\contentsline {subsubsection}{Problema Lineal}{8}
+\contentsline {subsubsection}{Solucion Iterativa}{8}
+\contentsline {subsubsection}{Solucion Analitica}{9}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {6}} - Publicidad}{9}
+\contentsline {subsubsection}{Programa Lineal}{9}
+\contentsline {subsubsection}{Solucion}{9}
+\contentsline {subsubsection}{Gastar \$1000 extras?}{10}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {7}} - Quilmes}{10}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {8}} - Paquete}{10}

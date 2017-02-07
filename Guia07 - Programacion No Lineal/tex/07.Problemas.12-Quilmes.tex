@@ -1,0 +1,42 @@
+\begin{homeworkProblem}[-1][Quilmes]
+
+\subsubsection{Programa Lineal}
+Variables de Decision:
+\begin{itemize}
+    \item $x$: cantidad de dinero a invertir en publicidad en Buenos Aires.
+    \item $y$: cantidad de dinero a invertir en publicidad en el Interior.
+\end{itemize}
+Funcion Objetivo:
+\begin{align*}
+    Max\ Z = 30\sqrt{x} + 20\sqrt{y}
+\end{align*}
+Sujeta a:
+\begin{align*}
+    x+y\leq 100 \\ x,y\geq0
+\end{align*}
+
+Para lograr maximizar los beneficios obtenidos, recomendamos la inversion de $\$69.23$ en publicidad destinada a Buenos Aires y el resto ($\$30.76$) al interior. Con esto, se alcanzaria un ingreso de $\$360.55$.
+
+\subsubsection{Condiciones de Optimo}
+
+\begin{align*}
+    \frac{\partial f}{\partial x} - \lambda \frac{\partial g}{\partial x} \leq 0 \rightarrow \frac{15}{\sqrt{69.23}} - \lambda \leq 0 \\
+    \frac{\partial f}{\partial y} - \lambda \frac{\partial g}{\partial y} \leq 0 \rightarrow \frac{10}{\sqrt{30.77}} - \lambda \leq 0 \\
+\end{align*}
+Ya que tanto $x$ como $y$ son distintas de cero, las expresiones anteriores son iguales a $0$, por lo que entonces:
+\begin{align*}
+    \lambda = 1.80
+\end{align*}
+Ademas, en el punto candidato a solucion optima:
+\begin{align*}
+    \lambda\corche{g(x)-b} = 0 \rightarrow \lambda\corche{x+y-100} = 0
+\end{align*}
+
+Debido a lo anterior, podemos asegurar que se cumplen las condiciones de optimalidad.
+
+
+
+\subsubsection{Un peso mas...}
+Teniendo en cuenta el valor de $\lambda$ el cual representa que tanto mejoraria nuestro funcional por unidad monetaria extra que se disponga
+podemos asegurar que la ganancia, de disponer de un peso mas detinado a inversion en pubilicidad, aumentaria en $\$1.8$ extra.
+\end{homeworkProblem}

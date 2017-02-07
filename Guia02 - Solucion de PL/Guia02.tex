@@ -1,0 +1,524 @@
+\documentclass{tarea}
+
+
+\renewcommand{\hmwkTitle}{Guia 02: Solucion de PL}
+\renewcommand{\hmwkDueDate}{--}
+\renewcommand{\hmwkClass}{Investigacion Operativa}
+\renewcommand{\hmwkClassInstructor}{C.C. Lauritto \& Ing. Casanova}
+\renewcommand{\hmwkAuthorName}{\textbf{ Ravera P. \& Rivera R.}}
+
+
+\begin{document}
+
+\caratula
+\tableofcontents
+\pagebreak
+
+
+\section{Ejercicios}
+
+\begin{homeworkProblem}[-1][Modelos Lineales]
+\subsubsection{Inciso A}
+Funcion Objetivo 
+\begin{align*}
+Max\ Z = 2X_1 + 4X_2
+\end{align*}
+Restricciones 
+\begin{equation}\label{1a1}
+		x+y-4=0
+\end{equation}
+\begin{equation}\label{1a2}
+		x + 2y -5 =0
+\end{equation}
+Por lo que los puntos son:
+\begin{itemize}
+\item A = (0, 0.25)
+\item B = (3,1)
+\item C= (4,0)
+\end{itemize}
+\begin{align*}
+&A \rightarrow\ 2(0) + 4(2.5) = 10 \\
+&B \rightarrow\ 2(3) + 4(1)   = 10 \\
+&C \rightarrow\ 2(4) + 4(0)   =  8
+\end{align*}
+Por lo tanto, el problema cuenta con Soluciones Alternativas, siendo Deterministico - Lineal - Continuo. \\
+Región factible:
+\insertarImagen{01-a}
+
+
+\subsubsection{Inciso B}
+Función Objetivo 
+\begin{align*}
+Max\ Z = 2X_1 + 8X_2
+\end{align*}
+Restricciones
+\ecuacion{2x -5y = 0}{1b1}
+\ecuacion{-x+5y = 5}{1b2}
+\ecuacion{x+2y=4}{1b3}
+Por lo que los puntos son:
+\llavesL{
+	( \ref{1b2} ) \\
+	( \ref{1b3} )
+}{ \rightarrow A = \paren{ \frac{10}{7} , \frac{9}{7} } }
+\llavesL{
+	( \ref{1b1} ) \\
+	( \ref{1b2} )
+}{ \rightarrow B = \paren{ 5 , 2 } }
+\llavesL{
+	( \ref{1b1} ) \\
+	( \ref{1b3} )
+}{ \rightarrow C = \paren{ 2.22, 0.88  } }
+\begin{align*}
+&A \rightarrow\ 2\paren{\frac{10}{7}} + 8\paren{\frac{9}{7}} =13.14 \\
+&B \rightarrow\ 2(5) + 8(2)   = 26 \\
+&C \rightarrow\ 2(2.22) + 8(0.88)   =  11.48
+\end{align*}
+El máximo se halla en $B$. El problema es Deterministico - Lineal - Continuo. \\
+Región factible:
+\insertarImagen{01-b}
+
+
+\subsubsection{Inciso C}
+La función objetivo es:
+\begin{align*}
+	Max\ Z = 2X_1 + X_2
+\end{align*}
+\insertarImagen{01-c}
+La región factible no esta acotada, por lo que el valor de $Z$ es $\infty$. La variable $X_2$ puede crecer libremente. \\
+El problema e Deterministico - Lineal - Continuo.
+
+\subsubsection{Inciso D}
+La función objetivo es: 
+\begin{align*}
+	Max\ Z = 3X_1 + 9X_2
+\end{align*}
+\insertarImagen{01-d}
+En este caso la solución es Infactible o Incompatible ya que la región factible es un conjunto vació al ser no convexo. \\
+El problema es Deterministico - Lineal - Continuo.
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[-1][Simplex Modelos Lineales]
+\subsubsection{Inciso A}
+\begin{align*}
+	Max\ &Z = 2X_1 + 4X_2 \\
+    s.a.:\quad\quad &X_1 + 2X_2 \le 5 \\
+	&X_1 + X_2 \le 4 \\
+	&X_1,X_2 \ge 0
+\end{align*}
+Forma Estándar:
+\begin{align*}
+	Max\ &Z = 2X_1 + 4X_2 + 0X_3 + 0X_4\\
+    s.a.:\quad\quad &X_1 + 2X_2 + X_3 = 5 \\
+	&X_1 + X_2 + X_4 =  4 \\
+	&X_1,X_2,X_3,X_4 \ge 0
+\end{align*}
+
+Este problema tiene soluciones alternativas, lo cual podemos detectar gracias a que existen dos conjuntos de variables básicas con el mismo valor de $Z$.
+\insertarTabla{02A}{Tableau Simplex 02A}
+
+
+
+\subsubsection{Inciso B}
+\begin{align*}
+Max\ &Z = 2X_1 + 8X_2 \\
+s.a. : \quad \quad &2X_1 + 4X_2 \ge 8 \\
+&2X_1 – 5X_2 \le 0 \\
+-&1X_1 + 5X_2 \le 5 \\
+&X_1,X_2 \ge 0
+\end{align*}
+Forma Estándar:
+\begin{align*}
+Max\ &Z = 2X_1 + 8X_2 +0X_3 + 0X_4 + 0X_5  –  M\mu_1 \\
+s.a. : \quad \quad &2X_1 - 5X_2 -1X_3 +0X_4 + 0X_5 + 1\mu_1= 8 \\
+&2X_1 - 5X_2 -0X_3 +1X_4 +0X_5 + 0\mu_1 =0\\
+-&1X_1 + 5X_2 -0X_3 +0X_4 + 1X_5 + 0\mu_1 = 5 \\
+&X_1,X_2,X_3,X_4,X_5 \ge 0
+\end{align*}
+La Solución Básica Factible Optima es $X_1 = 5\ y\ X_2=2$.
+\insertarTabla{02B1}{Tableau Simplex 02.A}
+\insertarTabla{02B2}{Tableau Simplex 02.B}
+
+
+\subsubsection{Inciso C}
+\begin{align*}
+	Max\ &Z = 2X_1 + X_2 \\
+	s.a.:\quad\quad &1X_1 - 1X_2 \le 10 \\
+	&2X_1 \le 40 \\
+	&X_1,X_2 \ge 0
+\end{align*}
+Forma Estándar:
+\begin{align*}
+	Max\ &Z = 2X_1 + X_2 + 0X_3 + 0X_4 \\
+	s.a.: &1X_1 - 1X_2 + 1X_3 + 0X_4 = 10 \\
+	&2X_1 + 0X_2 + 0X_3 + 1X_4 = 40 \\
+	&X_1,X_2,X_3,X_4 \ge 0
+\end{align*}
+\insertarTabla{02C}{Tableau Simplex 02.C}
+Como podemos ver, en la ultima iteracion del Simplex no existe un $\theta \ge 0$ por lo que la solución no esta acotada, osea, $Z\rightarrow  \infty$.
+
+\subsubsection{Inciso D}
+\begin{align*}
+	Max\ &Z = 3X_1 + 9X_2 \\
+	s.a.: &1X_1 + 4X_2 \ge 9 \\
+	&1X_1 + 2X_2 \le 4 \\
+	&X_1,X_2 \ge 0 
+\end{align*}
+Forma Estándar:
+\begin{align*}
+	Max\ &Z = 3X_1 + 9X_2 + 0X_3 + 0X_4 - M\mu_1 \\
+	s.a.: &1X_1 + 4X_2 - 1X_3 + 0X_4 + 1\mu_1 = 9 \\
+	&1X_1 + 2X_2 - 0X_3 + 1X_4 + 0\mu_1 = 4 \\
+	&X_1,X_2,X_3,X_4 \ge 0
+\end{align*}
+\insertarTabla{02D}{Tableau Simplex 02.D}
+En este caso, el problema es incompatible ya que la región de factibilidad es igual al conjunto vació.
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[-1][Compañía]
+Las variables de decisión son:
+\begin{itemize}
+	\item $X_A$ la cantidad vendida del producto A
+	\item $X_B$ la cantidad vendida del producto B
+\end{itemize}
+Función Objetivo:
+\begin{equation}
+	Max\ Z = 70\fraccorche{\$}{Ua}X_A\corche{Ua} + 50\fraccorche{\$}{Ub}X_B\corche{Ub}
+\end{equation}
+Restricciones:
+\begin{align*}
+  2\fraccorche{Hs}{Ua}X_a\corche{Ua} + 4\fraccorche{Hs}{Ub}X_b\corche{Ub} \le 100 \corche{Hs} \\
+  5\fraccorche{Hs}{Ua}X_a\corche{Ua} + 3\fraccorche{Hs}{Ub}X_b\corche{Ub} \le 110 \corche{Hs} \\  
+\end{align*}
+Forma Estándar:
+\begin{align*}
+	Max\ &Z = 70X_1 + 50X_2 + 0X_3 + 0X_4 \\
+	s.a.: &2X_1 + 4X_2 + 1X_3 + 0X_4 = 100 \\
+	&5X_1 + 3X_2 + 0X_3 + 1X_4 = 110 \\
+	&X_1,X_2,X_3,X_4 \ge 0
+\end{align*}
+\insertarTabla{03A}{Tableau Simplex 03}
+De esta manera, para maximizar la utilidad deberíamos producir 20 y 10 unidades de los productos A y B respectivamente.
+De esa manera, nuestra ganancia ascendería a los $\$1700$.\\
+Los efectos de contar con mas recursos (una unidad mas) son los siguientes:
+\begin{itemize}
+	\item Hora de la Maquina 1: Nuestra ganancia aumentaría en $20/7\corche{\$}$, 
+	podríamos producir $5/4$ unidades mas del producto A, pero deberíamos producir $3/4$ unidades menos del B.
+	\item Hora de la Maquina 2: Nuestra ganancia aumentaría en $90/7\corche{\$}$, produciendo $1/7$ menos unidades del producto A y $10/35$ mas del producto B. 
+\end{itemize}
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[-1][Granja Modelo]
+Las variables de decisión son:
+\begin{itemize}
+	\item $X_1$ Cantidad de maíz utilizada en el alimento.
+	\item $X_2$ Cantidad de soja utilizada en el alimento.
+\end{itemize}
+Función Objetivo: 
+\begin{equation}
+	Min\ Z = 0.30\fraccorche{\$}{Kg_M}X_1\corche{Kg_M} + 0.09\fraccorche{\$}{Kg_S}X_2\corche{Kg_S}
+\end{equation}
+Restricciones:
+\begin{align*}
+	1\fraccorche{Kg}{Kg_M}X_1\corche{Kg_M} + 1\fraccorche{Kg}{Kg_S}X_2\corche{Kg_S} &\ge 800\corche{Kg} \\
+	0.09\fraccorche{Kg}{Kg_M}X_1\corche{Kg_M} + 0.6\fraccorche{Kg}{Kg_S}X_2\corche{Kg_S} &\ge 0.3\paren{X_1 + X_2}\corche{Kg} \\
+	0.02\fraccorche{Kg}{Kg_M}X_1\corche{Kg_M} + 0.06\fraccorche{Kg}{Kg_S}X_2\corche{Kg_S} &\ge 0.05\paren{X_1 + X_2}\corche{Kg} \\
+\end{align*}
+Forma Estándar:
+\begin{align*}
+	Z=0.3&X_1 + 0.9X_2 + 0X_3 + 0X_4 + 0X_5 + M\mu_1 + M\mu_2 \\
+	s.a.:\quad \quad  1&X_1 + 1X_2 - 1X_3 + 1\mu_1 = 800 \\
+	-0.21&X_1 + 0.3X_2 - 1X_4 + 1\mu_2 = 0 \\
+	-0.08&X_1 + 0.01X_2 + 1X_5 = 0 \\
+	&X_1,X_2,X_3,X_4,X_5  \ge 0
+\end{align*}
+Se determino entonces que se deben utilizar 200 kg de Maíz y 600 de Soja para cumplir con las exigencias impuestas.
+\insertarTabla{04}{Tableau Simplex 04}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[-1][Almacén La Falda]
+Las variables de decisión son:
+\begin{itemize}
+	\item $X_1$: cantidad de cajas que se solicitan al deposito
+	\item $X_2$: cantidad de cajas  que se solicitan al proveedor 
+\end{itemize}
+La función objetivo es: 
+\begin{equation}
+	Min\ Z = 1\fraccorche{\$}{C_d}X_1\corche{C_d} + 6\fraccorche{\$}{C_p}X_2\corche{C_p}
+\end{equation}
+Sujeta a:
+\begin{align*}
+	1\fraccorche{Kg_A}{C_d}X_1\corche{C_d} + 2\fraccorche{Kg_A}{C_p}X_2\corche{C_p} &\ge 80 \corche{Kg_A}\\
+	5\fraccorche{Kg_Q}{C_p}X_2\corche{C_p} &\ge 60 \corche{Kg_Q} \\
+	X_1\corche{C_d} &\le 40\corche{C_d} \\
+	X_2\corche{C_p} &\le 30 \corche{C_p} \\
+	X_1,X_2 &\ge 0
+\end{align*}
+Forma Estándar:
+\begin{align*}
+	1X_1 + 6X_2 + 0X_3 + &0X_4 + 0X_5 + 0X_6 + M\mu_1 + M\mu_2 \\
+	1X_1 + 2X_2 - 1X_3 +&0X_4 +0X_5 + 0x_6 + 1\mu_1 + 0\mu_2 = 80 \\
+	0X_1 + 2X_2 + 0X_3 -&1X_4 +0X_5 + 0x_6 + 0\mu_1 + 1\mu_2 = 10 \\
+	1X_1 + 0X_2 - 0X_3 -&0X_4 + 1X_5 + 0X_6 + 0\mu_1 + 0\mu_2 = 40 \\
+	0X_1 + 1X_2 - 0X_3 -&0X_4 + 0X_5 + 0X_6 + 0\mu_1 + 0\mu_2 = 30 \\
+	&X_1,X_2 \ge 0
+\end{align*}
+\insertarTabla{05}{Tableau Simplex 05}
+De esta manera, podemos alcanzar el costo mínimo (de $ \$ 160$) si traemos del deposito la totalidad de las cajas disponibles (40) y le compramos al proveedor el $66.67\%$ de su stock disponible (osea 20 de 30 cajas).
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[-1][Lotería]
+Las variables de decisión son:
+\begin{itemize}
+	\item $X_1$: Cantidad de acciones del tipo A invertidas (en millones).
+	\item $X_2$: Cantidad de acciones invertidas del tipo B (en millones).
+\end{itemize}
+La función objetivo es: 
+\begin{equation}
+	Max\ Z = 0.10X_1\corche{\$} + 0.07X_2\corche{\$}
+\end{equation}
+Sujeta a:
+\begin{align*}
+	X_1\corche{\$}+X_2\corche{\$} &= 10\corche{\$} \\
+	X_1\corche{\$} &\le 6\corche{\$} \\
+	X_2\corche{\$} &\ge 2\corche{\$} \\
+	X_1,X_2 &\ge 0
+\end{align*}
+Forma Estándar:
+\begin{align*}
+&0.1X_1 + 0.07X_2 + 0X_3 + 0X_4 - M\mu_1 - M\mu_2 \\
+&1X_1 +1X_2 + 0X_3 + 0X_4 + 1\mu_1 - 0\mu_2 = 10 \\
+&1X_1 + 0X_2 + 1X_3 + 0X_4 - 0\mu_1 - 0\mu_2 = 6\\
+&0X_1 + 1X_2 + 0X_3 + 1X_4 - 0\mu_1 + 1\mu_2 = 2\\
+\end{align*}
+\insertarTabla{06}{Tableau Simplex 06}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[-1][Turkeyco]
+Las variables de decisión son:
+\begin{itemize}
+	\item $B_1$: Cantidad de carne "blanca" utilizada en chuleta tipo 1.
+	\item $N_1$: Cantidad de carne "negra" utilizada en chuleta tipo 1.
+	\item $B_2$: Cantidad de carne "blanca" utilizada en chuleta tipo 2.
+	\item $N_2$: Cantidad de carne "negra" utilizada en chuleta tipo 2.
+	\item $P_1$: Cantidad de pavos del tipo 1 utilizados.
+	\item $P_2$: Cantidad de pavos del tipo 2 utilizados.
+\end{itemize}
+La función objetivo es: 
+\begin{multline}
+	Max\ Z = 4\fraccorche{\$}{Kg_{C1}}\paren{B_1 + N_1}\corche{Kg_{C1}} +
+	 3\fraccorche{\$}{Kg_{C2}}\paren{B_2 + N_2}\corche{Kg_{C2}} - \\
+	  10\fraccorche{\$}{Kg_{P1}}P_1\corche{Kg_{P1}} -
+	  8\fraccorche{\$}{Kg_{P2}}P_2\corche{Kg_{P2}}
+\end{multline}
+Sujeta a:
+\begin{align*}
+	B_1\corche{Kg_{C1}} + N_1\corche{Kg_{C1}} &\le 50\corche{Kg_{C1}} \\
+	B_2\corche{Kg_{C2}} + N_2\corche{Kg_{C2}} &\le 30\corche{Kg_{C2}} \\
+	B_1\corche{Kg_{C1}} &\ge 0.7\paren{B_1 + N_1}\corche{Kg_{C1}} \\
+	B_2\corche{Kg_{C2}} &\ge 0.6\paren{B_2 + N_2}\corche{Kg_{C2}} \\
+	1\fraccorche{Kg}{Kg_{C1}}B_1\corche{Kg_{C1}} + 1\fraccorche{Kg}{Kg_{C2}}B_2\corche{Kg_{C2}} &\le 5\fraccorche{Kg}{Kg_{P1}}P_1\corche{Kg_{P1}} + 3\fraccorche{Kg}{Kg_{P2}}P_2\corche{Kg_{CP2}}\\
+	1\fraccorche{Kg}{Kg_{C1}}N_1\corche{Kg_{C1}} + 1\fraccorche{Kg}{Kg_{C2}}N_2\corche{Kg_{C2}} &\le 2\fraccorche{Kg}{Kg_{P1}}P_1\corche{Kg_{P1}} + 3\fraccorche{Kg}{Kg_{P2}}P_2\corche{Kg_{CP2}}\\
+	&B_1,B_2,N_1,N_2,P_1,P_2 \ge 0
+\end{align*}
+
+\insertarCodigo{lingo07.txt}{Ejercicio 07 - LINGO}
+Podemos observar entonces que lo mas conveniente para la empresa es utilizar para la confección de la chuleta numero 1, $35Kg$ de carne blanca y $15Kg$ de carne oscura, mientras que para la chuleta numero 2 las cantidades son $18Kg$ y $12Kg$ respectivamente. Por otra parte es conveniente adquirir casi 9 pavos del tipo 1 y un poco mas de 3 del tipo 2.
+
+\end{homeworkProblem}
+
+
+\begin{homeworkProblem}[-1][Importador]
+Las variables de decisión son:
+\begin{itemize}
+	\item $X_1$: Cantidad de dinero (en millones) dispuesto para importar repuestos.
+	\item $X_2$: Cantidad de dinero (en millones) destinado a importar sustancias químicas.
+\end{itemize}
+La función objetivo es: 
+\begin{equation}
+	Max\ Z = 0.02X_1\corche{\$} + 0.06X_2\corche{\$}
+\end{equation}
+Sujeta a:
+\begin{align*}
+	&X_1\corche{\$} + X_2\corche{\$} \le 20\corche{\$} \\
+	&X_1\corche{\$} \le 16\corche{\$} \\
+	&X_2\corche{\$} \le 8 \corche{\$} \\
+	2&X_2\corche{\$} - X_1\corche{\$} \ge 0
+\end{align*}
+Forma Estándar:
+\begin{align*}
+0.02&X_1 + 0.06X_2 + 0X_3 + 0X_4 + 0X_5 + 0X_6 \\
+1&X_1 + 1X_2 + 1X_3 + 0X_4 + 0X_5 + 0X_6 = 20 \\
+1&X_1 + 0X_2 + 0X_3 + 1X_4 + 1X_5 + 0X_6 = 16 \\
+0&X_1 + 1X_2 + 0X_3 + 0X_4 + 1X_5 + 0X_6 = 8\\
+-1&X_1 + 2X_2 + 1X_3 + 0X_4 + 0X_5 + 1X_6 = 0  \\
+\end{align*}
+\insertarImagen{08}
+\insertarTabla{08}{Tableau Simplex 08}
+Entonces, lo recomendable resulta la inversión de $13.33$ millones aproximadamente en repuestos para maquinarias agrícolas y $6.66$ millones por otra parte en sustancias químicas.
+\end{homeworkProblem}
+
+
+
+\begin{homeworkProblem}[-1][Compañía de Seguros]
+Las variables de decisión son:
+\begin{itemize}
+	\item $X_1$: Unidades de "Riesgos Especiales" vendidas.
+	\item $X_2$: Unidades de "Hipotecas" vendidas.
+\end{itemize}
+La función objetivo es: 
+\begin{equation}
+	Max\ Z = 5\fraccorche{\$}{u1}X_1\corche{u1} + 2\fraccorche{\$}{u2}X_2\corche{u2}
+\end{equation}
+Sujeta a:
+\begin{align*}
+	3\fraccorche{Hs}{u1}X_1\corche{u1} + 2\fraccorche{Hs}{u2}X_2\corche{u2} &\le 2400\corche{Hs} \\
+	1\fraccorche{Hs}{u2}X_2\corche{u2} &\le 800\corche{Hs}\\
+	2\fraccorche{Hs}{u1}X_1\corche{u1} &\le 1200\corche{Hs}\\
+	X_1,X_2 \ge 0	
+\end{align*}
+Forma Estándar:
+\begin{align*}
+5&X_1 + 2X_2 + 0X_3 +0X_4 + 0X_5 \\
+3&X_1 + 2X_2 + 1X_3 + 0X_4 + 0X_5 = 2400 \\
+0&X_1 + 1X_2 + 0X_3 + 1X_4 + 0X_5 = 800 \\
+2&X_1 + 0X_2 + 0X_3 + 0X_4 + 1X_5 = 1200
+\end{align*}
+\insertarImagen{09}
+\insertarTabla{09}{Tableau Simplex 09}
+Podemos observar que lo mas beneficioso seria la venta de 600 unidades del producto 1 ("Riesgo Especial") y 300 unidades del producto 2 ("Hipotecas").
+Tambien cabe aclarar que las horas administrativas no se llegan a consumir en su totalidad, existiendo un sobrante de 500, que podrían ser utilizadas en otras actividades.
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[-1][Criador de Perros]
+Las variables de decisión son:
+\begin{itemize}
+	\item $X_1$: Cantidad de alimento del tipo 1 utilizado.
+	\item $X_2$: Cantidad de alimento del tipo 2 utilizado.
+\end{itemize}
+La función objetivo es: 
+\begin{equation}
+	Min\ Z = 50\fraccorche{\$}{Kg_1}X_1\corche{Kg_1} + 25\fraccorche{\$}{Kg_2}X_2\corche{Kg_2}
+\end{equation}
+Sujeta a:
+\begin{align*}
+	0.1\fraccorche{Kg_{G}}{Kg_1}X_1\corche{Kg_1} + 0.3\fraccorche{Kg_{G}}{Kg_2}X_2\corche{Kg_2} &\ge 8\corche{Kg_{G}} \\
+	0.3\fraccorche{Kg_{C}}{Kg_1}X_1\corche{Kg_1} + 0.4\fraccorche{Kg_{C}}{Kg_2}X_2\corche{Kg_2} &\ge 19\corche{Kg_{C}} \\
+	0.3\fraccorche{Kg_{Ca}}{Kg_1}X_1\corche{Kg_1} + 0.1\fraccorche{Kg_{Ca}}{Kg_2}X_2\corche{Kg_2} &\ge 7\corche{Kg_{Ca}} \\
+	X_1,X_2 \ge 0 
+\end{align*}
+Forma Estándar:
+\begin{align*}
+50&X_1 + 25X_2 + 0X_3 + 0X_4 + 0X_5 + M\mu_1 + M\mu_2 + M\mu_3 \\
+0.1&X_1 + 0.3X_2 -1X_3 + 0X_4 + 0X_5 + 1\mu_1 + 0\mu_2 + 0\mu_3 = 8\\
+0.3&X_1 + 0.4X_2 +0X_3 -1X_4 + 0X_5 + 0\mu_1 + 1\mu_2 + 0\mu_3 = 19\\
+0.3&X_1 + 0.1X_2  +0X_3 + 0X_4 - 1X_5 + 1\mu_1 + 0\mu_2 + 1\mu_3 = 7\\
+\end{align*}
+\insertarImagen{10}
+\insertarTabla{10}{Tableau Simplex 10}
+En este caso, sugerimos al criador de perros el siguiente plan, con el cual podrá satisfacer las necesidades alimentarias de sus animales con el menor costo:
+\begin{itemize}
+	\item Utilizar 10 unidades del alimento tipo 1
+	\item Utilizar 40 unidades del alimento tipo 2
+	\item La necesidad de grasas saturadas de los animales se encuentra satisfecha con un nivel por encima del requerido.
+\end{itemize}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[-1][Banco Gane]
+Las variables de decisión son:
+\begin{itemize}
+	\item  $X_1$: Dinero (en millones) que se destina a prestamos Personales.
+	\item  $X_2$: Dinero (en millones) que se destina a prestamos Automovilísticos.
+	\item  $X_3$: Dinero (en millones) que se destina a prestamos para el Hogar.
+	\item  $X_4$: Dinero (en millones) que se destina a prestamos Agrícolas.
+	\item  $X_5$: Dinero (en millones) que se destina a prestamos Comerciales.
+\end{itemize}
+La función objetivo es: 
+\begin{equation}
+	Max\ Z = 0.026X_1\corche{\$} +0.051X_2\corche{\$} + 0.086X_3\corche{\$} + 0.069X_4\corche{\$} + 0.078X_5\corche{\$}
+\end{equation}
+Sujeta a:
+\begin{align*}
+	X_4\corche{\$} + X_5\corche{\$} &\ge 0.4\paren{X_1 + X_2 + X_3 + X_4 +X_5}\corche{\$} \\
+	X_3\corche{\$} &\ge 0.5\paren{X_1 + X_2 + X_3}\corche{\$}\\
+	\paren{0.1X_1 + 0.07X_2 + 0.03X_3 + 0.05X_4 + 0.02X_5}\corche{\$} &\le 0.04\paren{X_1 + X_2 + X_3+X_4 +X_5}\corche{\$} \\
+	\paren{X_1 + X_2 + X_3 +X_4 +X_5}\corche{\$} &\le 12\corche{\$}
+\end{align*}
+\insertarTabla{11}{Tableau Simplex 11}
+\insertarCodigo{lingo11.txt}{Ejercicio 11 - LINGO}
+La mejor política de prestamos para el Banco Gane es la siguiente:
+\begin{itemize}
+	\item Destinar 7,2 millones a prestamos para casas.
+	\item Destinar 4,8 millones a prestamos comerciales.
+\end{itemize}
+De esta manera, la ganancia del banco seria de $\$993600$.
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[-1][Papelera Moderna]
+Las variables de decisión son:
+\begin{itemize}
+	\item $X_1$: Cantidad de cortes en posición 7-9.
+	\item $X_2$: Cantidad de cortes en posición 5-5-7.
+	\item $X_3$: Cantidad de cortes en posición 5-5-9.
+	\item $X_4$: Cantidad de cortes en posición 5-5-5-5.
+	\item $X_5$: Cantidad de cortes en posición 9-9.
+	\item $X_6$: Cantidad de cortes en posición 7-7-5.
+\end{itemize}
+La función objetivo es: 
+\begin{align*}
+	Min\ Z = 4\fraccorche{pies}{C}X_1\corche{C} + &3\fraccorche{pies}{C}X_2\corche{C} + 1\fraccorche{pies}{C}X_3\corche{C} \\ + &0\fraccorche{pies}{C}X_4\corche{C} + 2\fraccorche{pies}{C}X_5\corche{C} +1\fraccorche{pies}{C}X_6\corche{C}
+\end{align*}
+Sujeta a:
+\begin{align*}
+	2X_2\corche{C} +2X_3\corche{C} +4X_4\corche{C} + 1X_6\corche{C} &\ge 150\corche{C} \\
+	1X_1\corche{C} + 1X_2\corche{C} + 2X_6\corche{C} &\ge 200\corche{C} \\
+	1X_1\corche{C} + 1X_3\corche{C} + 2X_5\corche{C} &\ge 300\corche{C} \\
+	X_1,X_2,X_3,X_4,X_5, X_6 &\ge 0
+\end{align*}
+\insertarTabla{12}{Tableau Simplex 12}
+Podemos ver que existen múltiples soluciones:
+\begin{itemize}
+	\item Solución 01:
+	\begin{itemize}
+		\item Realizar 100 cortes con el esquema 6
+		\item Realizar 150 cortes con el esquema 5
+	\end{itemize}
+	\item Solución 02:
+	\begin{itemize}
+		\item Realizar 25 cortes con el esquema 3
+		\item Realizar 100 cortes con el esquema 6
+		\item Realizar 137,5 cortes con el esquema 5
+	\end{itemize}
+\end{itemize}
+Ambas estrategias nos permiten alcanzar un desperdicio de solo 400 pies
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[-1][Ciudad de Progreso]
+Las variables de decisión son:
+\begin{itemize}
+	\item $X_1$: Cantidad de colectivos necesarios de 00 a 08 Hs.
+	\item $X_2$: Cantidad de colectivos necesarios de 04 a 23 Hs.
+	\item $X_3$: Cantidad de colectivos necesarios de 08 a 16 Hs.
+	\item $X_4$: Cantidad de colectivos necesarios de 12 a 20 Hs.
+	\item $X_5$: Cantidad de colectivos necesarios de 16 a 24 Hs.
+	\item $X_6$: Cantidad de colectivos necesarios de 20 a 04 Hs.
+\end{itemize}
+La función objetivo es: 
+\begin{equation}
+	Min\ Z = \sum_{i=1}^{6}{X_i}\corche{C}
+\end{equation}
+Sujeta a:
+\begin{align*}
+	X_1\corche{C} + X_6\corche{C} &\ge 4\corche{C} \\
+	X_1\corche{C} +X_2\corche{C} &\ge 8\corche{C} \\
+	X_2\corche{C} +X_3\corche{C} &\ge 10\corche{C} \\
+	X_3\corche{C} + X_4\corche{C} &\ge 7\corche{C} \\
+	X_4\corche{C} + X_5\corche{C} &\ge 12\corche{C} \\
+	X_5\corche{C} + X_6\corche{C} &\ge 4\corche{C}\\
+	X_1,X_2,X_3,X_4,X_5,X_6 &\ge 0
+\end{align*}
+\insertarTabla{13A}{Tableau Simplex 13.A}
+\insertarTabla{13B}{Tableau Simplex 13.B}
+\end{homeworkProblem}
+
+\end{document}

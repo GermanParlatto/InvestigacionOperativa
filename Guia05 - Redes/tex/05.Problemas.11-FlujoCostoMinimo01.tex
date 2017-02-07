@@ -1,0 +1,58 @@
+\begin{homeworkProblem}[-1][Flujo de costo Minimo 01]
+
+\begin{figure}[h]
+    \centering
+    \begin{adjustbox}{max width=\textwidth, max height=0.35\textheight}
+        \begin{tikzpicture}[
+            transform shape,
+            ->, >=stealth',
+            auto, node distance=3cm,
+            thick,
+            main node/.style={
+                circle, draw, font=\sffamily\Large\bfseries
+            }
+        ]
+
+        \node[main node] (p1) at (00,00)  {P1};
+        \node[main node] (p2) at (00,-3)  {P2};
+        \node[main node] (a1) at (03,00)  {A1};
+        \node[main node] (a2) at (03,-3)  {A2};
+        \node[main node] (t1) at (7,01.5)  {T1};
+        \node[main node] (t2) at (7,-1.5)  {T2};
+        \node[main node] (t3) at (7,-4.5)  {T3};
+
+        \foreach \from/\to/\te/\out/\in in {
+            p1/a1/425(125)/0/180,
+            p1/a2/560(150)/315/135,
+            p2/a1/510(175)/45/225,
+            p2/a2/600(200)/0/180,
+            a1/t1/470(100)/22.5/194,
+            a1/t2/505(150)/337.5/164,
+            a1/t3/490(100)/315/125  ,
+            a2/t1/390(125)/45/225,
+            a2/t2/410(150)/22.5/197 ,
+            a2/t3/440(75)/337.5/165
+        }{
+            \draw [->] (\from)  [sloped,out=\out, in=\in] to node [midway] {\scriptsize{$\te$}} (\to) ;
+        }
+        \end{tikzpicture}
+    \end{adjustbox}
+\end{figure}
+\FloatBarrier
+
+El plan de distribucion optimo (segun \textbf{LINGO}) es:
+\begin{itemize}
+    \item Enviar 125 unidades de P1 a A1.
+    \item Enviar 75 unidades de P1 a A2.
+    \item Enviar 125 unidades de P2 a A1.
+    \item Enviar 175 unidades de P2 a A2.
+    \item Enviar 100 unidades de A1 a T1.
+    \item Enviar 50 unidades de A1 a T2.
+    \item Enviar 100 unidades de A1 a T3.
+    \item Enviar 50 unidades de A2 a T1.
+    \item Enviar 150 unidades de A2 a T2.
+    \item Enviar 50 unidades de A2 a T3.
+\end{itemize}
+
+
+\end{homeworkProblem}

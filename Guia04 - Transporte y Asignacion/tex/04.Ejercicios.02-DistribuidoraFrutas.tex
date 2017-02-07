@@ -1,0 +1,38 @@
+
+\begin{homeworkProblem}[-1][Distribución de Frutas]
+Contamos con la siguiente información sobre los costos de transporte de transporte de un kg de fruta entre cada huerta y cada mercado, ademas de sus respectivas producciones y requerimientos:
+\insertarTabla{01.02.01.tex}{Ofertas y Demandas}
+En este caso la función objetivo es:
+\begin{align*}
+    Max\ Z = 10600\corche{\$} - 9700\corche{\$} - \sum_{i=1}^{3}{\sum_{j=1}^{5}{C_{ij}X_{ij}}}
+\end{align*}
+Sujeta a las siguientes restricciones pactadas con las huertas y los mercados respectivamente:
+\begin{align*}
+    &\corche{\text{Huerta01}}& &\sum_{j=1}^{5}{X_{1j}}\corche{Kg} = 200\corche{Kg}&\\ 
+    &\corche{\text{Huerta02}}& &\sum_{j=1}^{5}{X_{2j}}\corche{Kg} = 300\corche{Kg}&\\ 
+    &\corche{\text{Huerta03}}& &\sum_{j=1}^{5}{X_{3j}}\corche{Kg} = 500\corche{Kg}&\\ 
+    &\corche{\text{Mercado01}}& &\sum_{i=1}^{3}{X_{i1}}\corche{Kg} = 200\corche{Kg}&\\ 
+    &\corche{\text{Mercado02}}& &\sum_{i=1}^{3}{X_{i2}}\corche{Kg} = 100\corche{Kg}&\\ 
+    &\corche{\text{Mercado03}}& &\sum_{i=1}^{3}{X_{i3}}\corche{Kg} = 200\corche{Kg}&\\ 
+    &\corche{\text{Mercado04}}& &\sum_{i=1}^{3}{X_{i4}}\corche{Kg} = 400\corche{Kg}&\\ 
+    &\corche{\text{MercadoFict}}& &\sum_{i=1}^{3}{X_{i5}}\corche{Kg} = 100\corche{Kg}&\\ 
+\end{align*}
+\begin{align*}
+     \forall\quad\quad i \in \{1,2,3\}\quad j \in \{1,2,3,4,5\}\quad X_{ij} \ge 0
+\end{align*}
+Primera solución por Vogel:
+\insertarImagen{img/010202.png}
+Esta primera solución tiene un beneficio ($Z$) igual a \$ 660. Luego de resolver el problema con LINGO llegamos a la conclusión que esta solución no es solo la primera SBF, sino que es la optima. \\
+Esta solución entonces nos indica que el plan de distribución optimo consiste en:
+\begin{itemize}
+    \item Enviar $200\ Kg$ de fruta desde la huerta 01 hacia el mercado 01 
+    \item Enviar $100\ Kg$ de fruta desde la huerta 03 hacia el mercado 02 
+    \item Enviar $300\ Kg$ de fruta desde la huerta 02 hacia el mercado 04 
+    \item Enviar $200\ Kg$ de fruta desde la huerta 03 hacia el mercado 03 
+    \item Enviar $100\ Kg$ de fruta desde la huerta 03 hacia el mercado 04
+    \item Sobran $100\ Kg$ de fruta adquiridos en la huerta 03 que se echan a perder 
+\end{itemize}
+
+\end{homeworkProblem}
+
+ 

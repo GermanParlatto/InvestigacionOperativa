@@ -1,0 +1,59 @@
+\begin{homeworkProblem}[-1][Interconexion de Nodos 02]
+
+
+\tikzset{Inicio/.style={
+    state, draw=black, fill=black, thick, scale=0.5,
+    prefix after command= {\pgfextra{\tikzset{every label/.style={black}}}}
+    }
+}
+\begin{figure}[h]
+    \centering
+    \begin{adjustbox}{max width=\textwidth}
+        \begin{tikzpicture}[
+            shorten >=2pt,
+            line width=0.4mm,
+            node distance=2.25cm,
+            on grid,auto
+        ] 
+            \node[Inicio]    (n0)                {1}; 
+            \node[state]     (n1) [below=2cm of n0]       {1}; 
+            \node[state]     (n2) [below left =1cm and 4cm of n1]  {2}; 
+            \node[state]     (n9) [below right =1cm and 4cm of n1]  {9};
+            \node[state]     (n3) [below left =2.3cm and 1cm of n2]  {3}; 
+            \node[state]     (n4) [below right =2.5cm and 1cm of n3]  {4};
+            \node[state]     (n6) [below right=2cm and 2.5cm of n4]  {6};
+            \node[state]     (n5) [below=3.5cm of n1]  {5};
+            \node[state]     (n8) [right =5cm of n5]  {8};
+            \node[state]     (n7) [below right= 3cm and 2cm of n5]  {7};
+
+            \path[-] 
+                (n0)    edge    node            { }     (n1)
+                (n1)    edge[blue]    node  [swap]    {5}     (n2)
+                        edge[loosely dotted]    node            {15}    (n9)
+                        edge[loosely dotted]    node  [swap]    {9}     (n3)
+                        edge[loosely dotted]    node  [swap,pos=0.40]        {20}    (n4)
+                        edge[loosely dotted]    node  [swap,pos=0.35]    {14}    (n8)
+                        edge[blue]    node            {4}     (n5)
+                (n2)    edge[blue]    node  [swap]    {6}     (n3)
+                (n3)    edge[loosely dotted]    node  [swap]    {15}    (n4)
+                        edge[loosely dotted]    node  [pos=0.20]          {10}    (n5)
+                (n4)    edge[blue]    node  [swap]    {7}     (n6)
+                        edge[loosely dotted]    node   [pos=0.25]         {12}    (n7)
+                        edge[loosely dotted]    node            {20}    (n5)
+                (n5)    edge[blue]    node  [swap]    {3}     (n6)
+                        edge[blue]    node  [swap]    {5}     (n7)
+                (n9)    edge[blue]    node            {5}    (n8)
+                        edge[blue]    node  [pos=0.5]          {6}     (n5)
+                (n8)    edge[loosely dotted]    node            {7}     (n7)
+                        edge[loosely dotted]    node            {13}    (n5);
+
+                
+        \end{tikzpicture}
+    \end{adjustbox}
+    \caption{Conexiones de pozos de Gas}
+\end{figure}
+
+Con este diagrama de conexiones logramos que la longitud de la red de tuberias necesarias sea minima, con un valor de 46 millas.
+        \FloatBarrier
+
+\end{homeworkProblem}

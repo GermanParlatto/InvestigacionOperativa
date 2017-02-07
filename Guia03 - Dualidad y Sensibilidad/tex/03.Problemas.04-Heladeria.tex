@@ -1,0 +1,123 @@
+
+\begin{homeworkProblem}[-1][Heladería]
+
+\subsubsection{Modelo Lineal}
+El objetivo es determinar la cantidad a producir de cada sabor para maximizar la ganancia, de acuerdo a las limitaciones sobre la materia prima.
+Las variables de decisión son:
+\begin{itemize}
+  \item $X_1$ Cantidad de helado de chocolate a producir(Lt).
+  \item $X_2$ Cantidad de helado de vainilla a producir(Lt).
+  \item $X_3$ Cantidad de helado de dulce de leche a producir(Lt).
+\end{itemize}
+Función Objetivo: 
+\ecuacion{
+    Max\ Z = 1\fraccorche{\$}{Lt_c}X_1\corche{Lt_c} + 0.9\fraccorche{\$}{Lt_v}X_2\corche{Lt_v} + 0.95\fraccorche{\$}{Lt_d}X_1\corche{Lt_d}   
+}{020401}
+Restricciones:
+\begin{align*}
+    0.45\fraccorche{Lt_l}{Lt_c}X_1\corche{Lt_c} + 0.50\fraccorche{Lt_l}{Lt_v}X_2\corche{Lt_v} + 0.40\fraccorche{Lt_l}{Lt_d}X_3\corche{Lt_d} &\le 200\corche{Lt_l} \\
+    0.50\fraccorche{Kg_{az}}{Lt_c}X_1\corche{Lt_c} + 0.40\fraccorche{Kg_{az}}{Lt_v}X_2\corche{Lt_v} + 0.40\fraccorche{Kg_{az}}{Lt_d}X_3\corche{Lt_d} &\le 150\corche{Kg_{az}} \\
+    0.10\fraccorche{Kg_{cr}}{Lt_c}X_1\corche{Lt_c} + 0.15\fraccorche{Kg_{cr}}{Lt_v}X_2\corche{Lt_v} + 0.20\fraccorche{Kg_{cr}}{Lt_d}X_3\corche{Lt_d} &\le 60\corche{Kg_{cr}} \\
+    X_1,X_2,X_3 &\ge 0
+\end{align*}
+
+\subsubsection{Método Simplex}
+Forma estándar:
+\begin{align*}
+    Max\ Z = 1&X_1 + 0.90X_2 + 0.95X_3 + 0X_4 + 0X_5 +0X_6 \\
+    s.a.: 0.45&X_1 + 0.50X_2 + 0.40X_3 + 1X_4 + 0X_5 + 0X_6 = 200 \\
+    0.50&X_1 + 0.40X_2 + 0.40X_3 + 0X_4 + 1X_5 + 0X_6 = 150 \\
+    0.10&X_1 + 0.15X_2 + 0.20X_3 + 0X_4 + 0X_5 + 1X_6 = 60\\
+\end{align*}
+\insertarTabla{02.04.01.tex}{Tableau Simplex Optimo}
+De la tabla anterior podemos observar que el plan de producción para alcanzar la ganancia optima consiste en la producción de $300\ lt$ de helado de vainilla y $75\ Lt$ de helado de dulce de leche. En cuanto a los sobrantes, contaríamos con unos $20\ lt$ de leche. Sin embargo, tanto el azúcar como la crema se usaron en su totalidad. Si contáramos con un Kg mas de azúcar y crema veríamos un incremento en nuestra ganancia de $\$1.875$ y $\$1$ respectivamente.
+
+\subsubsection{Modelo Dual}
+El problema dual se puede interpretar como la búsqueda del costo mínimo al que se esta dispuesto a pagar cada unidad de cada recurso. Por otra parte, los lados izquierdos de cada restricción hacen referencia a la imputación de cada recurso a cada una de las actividades de la empresa, mientras que el lado derecho de la misma ecuación indica la ganancia por unidad que es realizada la actividad.
+\begin{align*}
+    Min\ W = 200&Y_1 +150Y_2 + 60Y_3 \\
+    s.a.: 0.45&Y_1 + 0.50Y_2 +0.10Y_3 \ge 1\\
+          0.50&Y_1 + 0.40Y_2 +0.15Y_3 \ge 0.90\\
+          0.40&Y_1 + 0.40Y_2 +0.20Y_3 \ge 0.95
+          &Y_1,Y_2,Y_3 \ge 0\\
+\end{align*}
+Dual Estándar 
+\begin{align*}
+    Min\ W = 200&Y_1 +150Y_2 + 60Y_3 + 0Y_4 + 0Y_5 + 0Y_6 + M\mu_1 + M\mu_2 + M\mu_3 \\
+    s.a.: 0.45&Y_1 + 0.50Y_2 +0.10Y_3 - 1Y_4 + 0Y_5 + 0Y_6 + 1\mu_1 + 0\mu_2 + 0\mu_3 = 1\\
+          0.50&Y_1 + 0.40Y_2 +0.15Y_3 + 0Y_4 - 1Y_5 + 0Y_6 + 0\mu_1 + 1\mu_2 + 0\mu_3 = 0.90\\
+          0.40&Y_1 + 0.40Y_2 +0.20Y_3 + 0Y_4 + 0Y_5 - 1Y_6 + 0\mu_1 + 0\mu_2 + 1\mu_3 = 0.95\\
+\end{align*}
+\insertarTabla{02.04.02.tex}{Tableau Dual Optimo}
+
+\subsubsection{Aumento Ganancia de DDL}
+Intervalo de variación de $c_3$:
+\llavesR{
+    0.9\times 3 - 1.75c_3 \ge 0 \\
+    0.9\times 10 - 7.5c_3 \ge 0 \\
+    0.9\times \paren{-20} + 20c_3 \ge 0 \\
+}{
+    c_3 \le 1.543 \wedge c_3 \le 1.2 \wedge c_3 \ge 0.9
+}
+Entonces   $0.9 \le c_3 \le 1.2$. \\
+Podemos ver que la solución optima no cambia ya que $c_3$ sigue en su rango de variación.
+El nuevo valor del funcional es de $345$.
+\insertarTabla{02.04.03.tex}{Simplex Optimo, modificación DDL+}
+
+\subsubsection{Disminución Ganancia de DDL}
+En el caso de disminuir el precio del lt de helado de dulce de leche a $\$0.92$, como el mismo sigue estando dentro del rango de variación permitido, sigue siendo optima la solución original. El nuevo valor del funcional es de $\$339$ (en este caso se sufrió una desmejora).
+\insertarTabla{02.04.04.tex}{Simplex Optimo, modificación DDL-}
+
+
+\subsubsection{Crema en mal estado}
+Debido a una mala gestión de la materia prima, la existencia de crema pasa a ser de 57.
+Intervalo de Variación de $b_3$
+\llavesR{
+    150\times 2 - 2b_3 \ge 0 \\
+    150\times 20 + 20b_3 \ge 0 \\
+    150\times \paren{-20} - 20b_3 \ge 0 
+}{
+    b_3 \ge 150 \wedge b_3 \le 75 \wedge b_3 \ge 56.25
+}
+Entonces podemos observar que el "nuevo" valor de $b_3 \in \corche{56.25,75}$. Tambien resulta que la nueva solución es factible:
+\begin{align*}
+    B^{-1}.b_{nuevo}=b^{*}=
+    \\
+    \begin{bmatrix}
+   1 & -2 & 2 \\
+   0 & 10 & -20 \\
+   0 & -0.75 & 20
+  \end{bmatrix}.
+  \begin{bmatrix}
+      200 \\
+      150 \\
+      75
+  \end{bmatrix} = 
+  \begin{bmatrix}
+      14 \\
+      360 \\
+      15
+  \end{bmatrix}
+\end{align*}
+
+\subsubsection{Mas azúcar!}
+Intervalo de variación de $b_2$:
+\llavesR{
+    60\times \paren{-2} + 2b_2 \ge 0 \\
+    60\times 20 + -10b_2 \ge 0 \\
+    60\times \paren{-20} + 7.5b_2 \ge 0
+}{
+    b_2 \le 60 \wedge b_2 \ge 120 \wedge b_2 \le 160
+}
+Como el nuevo valor del recurso "Kg de Azúcar" no esta dentro del rango de variación ($120 \le b_2 \le 160$), debemos reiterar para determinar la nueva solución optima. \\
+\insertarTabla{02.04.05.tex}{Mas azúcar...}
+Entonces, 
+\begin{align*}
+    Z_n - Z_a \ge 15 \\
+    368.3 - 341.25 \ge 15 \rightarrow 27.05 \ge 15
+\end{align*}
+En base a lo anteriormente expuesto, nos conviene adquirir los $15\ Kg$ de azúcar que nos ofrece el proveedor.
+
+\subsubsection{Sensibilidad de la Leche}
+En este problema, la Leche representa un recurso sobrante, ya que la variable de holgura que lo representa forma parte de la solución optima (es una VB).El valor de dicha variable es de 20 y, obviamente, su precio sombra es de 0. Entonces, podríamos disminuir la existencia de leche hasta 20 unidades y aumentar todo lo que quisiéramos la misma sin afecta la factibilidad. Sin embargo, si quisiéramos disminuir mas de 20 lt de leche la factibilidad variaría.
+\end{homeworkProblem}

@@ -1,0 +1,17 @@
+\select@language {spanish}
+\contentsline {section}{Solucion de Problemas}{3}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {1}} - Pasta Dental}{3}
+\contentsline {subsubsection}{Cantidad de Jarabe de Sorbitol retirado}{3}
+\contentsline {subsubsection}{Reposici\IeC {\'o}n de Jarabe}{3}
+\contentsline {subsubsection}{Gastos Anuales}{3}
+\contentsline {subsubsection}{Gr\IeC {\'a}fica de Costos}{4}
+\contentsline {subsubsection}{Recortes}{4}
+\contentsline {subsubsection}{Mayor Demanda de Sorbitol}{4}
+\contentsline {subsubsection}{Otra Estrategia}{5}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {2}} - Farmacias del Doctor Ahorro}{5}
+\contentsline {subsubsection}{Tama\IeC {\~n}o y frecuencia de compra}{5}
+\contentsline {subsubsection}{Envasado vs Envasar}{6}
+\contentsline {subsection}{Punto \padzeroes [2]{\@decimal {3}} - Pasta Dental revisited}{6}
+\contentsline {subsubsection}{Costo m\IeC {\'\i }nimo anual}{6}
+\contentsline {subsubsection}{Cantidad por pedido}{7}
+\contentsline {subsubsection}{Gr\IeC {\'a}ficas}{7}

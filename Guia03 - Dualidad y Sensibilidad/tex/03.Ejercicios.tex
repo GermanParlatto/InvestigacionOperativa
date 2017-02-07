@@ -1,0 +1,162 @@
+
+
+\begin{homeworkProblem}[-1][Modelo \RN{1}]
+\subsubsection{Tabla Original}
+\insertarTabla{01.01.01.tex}{Tabla original}
+\subsubsection{Unidad $R_1$}
+\insertarTabla{01.01.02.tex}{Modificación 01}
+En este caso, la solución optima es igual que en la version original, sin embargo podemos apreciar una mejora en el funcional de $0.33$.
+\subsubsection{Unidad $R_2$}
+\insertarTabla{01.01.03.tex}{Modificación 02}
+Por otra parte, realizando una modificación a las cantidades disponibles de $R_2$ vemos que la composición de la soluciona optima sigue siendo la misma, sin embargo notamos un desmejoramiento del funcional de $2.33$. 
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[-1][Modelo \RN{2}]
+En caso de modificar el valor del parámetro $c_1$, esto causara una modificación en la optimalidad del modelo, es decir, el valor de $Z$ (visible en el renglón $\zero$ de la tabla simplex y como pendiente del gráfico).
+Esto es así debido a que $c_1$ representa la contribución de la actividad 1 al funcional. Si dicho valor se mantienen dentro del intervalo de optimalidad no se modifica la SBF, sin embargo si lo hace el valor del funcional como dijimos anteriormente
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[-1][Programas Lineales]
+\subsubsection{Problema A}
+Primal - Planteo
+\begin{align*}
+Max\ Z = 2&X_1 + 4X_2 \\
+s.a.: 1&X_1 + 2X_2 \le 5 \\
+1&X_1 + X_2 \le 4 \\
+&X_1,X_2 \ge 0
+\end{align*}
+Primal - Estándar
+\begin{align*}
+Max\ Z = 2&X_1 + 4X_2 + 0X_3 + 0X_4 \\
+s.a.:1&X_1 + 2X_2 + 1X_3 + 0X_4 = 5 \\
+1&X_1 + 1X_2 + 0X_3 + 1X_4 = 4 \\
+&X_1,X_2 \ge 0
+\end{align*}
+\insertarTabla{01.03.01.tex}{Primal - Solución Optima}
+Dual - Planteo
+\begin{align*}
+Min\ W = 5&Y_1 + 4Y_2 \\
+s.a.:q&Y_1 + 1Y_2 \ge 2 \\
+2&Y_1 + 1Y_2 \ge 4\\
+&Y_1,Y_2 \ge 0
+\end{align*}
+Dual - Estándar
+\begin{align*}
+Min\ W = 5&Y_1 + 4Y_2 + 0Y_3 + 0Y_4 + M\mu_1 + M\mu_2 \\
+s.a.: 1&Y_1 + 1Y_2 - 1Y_3 +0Y_4 + 1\mu_1 + 0\mu_2 = 2 \\
+2&Y_1 + 1Y_2 + 0Y_3 - 1Y_4 + 0\mu_1 + 1\mu_2 = 4\\
+Y_1,Y_2 \ge 0
+\end{align*}
+\insertarTabla{01.03.02.tex}{Dual - Solución Optima}
+
+\subsubsection{Problema B}
+Primal - Planteo
+\begin{align*}
+Max\ Z = 2&X_1 + 8X_2 \\
+s.a.:2&X_1 + 4X_2 \ge 8\\
+s&X_1 - 5X_2 \le 0 \\
+-1&X_1 + 5X_2 \le 0 \\
+&X_1,X_2 \ge 0
+\end{align*}
+Primal - Estándar
+\begin{align*}
+Max\ Z = 2&X_1 + 8X_2 + 0X_3 + 0X_4 + 0X_5 + M\mu_1 \\
+s.a.: 2&X_1 + 4X_2 -1X_3 + 0X_4 + 0X_5 + 1\mu_1 = 8\\
+2&X_1 - 5X_2 + 0X_3 + 1X_4 + 0X_5 + 0\mu_1 = 0 \\
+-1&X_1 + 5X_2 + 0X_3 + 0X_4 + 1X_5 + 0\mu_1 = 5 \\
+&X_1, X_2 \ge 0
+\end{align*}
+\insertarTabla{01.03.03.tex}{Primal - Solución Optima}
+Dual - Planteo
+\begin{align*}
+Min\ W = 8&Y_1 + 0Y_2 + 5Y_3 \\
+s.a.:2&Y_1 + 2Y_2 - 1Y_3 \ge 2 \\
+4&Y_1 - 5Y_2 + 5Y_3 \ge 8 \\
+-1&Y_1 \ge 0 \\
+&Y_2,Y_3 \ge 0
+\end{align*}
+Dual - Estándar
+\begin{align*}
+Min\ W = 8&Y_1 + 0Y_2 + 5Y_3 + 0Y_4 + 0Y_5 + M\mu_1 + M\mu_2 \\
+s.a.: 2&Y_1 + 2Y_3 - 1Y_3 - 1Y_4 + 0Y_5 + 1\mu_1 + 0\mu_2 = 2 \\
+      4&Y_1 - 5Y_2 + 5Y_5 + 0Y_4 - 1Y_5 + 0\mu_1 + 1\mu_2 = 8 \\
+      &Y_1 \le 0 \\ &Y_2,Y_3 \ge 0 
+\end{align*}
+\insertarTabla{01.03.04.tex}{Dual - Solución Optima}
+
+\subsubsection{Problema C}
+Primal - Planteo
+\begin{align*}
+Max\ Z = 2&X_1 + 1X_2 \\
+s.a.:1&X_1 - 1X_2 \le 10 \\
+2&X_1 + 0X_2 \le 40  \\
+&X_1,X_2 \ge 0
+\end{align*}
+Primal - Estándar
+\begin{align*}
+Max\ Z = 2&X_1 + 1X_2 + 0X_2 + 0X_4 \\
+s.a.:1&X_1 - 1X_2 + 1X_3 + 0X_4 = 10 \\
+2&X_1 + 0X_2 + 0X_3 + 1X_4 = 40  \\
+&X_1,X_2 \ge 0
+\end{align*}
+\insertarTabla{01.03.05.tex}{Primal - Solución Optima}
+Dual - Planteo
+\begin{align*}
+Min\ W = 10&Y_1 + 40Y_2 \\
+s.a.:1&Y_1 + 2Y_2 \ge 2 \\
+-1&Y_1 + 0Y_2 \ge 1 \\
+&Y_1,Y_2 \ge 0 
+\end{align*}
+Dual - Estándar
+\begin{align*}
+Min\ W = 10&Y_1 + 40Y_2 + 0Y_3 +0Y_4 + M\mu_1 \\
+s.a.:1&Y_1 + 2Y_2 -1Y_3 + 0Y_4 + 1\mu_1 =  2 \\
+-1&Y_1 + 0Y_2 + 0Y_3 + 1Y_4 +0\mu_1 = 1 \\
+&Y_1,Y_2 \ge 0 
+\end{align*}
+\insertarTabla{01.03.06.tex}{Dual - Solución Optima}
+
+\subsubsection{Problema D}
+Primal - Planteo
+\begin{align*}
+Max\ Z = 3&X_1 + 9X_2 \\
+s.a.: 1&X_1 + 4X_2 \ge 9 \\
+1&X_1 + 2X_2 \le 4 \\
+&X_1,X_2 \ge 0
+\end{align*}
+Primal - Estándar
+\begin{align*}
+Max\ Z = 3&X_1 + 9X_2 + 0X_3 + 0X_4 + M\mu_1\\
+s.a.: 1&X_1 + 4X_2 - 1X_3 + 0X_4 + 1\mu_1 = 9 \\
+1&X_1 + 2X_2 + 0X_3 + 1X_4 + 0\mu_1 = 4 \\
+&X_1,X_2 \ge 0
+\end{align*}
+\insertarTabla{01.03.07.tex}{Primal - Solución Optima}
+Dual - Planteo
+\begin{align*}
+Min\ W = 9&Y_1 + 4Y_2 \\
+s.a.: 1&Y_1 + 1Y_2 \ge 3 \\
+4&Y_1 + 2Y_2 \ge 9 \\
+-1&Y_1 + 0Y_2 \ge 0 \\
+&Y_2 \ge 0
+\end{align*}
+Dual - Estándar
+\begin{align*}
+Min\ W = 9&Y_1 + 4Y_2 + 0Y_3 + 0Y_4 + M\mu_1 + M\mu_2 \\
+s.a.: 1&Y_1 + 1Y_2  - 1Y_3 + 0Y_4 + 1\mu_1 + 0\mu_2 = 3 \\
+4&Y_1 + 2Y_2 + 0Y_3 - 1Y_4 + 0\mu_1 + 1\mu_2 = 9\\
+-1&Y_1 \ge 0 \\
+&Y_2 \ge 0
+\end{align*}
+\insertarTabla{01.03.08.tex}{Dual - Solución Optima}
+
+\subsubsection{Comparación}
+\insertarTabla{tabla01}{Tabla Problemas Lineales}
+\end{homeworkProblem}
+
+\pagebreak %little fix to make sure the title and answear lies in the same page 
+\begin{homeworkProblem}[-1][Propiedades]
+\insertarTabla{tabla02}{Modificación de Parámetros}
+\end{homeworkProblem}
+
+

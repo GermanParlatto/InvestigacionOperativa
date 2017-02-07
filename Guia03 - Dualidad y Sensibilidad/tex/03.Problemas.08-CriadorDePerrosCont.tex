@@ -1,0 +1,35 @@
+77
+\begin{homeworkProblem}[-1][Criador de perros cont.]
+Las variables de decisión son:
+\begin{itemize}
+	\item $X_1$: Cantidad de alimento del tipo 1 utilizado.
+	\item $X_2$: Cantidad de alimento del tipo 2 utilizado.
+\end{itemize}
+La función objetivo es: 
+\begin{equation}
+	Min\ Z = 50\fraccorche{\$}{Kg_1}X_1\corche{Kg_1} + 25\fraccorche{\$}{Kg_2}X_2\corche{Kg_2}
+\end{equation}
+Sujeta a:
+\begin{align*}
+	0.1\fraccorche{Kg_{G}}{Kg_1}X_1\corche{Kg_1} + 0.3\fraccorche{Kg_{G}}{Kg_2}X_2\corche{Kg_2} &\ge 8\corche{Kg_{G}} \\
+	0.3\fraccorche{Kg_{C}}{Kg_1}X_1\corche{Kg_1} + 0.4\fraccorche{Kg_{C}}{Kg_2}X_2\corche{Kg_2} &\ge 19\corche{Kg_{C}} \\
+	0.3\fraccorche{Kg_{Ca}}{Kg_1}X_1\corche{Kg_1} + 0.1\fraccorche{Kg_{Ca}}{Kg_2}X_2\corche{Kg_2} &\ge 7\corche{Kg_{Ca}} \\
+	X_1,X_2 \ge 0 
+\end{align*}
+Forma Estándar:
+\begin{align*}
+50&X_1 + 25X_2 + 0X_3 + 0X_4 + 0X_5 + M\mu_1 + M\mu_2 + M\mu_3 \\
+0.1&X_1 + 0.3X_2 -1X_3 + 0X_4 + 0X_5 + 1\mu_1 + 0\mu_2 + 0\mu_3 = 8\\
+0.3&X_1 + 0.4X_2 +0X_3 -1X_4 + 0X_5 + 0\mu_1 + 1\mu_2 + 0\mu_3 = 19\\
+0.3&X_1 + 0.1X_2  +0X_3 + 0X_4 - 1X_5 + 1\mu_1 + 0\mu_2 + 1\mu_3 = 7\\
+\end{align*}
+Problema Dual Asociado:
+\begin{align*}
+    Max\ W = 8&Y_1 + 19Y_2 + 7Y_3 \\
+    s.a.: 0.1&Y_1 + 0.3Y_3 + 0.3Y_3 \le 50 \\
+    0.3&Y_1 + 0.4Y_2 + 0.1Y_3 \le 25 
+\end{align*}
+\insertarTabla{02.08.01.tex}{Tabla Dual Optima}
+En este problema se busca adquirir la mayor cantidad de alimento balanceando tal que satisfaga los requerimientos de clorhidratos, calcio y grasas no saturadas al menor costo posible. \\
+Los precios sombra 4 y 5 nos indican que tanto mejoraría nuestro funcional (la cantidad de nutrientes) en caso de que los precios de los alimentos 1 y 2 del primal aumentaran en una unidad respectivamente. por otra parte, el precio sombra 1, indica la mejora que se experimentaría en caso de requerir un kg mas de alimentos ricos en clorhidratos.
+\end{homeworkProblem}

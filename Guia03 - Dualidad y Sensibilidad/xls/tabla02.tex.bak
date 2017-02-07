@@ -1,0 +1,32 @@
+\newcolumntype{L}[1]{
+    >{
+        \centering\arraybackslash
+    }m{#1}
+}
+
+
+\begin{tabular}{
+    L{0.1\linewidth}
+    L{0.1\linewidth}
+    L{0.4\linewidth}
+    L{0.4\linewidth}
+}
+\hline
+\hline
+Cambios en los parametros & Propiedad de la solucion afectada & Procedimiento para reoptimizar desde el primal & Procedimiento para reoptimizar desde el dual \bigstrut\\
+\hline
+\hline
+Cambio en $c_j$ & Optimalidad & Debemos recalcular el renglon $\zero$.   En caso de que no sea optimo, seguimos iterando & Verificamos si la solucion optima actual verifica la restriccion modificada.  En caso de no hacerlo es necesario modificar la tabla y trabajar sobre el primal asociado \bigstrut\\
+\hline
+Cambio en $b_i$ & Factibilidad & Verificamos si la solucion optima cumple con la restriccion modificada.  En caso de que no sea asi modificamos la tabla y trabajamos sobre el problema dual & Verificamos si la solucion optima lo sigue siendo (analizando el renglon $\zero$).   Caso contrario re iteramos. \bigstrut\\
+\hline
+Cambio en $a_{ij}$ no basica & Optimalidad & Recalulamos la columna $A_j$ correspondiente a la $a_{ij}$ que se modifico.  Verificamos si la solucion optima lo sigue siendo (analizando el renglon $\zero$) y en caso contrario re iteramos. & Recalulamos la columna $A_j$ correspondiente a la $a_{ij}$ que se modifico.  Verificamos si la solucion optima lo sigue siendo (analizando el renglon $\zero$) y en caso contrario re iteramos. \bigstrut\\
+\hline
+Cambio en $a_{ij}$ basica & Factibilidad & Debemos trabajar sobre el problema dual asociado & Recalulamos la columna $A_j$ correspondiente a la $a_{ij}$ que se modifico.   Verificamos si la solucion optima lo sigue siendo (analizando el renglon $\zero$) y en caso contrario re iteramos. \bigstrut\\
+\hline
+Agregado de una nueva Actividad & Optimalidad & Agregamos una nueva columna a la tabla optima.  Verificamos si la solucion optima lo sigue siendo (analizando el renglon $\zero$) y en caso contrario re iteramos. & La nueva actividad se convierte en una nueva restrccion.   La reoptimizacion es analoga al caso de nueva nueva restriccion en el primal \bigstrut\\
+\hline
+Agregado de una nueva restriccion & Factibilidad & Verificamos si la solucion optima cumple con la restriccion modificada.   En caso de que no sea asi modificamos la tabla y trabajamos sobre el problema dual & La nueva restriccion se convierte en una nueva actividad.    La reoptimizacion es analoga al caso de nueva nueva actividad  en el primal \bigstrut\\
+\hline
+\hline
+\end{tabular}%

@@ -1,0 +1,125 @@
+\begin{homeworkProblem}[1][Dakota]
+\subsubsection{Simplex}
+Las variables de decisión son:
+\begin{itemize}
+	\item $E$ Cantidad de Escritorios a producir.
+  \item $S$ Cantidad de Sillas a producir.
+  \item $M$ Cantidad de Mesas a producir  
+\end{itemize}
+Función Objetivo: 
+\begin{equation}
+Max\ Z =  60\fraccorche{\$}{e}E\corche{e} +
+          30\fraccorche{\$}{m}M\corche{m} +
+          20\fraccorche{\$}{s}S\corche{s}
+\end{equation}
+Restricciones:
+\begin{align*}
+8\fraccorche{Mad}{e}E\corche{e} + 6\fraccorche{Mad}{m}M\corche{m} + 1\fraccorche{Mad}{s}S\corche{s} &\le 48\corche{Mad} \\
+4\fraccorche{Aca}{e}E\corche{e} + 2\fraccorche{Aca}{m}M\corche{m} + 1.5\fraccorche{Aca}{s}S\corche{s} &\le 20\corche{Aca} \\
+2\fraccorche{Car}{e}E\corche{e} + 1.5\fraccorche{Car}{m}M\corche{m} + 0.5\fraccorche{Car}{s}S\corche{s} &\le 8\corche{Car} \\
+E,M,S &\ge 0
+\end{align*}
+Forma Estándar:
+\begin{align*}
+	60&X_1 + 30X_2 + 20X_3 + 0X_4 + 0X_5 + 0X_6 \\
+  8&X_1 + 6X_2 + 1X_3 + 1X_4 + 0X_5 + 0X_6 = 48 \\
+  4&X_1 + 2X_2 + 1.5X_3 + 0X_4 + 1X_5 + 0X_6 = 20 \\
+  2&X_1 + 1.5X_2 + 0.5X_3 + 0X_4 + 0X_5 + 1X_6 = 8 \\
+  &X_1,X_2,X_3 \ge 0
+\end{align*}
+\insertarTabla{02.01.01.tex}{Tableau Simplex Optimo}
+
+\subsubsection{Variación de $c_3$}
+\begin{align*}
+  Z_2 - Z_2 : C_3(-2) + 60(1.25) \ge 0 \rightarrow C_3 \le 37.5 \\
+  Z_5 - Z_5 : C_3(2) + 60(-0.5) \ge 0 \rightarrow C_3 \ge 15\\
+  Z_6 - Z_6 : C_3(-4) + 60(1.5) \ge 0 \rightarrow C_3 \le 22.5 \\
+  \text{Entonces: } 15 \le C_3 \le 22.5
+\end{align*}
+
+
+\subsubsection{Precios Sombra}
+Los valores de los precios sombra son:
+\begin{itemize}
+  \item Hora de Carpintería: $10 \fraccorche{\$}{Car}$
+  \item Hora de Acabado: $10 \fraccorche{\$}{Aca}$
+  \item Madera: $0 \fraccorche{\$}{Mad}$
+\end{itemize}
+En el caso de las horas e Carpintería y Acabado, las mismas se interpretan como la mejora que se produciría en el funcional en el caso de contar con una unidad mas de cualquiera de los dos recursos.
+Sin embargo, esta variación es valida solo para el intervalo de variación de cada una de las variables en cuestión. Cabe destacar que las mismas fueron consumidas en su totalidad\\
+
+En cambio, la madera presenta un sobrante y es por esto que contar con una unidad de madera extra no presentaría una mejora, ya que de por si tenemos todavía madera a nuestra disposición
+\subsubsection{18 hs de acabado}
+
+\begin{align*}
+  b_2(-2) + 8(8) \le 0 \rightarrow b_2 \ge 32 \\
+  b_2(1/2) + 8(-3/2) \le 0 \rightarrow b_2 \le 24 \\
+  b_2(-2) + 8(4) \le 0 \rightarrow b_2 \ge 16
+\end{align*}
+Por lo tanto, $b_2$ esta en el rango de: $16  \le b_2 \le 24$
+
+$W = Z = 0(5) + 18(10) + 8(10) = 260 \quad \rightarrow 280-260 = 20 \rightarrow Disminucion$
+
+\subsubsection{Mesas para PC}
+Un método para determinar si es conveniente o no es analizar el valor de la suma de los precios sombra de los recursos necesarios para realizar la nueva actividad y comparar los mismos con el precio estimado de venta. Por lo tanto:
+\begin{align*}
+  A_7 =
+  \begin{bmatrix}
+    6  \\ 2 \\ 2
+  \end{bmatrix} \\
+  6Y_1+2Y_2+2Y_3 \ge 36 \\
+  6(0) + 2(10) + 2(10) \ge 36 \rightarrow 40 \ge 36
+\end{align*}
+Por ende, no es conveniente realizar la nueva actividad, en este caso, la producción de mesas de PC.
+
+
+\subsubsection{Problema Dual}
+\begin{align*}
+  Min\ W = 48&Y_1 + 20Y_2 + 8Y_3 \\
+  s.a.: 8&Y_1 + 4Y_2 + 2Y_3 \ge 6 \\
+        6&Y_1 + 2Y_2 + 1.5Y_3 \ge 30 \\
+        1&Y_1 + 1.5Y_2 + 0.5Y_3 \ge 20 \\ 
+        &Y_1,Y_2,Y_3 \ge 0
+\end{align*}
+Forma Estándar
+\begin{align*}
+  Min\ W = 48&Y_1 + 20Y_2 + 8Y_3 + 0Y_4 + 0Y_5 + 0Y_6 + M\mu_1 + M\mu_2 + M\mu_3 \\
+  s.a.: 8&Y_1 + 4Y_2 + 2Y_3 - 1Y_4 + 0Y_5 + 0Y_6 + 1\mu_1 + 0\mu_2 + 0\mu_3 = 6\\
+        6&Y_1 + 2Y_2 + 1.5Y_3 + 0Y_4 - 1Y_5 + 0Y_6 + 0\mu_1 + 1\mu_2 + 0\mu_3 = 30 \\
+        1&Y_1 + 1.5Y_2 + 0.5Y_3 +0Y_4 + 0Y_5 - 1Y_6 + 0\mu_1 + 0\mu_2 + 1\mu_3 = 20   \\ 
+        &Y_1,Y_2,Y_3 \ge 0
+\end{align*}
+Se puede interpretar el problema dual de la siguiente manera. Buscamos minimizar el costo total a pagar por cada recurso que necesitamos para la producción.
+En el lado izquierdo de las restricciones podemos apreciar los requerimientos de cada recurso para cada una de las actividades que deseamos llevar a cabo como empresa, mientras
+que en el lado derecho se encuentra el precio de venta del producto resultante de dicha actividad. De esta manera, exigimos que lógicamente la suma de los costos de un producto sea siempre menor a su precio de venta de manera de asegurar la existencia de ganancias para la empresa
+
+
+\subsubsection{Estudio de Mercado}
+No es necesario modificar la solución obtenida anteriormente ya que la nueva restricción resulta redundante.
+El plan de producción actual incluye la fabricación de 8 unidades del producto 3 ($X_3$), osea sillas.
+
+\subsubsection{Una corrección en el Estudio de Mercado}
+Como los muchachos de Marketing estaban equivocados (que sorpresa), la restricción anterior si nos afecta. Esto es debido a que actualmente el nivel de la actividad "producción de sillas" es de 8, mientras que la nueva restricción nos impone un mínimo de 9.
+Entonces debemos agregar la siguiente restricción,
+\ecuacion{0X_1 + 0X_2 + 1X_3 + 0X_4 + 0X_5 + 0X_6 - 1X_7 + 1\mu_1 \ge 9}{020103}
+lo que resulta en una nueva tabla, la cual debemos analizar:
+\insertarTabla{02.01.03.tex}{Nueva tabla}
+\insertarTabla{02.01.04.tex}{Iteraciones}
+\pagebreak
+Por lo tanto, el mejor plan de producción seria:
+\begin{itemize}
+	\item $9$ Sillas
+	\item $1.375$ Escritorios
+	\item $0.5$ Mesas
+\end{itemize}
+
+
+\subsubsection{Mesas, si o si}
+Para lograr que la venta de mesas sea una actividad rentable, entonces el precio sombra de la actividad 2 debería ser igual a $0$. Para lograr esto, una forma es aumentar el valor de $c_2$ (la contribución de la actividad venta de mesas al funcional) hasta que la solución actual no sea optima. Entonces debemos aumentarlo por afuera de su rango de variación. \\
+Intervalo de variación de $c_2$ (VNB):
+\begin{align*}
+  &L_{inf} = -\infty \\
+  &L_{sup} = c_2 + \paren{Z_2 - c_2} = 35  
+\end{align*}
+En resumen, debemos vender cada mesa al menos a $\$35$ para que nos resulte rentable.
+\end{homeworkProblem}

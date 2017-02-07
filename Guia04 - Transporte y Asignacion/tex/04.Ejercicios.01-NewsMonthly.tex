@@ -1,0 +1,32 @@
+
+\begin{homeworkProblem}[-1][\textit{News Monthly}]
+Contamos con la siguiente información sobre los costos de envió:
+\insertarTabla{01.01.01.tex}{Costos de Envió}
+Entonces, nuestra variable de decisión $X_{ij}$ representa la cantidad de ejemplares enviados desde el origen $i$ al destino $j$.
+La función objetivo:
+\begin{align*}
+    Max\ Z = 
+    0.07\fraccorche{\$}{c}X_{11}\corche{c} + 
+    0.05\fraccorche{\$}{c}X_{12}\corche{c} +
+    0.10\fraccorche{\$}{c}X_{13}\corche{c} -
+    0.05\fraccorche{\$}{c}X_{14}\corche{c}\\ +
+    0.03\fraccorche{\$}{c}X_{21}\corche{c} +
+    0.11\fraccorche{\$}{c}X_{22}\corche{c} +
+    0.04\fraccorche{\$}{c}X_{23}\corche{c} -
+    0.08\fraccorche{\$}{c}X_{24}\corche{c} 
+\end{align*}
+sujeta a:
+\begin{align*}
+   X_{11}\corche{c} + X_{12}\corche{c} +    X_{13}\corche{c} + X_{14}\corche{c} \le 5000\corche{c} \\
+   X_{21}\corche{c} + X_{22}\corche{c} +    X_{23}\corche{c} + X_{24}\corche{c} \le 5000\corche{c} \\
+   X_{11}\corche{c} + X_{21}\corche{c}  \ge 4000\corche{c} \\
+   X_{12}\corche{c} + X_{22}\corche{c}  \ge 2000\corche{c} \\
+   X_{13}\corche{c} + X_{23}\corche{c}  \ge 2500\corche{c} \\
+   X_{14}\corche{c} + X_{24}\corche{c}  \ge 1500\corche{c}
+\end{align*}
+Entonces, luego de resolver el problema llegamos a la siguiente solución:
+\insertarTabla{01.01.02.tex}{Plan Optimo}
+Quedando sin entregar 1500 copias de la imprenta de la ciudad de Los Ángeles.
+\end{homeworkProblem}
+
+

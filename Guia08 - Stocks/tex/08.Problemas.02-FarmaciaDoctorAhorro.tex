@@ -1,0 +1,60 @@
+\begin{homeworkProblem}[-1][Farmacias del Doctor Ahorro]
+\subsubsection{Tamaño y frecuencia de compra}
+Los datos pertinentes al problema son:
+\begin{itemize}
+    \item Opción 01: Envasar Aspirinas:
+    \begin{itemize}
+        \item $k$: \$1000
+        \item $b$: \$1 por caja terminada
+    \end{itemize}
+    \item Opción 02: Comprar aspirinas envasadas
+    \begin{itemize}
+        \item $k$: \$50
+        \item $b$: \$1.25 por caja terminada
+    \end{itemize}
+    \item $D$: 150000 cajas por año 
+    \item $c_1$: 30\% de $b$.
+\end{itemize}
+
+Análisis de la opción 01:
+\begin{align*}
+    q_0=\sqrt{
+        \frac{
+            2\times 1000\fraccorche{\$}{Orden}\times 150000\fraccorche{Caja}{\ano}
+            }{
+                \paren{1 \times 1.3}\fraccorche{\$}{Caja.\ano}\times 1\corche{Orden}
+            }
+        }
+        =
+        15191.09\fraccorche{Caja}{Orden}
+\end{align*}
+\begin{align*}
+    CTE = 1\fraccorche{\$}{Caja}&\times 150000\corche{Caja} + 1000\fraccorche{\$}{Orden}\times \frac{150000\corche{Caja}}{15191.09\fraccorche{Caja}{Orden}} \\&+ \frac{1}{2} \times 1.3\fraccorche{\$}{Caja.\ano} \times 15191.09\fraccorche{Caja}{Orden} \times 1\corche{\ano}=169748.417
+\end{align*}
+
+Análisis de la opción 02:
+\begin{align*}
+    q_0=\sqrt{
+        \frac{
+            2\times 50\fraccorche{\$}{Orden}\times 150000\fraccorche{Caja}{\ano}
+            }{
+                \paren{1.25 \times 1.3}\fraccorche{\$}{Caja.\ano}\times 1\corche{Orden}
+            }
+        }
+        =
+        3038.21\fraccorche{Caja}{Orden}
+\end{align*}
+\begin{align*}
+    CTE = 1.25\fraccorche{\$}{Caja}&\times 150000\corche{Caja} + 50\fraccorche{\$}{Orden}\times \frac{150000\corche{Caja}}{3038.21\fraccorche{Caja}{Orden}} \\&+ \frac{1}{2} \times 1.625\fraccorche{\$}{Caja.\ano} \times 3038.21\fraccorche{Caja}{Orden} \times 1\corche{\ano}=192437.10
+\end{align*}
+
+\subsubsection{Envasado vs Envasar}
+Entonces si comparamos tanto los lotes óptimos como los CTE previamente calculados:
+\begin{itemize}
+    \item $Q^*_1:15191.09$
+    \item $Q^*_2:3038.21$
+    \item $CTE_1:169748.417$
+    \item $CTE_2:192437.10$
+\end{itemize}
+Se observa que resulta mas conveniente realizar el envasado de aspirinas, contrario a comprar las mismas ya envasadas
+\end{homeworkProblem}

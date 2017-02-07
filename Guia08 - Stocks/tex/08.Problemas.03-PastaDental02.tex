@@ -1,0 +1,54 @@
+\begin{homeworkProblem}[-1][Pasta Dental revisited]
+Datos:
+\begin{itemize}
+    \item $D$: 6500.
+    \item $k$: 1200.
+\end{itemize}
+\subsubsection{Costo mínimo anual}
+\begin{align*}
+    q_1=\sqrt{
+        \frac{
+            2\times 1200\fraccorche{\$}{Orden}\times 2340000\fraccorche{Kg}{\ano}
+            }{
+                10.8\fraccorche{\$}{Kg.\ano}\times 1\corche{Orden}
+            }
+        }
+        =
+        22803.50\fraccorche{Kg}{Orden}
+\end{align*}
+\begin{align*}
+    q_2=\sqrt{
+        \frac{
+            2\times 1200\fraccorche{\$}{Orden}\times 2340000\fraccorche{Kg}{\ano}
+            }{
+                7.2\fraccorche{\$}{Kg.\ano}\times 1\corche{Orden}
+            }
+        }
+        =
+        27928.48\fraccorche{Kg}{Orden}
+\end{align*}
+\begin{align*}
+    q_3=\sqrt{
+        \frac{
+            2\times 1200\fraccorche{\$}{Orden}\times 2340000\fraccorche{Kg}{\ano}
+            }{
+                5.4\fraccorche{\$}{Kg.\ano}\times 1\corche{Orden}
+            }
+        }
+        =
+        32249.03\fraccorche{Kg}{Orden}
+\end{align*}
+Como vemos que el segundo lote optimo se encuentra en el rango que le corresponde, calculamos su CTE y lo comparamos con el CTE del limite superior de dicho intervalo:
+\begin{align*}
+    CTE_{q2} = 1200\fraccorche{\$}{Orden}&\times \frac{2340000\fraccorche{Kg}{\ano}}{27928.48\fraccorche{Kg}{Orden}}  + \frac{1}{2}\times \\ & 27928.48\fraccorche{Kg}{Orden}\times 7.2\fraccorche{\$}{Kg.\ano}\times 1\corche{\ano}=201085.05
+\end{align*}
+\begin{align*}
+    CTE_{Q2=40000} = 1200\fraccorche{\$}{Orden}&\times \frac{2340000\fraccorche{Kg}{\ano}}{40000\fraccorche{Kg}{Orden}}  + \frac{1}{2}\times \\ & 40000\fraccorche{Kg}{Orden}\times 7.2\fraccorche{\$}{Kg.\ano}\times 1\corche{\ano}=214200
+\end{align*}
+
+\subsubsection{Cantidad por pedido}
+Basándonos en los datos anteriores, resulta conveniente pedir $27938.48$ Kg por Orden ($q_2$)
+
+\subsubsection{Gráficas}
+\insertarImagen{03}
+\end{homeworkProblem}
