@@ -1,19 +1,13 @@
 \documentclass{tarea}
 
 
-\renewcommand{\hmwkTitle}{Guia 07: Programacion No Lineal}
+\renewcommand{\hmwkTitle}{Guía 07: Programación No Lineal}
 \renewcommand{\hmwkDueDate}{04 de Diciembre de 2016}
-\renewcommand{\hmwkClass}{Investigacion Operativa}
+\renewcommand{\hmwkClass}{Investigación Operativa}
 \renewcommand{\hmwkClassInstructor}{C.C. Lauritto \& Ing. Casanova}
 \renewcommand{\hmwkAuthorName}{\textbf{ Ravera P. \& Rivera R.}}
 
-\makeatletter
-\renewcommand*\env@matrix[1][\arraystretch]{%
-  \edef\arraystretch{#1}%
-  \hskip -\arraycolsep
-  \let\@ifnextchar\new@ifnextchar
-  \array{*\c@MaxMatrixCols c}}
-\makeatother	
+
 
 \begin{document}
 
@@ -23,7 +17,7 @@
 
 
 	
-\section{Solucion de Problemas}
+\section{Solución de Problemas}
 
 
 \importarArchivo{07.Problemas.01-MaximoLocalGlobal.tex}

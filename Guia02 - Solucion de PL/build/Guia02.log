@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.15)  3 FEB 2017 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.15)  7 FEB 2017 22:47
 entering extended mode
 **./Guia02.tex
 (Guia02.tex
@@ -1218,8 +1218,7 @@ File: tikzlibrarybabel.code.tex 2013/06/24 v3.0.1a (rcs-revision 1.1)
 . 
 . Defining environment 'homeworkProblem' with sig. 'O{-1} o' on line 123.
 .................................................
-)
-("C:\Users\GIBD\Google Drive\InvOpe\Guia02 - Solucion de PL\build\Guia02.aux"
+) (Guia02.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 
@@ -1350,16 +1349,15 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 13.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/GIBD/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("C:\Users\GIBD\Google Drive\InvOpe\Guia02 - Solucion de PL\build\Guia02.toc"
+{C:/Users/GIBD/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (Guia02.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@toc=\write4
 \openout4 = `Guia02.toc'.
 
-
-[2] <geo/01-a.png, id=15, 288.1164pt x 222.1098pt>
+ [2]
+<geo/01-a.png, id=15, 288.1164pt x 222.1098pt>
 File: geo/01-a.png Graphic file (type png)
  <use geo/01-a.png>
 Package pdftex.def Info: geo/01-a.png used on input line 46.
@@ -1450,41 +1448,146 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17] [18] (txt/lingo07.txt) [19] [20]
-<geo/08.png, id=90, 732.48656pt x 365.11406pt>
+[17] [18] (txt/lingo07.txt
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+[][][][][][]
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 42--325
+[][][][][][]
+ []
+
+
+LaTeX Warning: Float too large for page by 218.70695pt on input line 325.
+
+[19] [20] <geo/08.png, id=90, 732.48656pt x 365.11406pt>
 File: geo/08.png Graphic file (type png)
  <use geo/08.png>
 Package pdftex.def Info: geo/08.png used on input line 356.
 (pdftex.def)             Requested size: 469.75499pt x 234.15689pt.
- (xls/08.tex)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+(xls/08.tex) [21
 
-[21 <./geo/08.png>] [22] <geo/09.png, id=98, 634.62094pt x 316.93407pt>
+] [22 <./geo/08.png>]
+<geo/09.png, id=98, 634.62094pt x 316.93407pt>
 File: geo/09.png Graphic file (type png)
-
-<use geo/09.png>
+ <use geo/09.png>
 Package pdftex.def Info: geo/09.png used on input line 387.
 (pdftex.def)             Requested size: 469.75499pt x 234.6049pt.
  (xls/09.tex)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[23 <./geo/09.png>] [24] <geo/10.png, id=106, 474.0912pt x 236.5638pt>
+[23] [24 <./geo/09.png>] <geo/10.png, id=106, 474.0912pt x 236.5638pt>
 File: geo/10.png Graphic file (type png)
 
 <use geo/10.png>
 Package pdftex.def Info: geo/10.png used on input line 417.
 (pdftex.def)             Requested size: 469.75499pt x 234.41183pt.
- (xls/10.tex)
+ (xls/10.tex) [25] [26 <./geo/10.png>] (xls/11.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25 <./geo/10.png>] [26] (xls/11.tex) (txt/lingo11.txt) [27] [28] (xls/12.tex)
+[27] (txt/lingo11.txt) [28] [29] (xls/12.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29]
+[30
+
+]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 483.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -1492,12 +1595,11 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 483.
- [30] (xls/13A.tex) (xls/13B.tex)
+ [31] (xls/13A.tex) (xls/13B.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31] [32]
-("C:\Users\GIBD\Google Drive\InvOpe\Guia02 - Solucion de PL\build\Guia02.aux"
+[32] [33] (Guia02.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 )
@@ -1509,13 +1611,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26854 strings out of 493333
- 509605 string characters out of 3139196
- 656742 words of memory out of 3000000
- 29834 multiletter control sequences out of 15000+200000
+ 26846 strings out of 493333
+ 509116 string characters out of 3139196
+ 648769 words of memory out of 3000000
+ 29826 multiletter control sequences out of 15000+200000
  17383 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,17n,68p,10385b,1226s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,17n,68p,10385b,1214s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKT
@@ -1527,11 +1629,11 @@ ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "C:/Users/GIBD/Google Drive/InvOpe/Guia02 - Solucion de PL/bu
-ild/Guia02.pdf" (32 pages, 613680 bytes).
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "C:/Users/GIBD/Google Drive/InvOpe/Repo/Guia02 - Solucion de 
+PL/build/Guia02.pdf" (33 pages, 640628 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
+ 178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

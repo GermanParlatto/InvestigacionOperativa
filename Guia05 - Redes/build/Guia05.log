@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.15)  3 FEB 2017 15:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.15)  7 FEB 2017 22:51
 entering extended mode
 **./Guia05.tex
 (Guia05.tex
@@ -1404,13 +1404,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27422 strings out of 493333
- 520093 string characters out of 3139196
- 1224631 words of memory out of 3000000
- 30382 multiletter control sequences out of 15000+200000
+ 27428 strings out of 493333
+ 520157 string characters out of 3139196
+ 1224746 words of memory out of 3000000
+ 30388 multiletter control sequences out of 15000+200000
  19041 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,77p,10385b,1225s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,12n,77p,10385b,1227s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
@@ -1424,8 +1424,8 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "C:/Users/GIBD/Google Drive/InvOpe/Guia05 - Redes/build/Guia0
-5.pdf" (24 pages, 237255 bytes).
+Output written on "C:/Users/GIBD/Google Drive/InvOpe/Repo/Guia05 - Redes/build/
+Guia05.pdf" (24 pages, 237914 bytes).
 PDF statistics:
  138 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

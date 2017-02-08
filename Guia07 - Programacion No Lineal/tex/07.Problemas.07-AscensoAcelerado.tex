@@ -1,18 +1,18 @@
 \begin{homeworkProblem}[-1][Ascenso Acelerado]
-Siendo la funcion multivariable:
+Siendo la función multivariable:
 \begin{align*}
     z(x_1,x_2)=-\paren{x_1-\sqrt{5}}^2 -\paren{x_2-\pi}^2 - 10
 \end{align*}
 
 \subsubsection{Ascenso Acelerado}   
 
-Siendo el gradiente de la funcion:
+Siendo el gradiente de la función:
 \begin{align*}
     \nabla z(x_1,x_2)=\paren{-2x_1+2\sqrt{5};-2x_2+2\Pi}
 \end{align*}
 Y tomando el punto inicial $X_0=(2;3)$.\\
 
-\textbf{Iteracion 01}\\
+\textbf{Iteración 01}\\
 \begin{align*}
     &X_1=\paren{2+0.47\lambda ; 3+0.28\lambda}\\
     &z(X_1)=-10.076 + 0.3012\lambda + 0.3\lambda^2\\
@@ -21,18 +21,18 @@ Y tomando el punto inicial $X_0=(2;3)$.\\
     &||\nabla z(X_1)|| = 3.836x10^{-3} \leq 0.05
 \end{align*}
 
-Por lo tanto, con un error de $3.836x10^{-3}$ se puede afirmar que existe un maximo en $X=\paren{2.235;3.14}$.
+Por lo tanto, con un error de $3.836x10^{-3}$ se puede afirmar que existe un Máximo en $X=\paren{2.235;3.14}$.
 
 
-\subsubsection{Newton Raphrson}   
+\subsubsection{Newton Raphson}   
 
-Siendo el gradiente de la funcion:
+Siendo el gradiente de la función:
 \begin{align*}
     \nabla z(x_1,x_2)=\paren{-2x_1+2\sqrt{5};-2x_2+2\Pi}
 \end{align*}
 Y tomando el punto inicial $X_0=(2;3)$.\\
 
-\textbf{Iteracion 01}\\
+\textbf{Iteración 01}\\
 \begin{align*}
 \mathcal{H}_z=\begin{bmatrix}
     -2 & 0 \\ 0 & -2
@@ -52,7 +52,7 @@ X_1=\begin{bmatrix}
 \end{bmatrix}
 \end{align*}
 
-Por lo tanto, se puede afirmar que existe un maximo en $X=\paren{\sqrt{5};\pi}$.
+Por lo tanto, se puede afirmar que existe un Máximo en $X=\paren{\sqrt{5};\pi}$.
 
 
 

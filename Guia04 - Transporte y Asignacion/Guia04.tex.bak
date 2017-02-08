@@ -1,7 +1,7 @@
 \documentclass{tarea}
 
 
-\renewcommand{\hmwkTitle}{Guia 04: Transporte y Asignación}
+\renewcommand{\hmwkTitle}{Guía 04: Transporte y Asignación}
 \renewcommand{\hmwkDueDate}{04 de Diciembre de 2016}
 \renewcommand{\hmwkClass}{Investigación Operativa}
 \renewcommand{\hmwkClassInstructor}{C.C. Lauritto \& Ing. Casanova}

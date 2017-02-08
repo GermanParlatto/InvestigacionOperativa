@@ -1,21 +1,21 @@
-\begin{homeworkProblem}[-1][Optimizacion no Restringida]
-Siendo la funcion multivariable:
+\begin{homeworkProblem}[-1][Optimización no Restringida]
+Siendo la función multivariable:
 \begin{align*}
     z(x_1,x_2)=2x_1x_2+x_2-x_1^2-2x_2^2
 \end{align*}
 
 \subsubsection{Ascenso Acelerado}
-Utilizando la siguiente expresion como paso general:
+Utilizando la siguiente expresión como paso general:
 \begin{align*}
     X^{k+1}=X^k-\lambda^k.\nabla z\paren{X^k}
 \end{align*} 
-Siendo el gradiente de la funcion:
+Siendo el gradiente de la función:
 \begin{align*}
     \nabla z(x_1,x_2)=\paren{2x_2-2x_1;2x_1+1-4x_2}
 \end{align*}
 Y tomando el punto inicial $X_0=(1;1)$ con un error $\varepsilon=0.25$.\\
 
-\textbf{Iteracion 01}\\
+\textbf{Iteración 01}\\
 \begin{align*}
     &X^{1}=X^0-\lambda^0.\nabla z\paren{X^0}=\paren{1;1-\lambda}\\
     &z(X^1)=-2\paren{1-\lambda}^2-3\lambda +2 \\
@@ -26,7 +26,7 @@ Y tomando el punto inicial $X_0=(1;1)$ con un error $\varepsilon=0.25$.\\
     &||\nabla z(X^1)|| = \frac{1}{2} \geq \varepsilon
 \end{align*}
 
-\textbf{Iteracion 02}\\
+\textbf{Iteración 02}\\
 \begin{align*}
     &X^{2}=X^1-\lambda^1.\nabla z\paren{X^1}=\paren{1-\frac{\lambda}{2};\frac{3}{4}}\\
     &z(X^2)=-\paren{1-\frac{\lambda}{2}}^2\frac{27}{8} -\frac{3\lambda}{4} \\
@@ -38,7 +38,7 @@ Y tomando el punto inicial $X_0=(1;1)$ con un error $\varepsilon=0.25$.\\
 \end{align*}
 
 
-\textbf{Iteracion 03}\\
+\textbf{Iteración 03}\\
 \begin{align*}
     &X^3=X^2-\lambda^2.\nabla z\paren{X^2}=\paren{\frac{3}{4};\frac{3}{4} - \frac{\lambda}{2}}\\
     &z(X^3)=-2\paren{\frac{3}{4}-\frac{\lambda}{2}}^2
@@ -50,7 +50,7 @@ Y tomando el punto inicial $X_0=(1;1)$ con un error $\varepsilon=0.25$.\\
     &||\nabla z(X^3)|| = \frac{1}{4} \leq \varepsilon
 \end{align*}
 
-Por lo tanto, con un error de $0.25$ se puede afirmar que existe un maximo en $X=\paren{\frac{3}{4};\frac{5}{8}}$.
+Por lo tanto, con un error de $0.25$ se puede afirmar que existe un Máximo en $X=\paren{\frac{3}{4};\frac{5}{8}}$.
 
 \subsubsection{Sistema de Ecuaciones}
 \begin{align*}

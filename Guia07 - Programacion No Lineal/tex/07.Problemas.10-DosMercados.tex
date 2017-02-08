@@ -1,23 +1,23 @@
 \begin{homeworkProblem}[-1][Dos mercados]
 
 \subsubsection{Problema Lineal}
-Funcion Objetivo:
+Función Objetivo:
 \begin{align*}
     Max\ Z = \paren{60q_1+\paren{100-q_2}q_2} - \paren{q_1+q_2}^2
 \end{align*}
-\subsubsection{Solucion Iterativa}
+\subsubsection{Solución Iterativa}
 
-Utilizando la siguiente expresion como paso general:
+Utilizando la siguiente expresión como paso general:
 \begin{align*}
     X^{k+1}=X^k-\lambda^k.\nabla z\paren{X^k}
 \end{align*} 
-Siendo el gradiente de la funcion:
+Siendo el gradiente de la función:
 \begin{align*}
     \nabla z(q_1,q_2)=\paren{60-2q_1-2q_2;100-4q_2-2q_1}
 \end{align*}
 Y tomando el punto inicial $X_0=(5;10)$ con un error $\varepsilon=0.1$.\\
 
-\textbf{Iteracion 01}\\
+\textbf{Iteración 01}\\
 \begin{align*}
     &X^{1}=X^0-\lambda^0.\nabla z\paren{X^0}=\paren{5+30\lambda;10+50\lambda}\\
     &z(X^1)=60(5+30\lambda)+(100-(10+50\lambda))(10+50\lambda)-((5+3\lambda)+(10+50\lambda))^2 \\
@@ -28,7 +28,7 @@ Y tomando el punto inicial $X_0=(5;10)$ con un error $\varepsilon=0.1$.\\
     &||\nabla z(X^1)|| = 0.655 \geq \varepsilon
 \end{align*}
 
-\textbf{Iteracion 02}\\
+\textbf{Iteración 02}\\
 \begin{align*}
     &X^{2}=X^1-\lambda^1.\nabla z\paren{X^1}=\paren{\frac{955}{89}-\frac{50}{89}\lambda;\frac{1740}{89}+\frac{30}{89}\lambda}\\
     &z(X^2)=\frac-{1300}{7921}\lambda^2+\frac{3400}{7921}\lambda+\frac{115675}{89} \\
@@ -39,18 +39,18 @@ Y tomando el punto inicial $X_0=(5;10)$ con un error $\varepsilon=0.1$.\\
     &||\nabla z(X^2)|| = 0.05042 \leq \varepsilon
 \end{align*}
 
-Por lo tanto, con un error de $0.05042$ se puede afirmar que existe un maximo en $X=\paren{\frac{11565}{1157};\frac{23130}{1157}}$.
+Por lo tanto, con un error de $0.05042$ se puede afirmar que existe un Máximo en $X=\paren{\frac{11565}{1157};\frac{23130}{1157}}$.
 
 
-\subsubsection{Solucion Analitica}
-Condicion Necesaria:
+\subsubsection{Solución Analítica}
+Condición Necesaria:
 \llavesR{
     \frac{\partial z}{\partial q_1}= 0 \rightarrow 60-2q_1-2q_2=0 \\
     \frac{\partial z}{\partial q_2}= 0 \rightarrow 100-4q_2-2q_1=0 
 }{
     q_1=10 \wedge q_2=20
 }
-Condicion Suficiente:\\
+Condición Suficiente:\\
 \begin{align*}
     \mathcal{H}=\large{\begin{bmatrix}[2]
         \frac{\partial^2 z}{\partial q_1^2}  & \frac{\partial^2 z}{\partial q_1q_2} \\
@@ -59,5 +59,5 @@ Condicion Suficiente:\\
         -2 & -2 \\ -2 & -4
     \end{bmatrix}
 \end{align*}
-A partir del analisis de los determinantes de la hessiana, comproobamos que la condicion de óptimo local se cumple, por lo que podemos assegurar encontrarnos frente a un maximo.
+A partir del análisis de los determinantes de la hessiana, comprobamos que la condición de óptimo local se cumple, por lo que podemos asegurar encontrarnos frente a un Máximo.
 \end{homeworkProblem}

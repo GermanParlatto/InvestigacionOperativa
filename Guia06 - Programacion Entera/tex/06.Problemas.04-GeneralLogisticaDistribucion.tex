@@ -1,11 +1,11 @@
 
 \pagebreak
 \begin{homeworkProblem}[-1][Industria: General - Sector: Logística - Objeto: Distribución]
-\insertarTabla{02.06.01.tex}{Datos sobre Fabricas}
-\insertarTabla{02.06.02.tex}{Datos sobre almacenes}
+\insertarTabla{02.06.01.tex}{Datos sobre fábricas}
+\insertarTabla{02.06.02.tex}{Datos sobre almacénes}
 \subsubsection{Programa de Distribución}
-Las variables de decisión toman la forma $X_{ij}$, representando la cantidad de unidades producida en la fabrica $i$ y transportada al almacén $j$.
-Al mismo tiempo, existen los valores $C_i$ y $T_{ij}$, que indican los costos por unidades producida en la fabrica $i$ y los costos de transporte por unidad de la fabrica $i$ hacia el almacén $j$ respectivamente. Por ultimo, las variables $R_j$ y $L_i$  representan los requerimientos a satisfacer del almacén $j$ y el limite de producción de la fabrica $i$
+Las variables de decisión toman la forma $X_{ij}$, representando la cantidad de unidades producida en la fábrica $i$ y transportada al almacén $j$.
+Al mismo tiempo, existen los valores $C_i$ y $T_{ij}$, que indican los costos por unidades producida en la fábrica $i$ y los costos de transporte por unidad de la fábrica $i$ hacia el almacén $j$ respectivamente. Por ultimo, las variables $R_j$ y $L_i$  representan los requerimientos a satisfacer del almacén $j$ y el limite de producción de la fábrica $i$
 \begin{align*}
     Min\ Z = \sum_{i=1}^{4}{\sum_{j=1}^{6}{C_iX_{ij}}}   +
      \sum_{i=1}^{4}{\sum_{j=1}^{6}{T_{ij}X_{ij}}}
@@ -19,7 +19,7 @@ Sujeta a:
 
 
 \subsubsection{Costos fijos}
-Ahora se agrega la variable de activación $Y_{i}$  que nos indica si en la fabrica $i$ se produjo al menos una unidad y el costo fijo por fabrica $i$, $F_i$
+Ahora se agrega la variable de activación $Y_{i}$  que nos indica si en la fábrica $i$ se produjo al menos una unidad y el costo fijo por fábrica $i$, $F_i$
 \begin{align*}
     Min\ Z = \sum_{i=1}^{4}{\sum_{j=1}^{6}{C_iX_{ij}}}   +
      \sum_{i=1}^{4}{\sum_{j=1}^{6}{T_{ij}X_{ij}}} + \sum_{i=1}^{4}{Y_iF_i}
@@ -47,7 +47,7 @@ Sujeta a:
 
 
 \subsubsection{Cierre}
-Se impone la restricción de que solo 3 fabricas puedan operar
+Se impone la restricción de que sólo 3 fábricas puedan operar
 \begin{align*}
     Max\ Z = 200\sum_{i=1}^{4}{ \sum_{j=1}^{6}{ X_{ij} } } - \paren{\sum_{i=1}^{4}{\sum_{j=1}^{6}{C_iX_{ij}}}   +
      \sum_{i=1}^{4}{\sum_{j=1}^{6}{T_{ij}X_{ij}}} + \sum_{i=1}^{4}{Y_iF_i}}
